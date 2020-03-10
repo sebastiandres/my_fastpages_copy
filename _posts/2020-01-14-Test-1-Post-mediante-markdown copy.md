@@ -15,9 +15,28 @@ Donde `AAAA` es el año con 34 dígitos, `MM` es el mes con 2 dígitos, `DD` es 
 
 La primera línea del archivo debe comenzar con `# Mi título` para que se defina "Mi título" como el título del post. Dentro del post, se pueden hacer subtítulos `## Mi subtítulo` (y sub-subtítulos, `### Mi sub-subtítulo`, pero ya es desaconsejado.)
 
+# Configuración avanzada
+
+Para agregar una descripción, categorías (etiquetas/tags), y toc (table of contents - tabla de contenidos) es necesario agregar un contenido específico encerrado por `---`. Por ejemplo, las primeras 10 líneas de este post son las siguientes:
+
+```
+---
+toc: true
+description: Ejemplo usando markdown con fastpages.
+categories: [fastpages, markdown]
+---
+# Test 1: Post mediante Markdown
+
+## Configuración básica
+
+Un blog post files debe tener el siguiente formato:
+```
+
+Para desactivar la funcionalidad basta con eliminarla o dejarla vacía.
+
 ## Formato básico
 
-Se pueden usar *cursivas*, **negritas**, ***negritas cursvias***, `codigo`, y crear [links](https://www.markdownguide.org/cheat-sheet/). También notas a pie de página [^1]. También una línea horizontal:
+Se pueden usar *cursivas*, **negritas**, ***negritas cursivas***, `código`, y crear [links](https://www.markdownguide.org/cheat-sheet/). También notas a pie de página [^1]. También una línea horizontal:
 
 ---
 
@@ -35,13 +54,14 @@ Acá hay una lista numerada:
 
 ## Citas y otras formas de destacar
 
-> This is a quotation
+Citas:
+> Esta es una cita
 
-{% include alert.html text="You can include alert boxes" %}
+Alerta:
+{% include alert.html text="Puedes incluir alertas" %}
 
-...and...
-
-{% include info.html text="You can include info boxes" %}
+Información:
+{% include info.html text="Puedes destacar información" %}
 
 ## Imágenes
 
@@ -72,12 +92,12 @@ print(1+1)
 | Una cosa más | Otra cosa más |
 
 
-## Tweetcards
+## Tweets
 
 {% twitter https://twitter.com/jakevdp/status/1204765621767901185?s=20 %}
 
 
-## Footnotes
+## Notas a pie de página
 
 [^1]: Esta es la nota al pie de página.
 
