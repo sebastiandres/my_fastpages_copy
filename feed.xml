@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://sebastiandres.github.io/my_fastpages_copy/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sebastiandres.github.io/my_fastpages_copy/" rel="alternate" type="text/html" /><updated>2020-03-10T07:40:58-05:00</updated><id>https://sebastiandres.github.io/my_fastpages_copy/feed.xml</id><title type="html">sebastiandres</title><subtitle>Blog de sebastiandres</subtitle><entry><title type="html">Redirigiendo al blog</title><link href="https://sebastiandres.github.io/my_fastpages_copy/html/fastpages/2020/03/10/Redirect.html" rel="alternate" type="text/html" title="Redirigiendo al blog" /><published>2020-03-10T00:00:00-05:00</published><updated>2020-03-10T00:00:00-05:00</updated><id>https://sebastiandres.github.io/my_fastpages_copy/html/fastpages/2020/03/10/Redirect</id><content type="html" xml:base="https://sebastiandres.github.io/my_fastpages_copy/html/fastpages/2020/03/10/Redirect.html">&lt;p&gt;Aún no termino de traducir los posts “originales” y ya estoy pensando en el próximo post. Es un buen signo de que el nuevo sistema es más fácil de usar.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://sebastiandres.github.io/my_fastpages_copy/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sebastiandres.github.io/my_fastpages_copy/" rel="alternate" type="text/html" /><updated>2020-03-10T07:55:12-05:00</updated><id>https://sebastiandres.github.io/my_fastpages_copy/feed.xml</id><title type="html">sebastiandres</title><subtitle>Blog de sebastiandres</subtitle><entry><title type="html">Redirigiendo al blog</title><link href="https://sebastiandres.github.io/my_fastpages_copy/html/fastpages/2020/03/10/Redirect.html" rel="alternate" type="text/html" title="Redirigiendo al blog" /><published>2020-03-10T00:00:00-05:00</published><updated>2020-03-10T00:00:00-05:00</updated><id>https://sebastiandres.github.io/my_fastpages_copy/html/fastpages/2020/03/10/Redirect</id><content type="html" xml:base="https://sebastiandres.github.io/my_fastpages_copy/html/fastpages/2020/03/10/Redirect.html">&lt;p&gt;Aún no termino de traducir los posts “originales” y ya estoy pensando en el próximo post. Es un buen signo de que el nuevo sistema es más fácil de usar.&lt;/p&gt;
 
 &lt;p&gt;Al seguir las instrucciones para configurar fastpages, pide que el repositorio no sea “github_username.github.io”. En mi caso y después de algunas pruebas, me incliné por “blog”, por lo que el blog queda en https://sebastiandres.github.io/blog/. Sin embargo, me pareció que rompe la expectativa, puesto que https://sebastiandres.github.io arroja un error (página 404-no encontrada).&lt;/p&gt;
 
@@ -789,9 +789,27 @@
 
 &lt;p&gt;La primera línea del archivo debe comenzar con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;# Mi título&lt;/code&gt; para que se defina “Mi título” como el título del post. Dentro del post, se pueden hacer subtítulos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;## Mi subtítulo&lt;/code&gt; (y sub-subtítulos, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;### Mi sub-subtítulo&lt;/code&gt;, pero ya es desaconsejado.)&lt;/p&gt;
 
+&lt;h1 id=&quot;configuración-avanzada&quot;&gt;Configuración avanzada&lt;/h1&gt;
+
+&lt;p&gt;Para agregar una descripción, categorías (etiquetas/tags), y toc (table of contents - tabla de contenidos) es necesario agregar un contenido específico encerrado por &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;---&lt;/code&gt;. Por ejemplo, las primeras 10 líneas de este post son las siguientes:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+toc: true
+description: Ejemplo usando markdown con fastpages.
+categories: [fastpages, markdown]
+---
+# Test 1: Post mediante Markdown
+
+## Configuración básica
+
+Un blog post files debe tener el siguiente formato:
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Para desactivar la funcionalidad basta con eliminarla o dejarla vacía.&lt;/p&gt;
+
 &lt;h2 id=&quot;formato-básico&quot;&gt;Formato básico&lt;/h2&gt;
 
-&lt;p&gt;Se pueden usar &lt;em&gt;cursivas&lt;/em&gt;, &lt;strong&gt;negritas&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;negritas cursvias&lt;/em&gt;&lt;/strong&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;codigo&lt;/code&gt;, y crear &lt;a href=&quot;https://www.markdownguide.org/cheat-sheet/&quot;&gt;links&lt;/a&gt;. También notas a pie de página &lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. También una línea horizontal:&lt;/p&gt;
+&lt;p&gt;Se pueden usar &lt;em&gt;cursivas&lt;/em&gt;, &lt;strong&gt;negritas&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;negritas cursivas&lt;/em&gt;&lt;/strong&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;código&lt;/code&gt;, y crear &lt;a href=&quot;https://www.markdownguide.org/cheat-sheet/&quot;&gt;links&lt;/a&gt;. También notas a pie de página &lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. También una línea horizontal:&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -813,20 +831,21 @@
 
 &lt;h2 id=&quot;citas-y-otras-formas-de-destacar&quot;&gt;Citas y otras formas de destacar&lt;/h2&gt;
 
+&lt;p&gt;Citas:&lt;/p&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;This is a quotation&lt;/p&gt;
+  &lt;p&gt;Esta es una cita&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;p&gt;Alerta:&lt;/p&gt;
 &lt;div class=&quot;Toast Toast--warning googoo&quot;&gt;
    &lt;span class=&quot;Toast-icon&quot;&gt;&lt;svg class=&quot;octicon octicon-alert&quot; viewBox=&quot;0 0 16 16&quot; version=&quot;1.1&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z&quot; /&gt;&lt;/svg&gt;&lt;/span&gt;
-   &lt;span class=&quot;Toast-content&quot;&gt;You can include alert boxes&lt;/span&gt;
+   &lt;span class=&quot;Toast-content&quot;&gt;Puedes incluir alertas&lt;/span&gt;
 &lt;/div&gt;
 
-&lt;p&gt;…and…&lt;/p&gt;
-
+&lt;p&gt;Información:&lt;/p&gt;
 &lt;div class=&quot;Toast&quot;&gt;
    &lt;span class=&quot;Toast-icon&quot;&gt;&lt;svg class=&quot;octicon octicon-info&quot; viewBox=&quot;0 0 14 16&quot; version=&quot;1.1&quot; width=&quot;14&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M6.3 5.69a.942.942 0 01-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 01-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z&quot; /&gt;&lt;/svg&gt;&lt;/span&gt;
-   &lt;span class=&quot;Toast-content&quot;&gt;You can include info boxes&lt;/span&gt;
+   &lt;span class=&quot;Toast-content&quot;&gt;Puedes destacar información&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;imágenes&quot;&gt;Imágenes&lt;/h2&gt;
@@ -871,13 +890,13 @@ do_thing()
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h2 id=&quot;tweetcards&quot;&gt;Tweetcards&lt;/h2&gt;
+&lt;h2 id=&quot;tweets&quot;&gt;Tweets&lt;/h2&gt;
 
 &lt;div class=&quot;jekyll-twitter-plugin&quot;&gt;&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Altair 4.0 is released! &lt;a href=&quot;https://t.co/PCyrIOTcvv&quot;&gt;https://t.co/PCyrIOTcvv&lt;/a&gt;&lt;br /&gt;Try it with:&lt;br /&gt;&lt;br /&gt;  pip install -U altair&lt;br /&gt;&lt;br /&gt;The full list of changes is at &lt;a href=&quot;https://t.co/roXmzcsT58&quot;&gt;https://t.co/roXmzcsT58&lt;/a&gt; ...read on for some highlights. &lt;a href=&quot;https://t.co/vWJ0ZveKbZ&quot;&gt;pic.twitter.com/vWJ0ZveKbZ&lt;/a&gt;&lt;/p&gt;&amp;mdash; Jake VanderPlas (@jakevdp) &lt;a href=&quot;https://twitter.com/jakevdp/status/1204765621767901185?ref_src=twsrc%5Etfw&quot;&gt;December 11, 2019&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h2&gt;
+&lt;h2 id=&quot;notas-a-pie-de-página&quot;&gt;Notas a pie de página&lt;/h2&gt;
 
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;

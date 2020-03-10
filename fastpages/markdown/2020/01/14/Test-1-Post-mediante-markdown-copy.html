@@ -117,14 +117,18 @@
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
 <li class="toc-entry toc-h2"><a href="#configuración-básica">Configuración básica</a></li>
+<li class="toc-entry toc-h1"><a href="#configuración-avanzada">Configuración avanzada</a>
+<ul>
 <li class="toc-entry toc-h2"><a href="#formato-básico">Formato básico</a></li>
 <li class="toc-entry toc-h2"><a href="#listas">Listas</a></li>
 <li class="toc-entry toc-h2"><a href="#citas-y-otras-formas-de-destacar">Citas y otras formas de destacar</a></li>
 <li class="toc-entry toc-h2"><a href="#imágenes">Imágenes</a></li>
 <li class="toc-entry toc-h2"><a href="#código">Código</a></li>
 <li class="toc-entry toc-h2"><a href="#tablas">Tablas</a></li>
-<li class="toc-entry toc-h2"><a href="#tweetcards">Tweetcards</a></li>
-<li class="toc-entry toc-h2"><a href="#footnotes">Footnotes</a></li>
+<li class="toc-entry toc-h2"><a href="#tweets">Tweets</a></li>
+<li class="toc-entry toc-h2"><a href="#notas-a-pie-de-página">Notas a pie de página</a></li>
+</ul>
+</li>
 </ul><h2 id="configuración-básica">
 <a class="anchor" href="#configuraci%C3%B3n-b%C3%A1sica" aria-hidden="true"><span class="octicon octicon-link"></span></a>Configuración básica</h2>
 
@@ -136,10 +140,29 @@
 
 <p>La primera línea del archivo debe comenzar con <code class="language-plaintext highlighter-rouge"># Mi título</code> para que se defina “Mi título” como el título del post. Dentro del post, se pueden hacer subtítulos <code class="language-plaintext highlighter-rouge">## Mi subtítulo</code> (y sub-subtítulos, <code class="language-plaintext highlighter-rouge">### Mi sub-subtítulo</code>, pero ya es desaconsejado.)</p>
 
+<h1 id="configuración-avanzada">
+<a class="anchor" href="#configuraci%C3%B3n-avanzada" aria-hidden="true"><span class="octicon octicon-link"></span></a>Configuración avanzada</h1>
+
+<p>Para agregar una descripción, categorías (etiquetas/tags), y toc (table of contents - tabla de contenidos) es necesario agregar un contenido específico encerrado por <code class="language-plaintext highlighter-rouge">---</code>. Por ejemplo, las primeras 10 líneas de este post son las siguientes:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+toc: true
+description: Ejemplo usando markdown con fastpages.
+categories: [fastpages, markdown]
+---
+# Test 1: Post mediante Markdown
+
+## Configuración básica
+
+Un blog post files debe tener el siguiente formato:
+</code></pre></div></div>
+
+<p>Para desactivar la funcionalidad basta con eliminarla o dejarla vacía.</p>
+
 <h2 id="formato-básico">
 <a class="anchor" href="#formato-b%C3%A1sico" aria-hidden="true"><span class="octicon octicon-link"></span></a>Formato básico</h2>
 
-<p>Se pueden usar <em>cursivas</em>, <strong>negritas</strong>, <strong><em>negritas cursvias</em></strong>, <code class="language-plaintext highlighter-rouge">codigo</code>, y crear <a href="https://www.markdownguide.org/cheat-sheet/">links</a>. También notas a pie de página <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. También una línea horizontal:</p>
+<p>Se pueden usar <em>cursivas</em>, <strong>negritas</strong>, <strong><em>negritas cursivas</em></strong>, <code class="language-plaintext highlighter-rouge">código</code>, y crear <a href="https://www.markdownguide.org/cheat-sheet/">links</a>. También notas a pie de página <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. También una línea horizontal:</p>
 
 <hr>
 
@@ -163,20 +186,21 @@
 <h2 id="citas-y-otras-formas-de-destacar">
 <a class="anchor" href="#citas-y-otras-formas-de-destacar" aria-hidden="true"><span class="octicon octicon-link"></span></a>Citas y otras formas de destacar</h2>
 
+<p>Citas:</p>
 <blockquote>
-  <p>This is a quotation</p>
+  <p>Esta es una cita</p>
 </blockquote>
 
+<p>Alerta:</p>
 <div class="Toast Toast--warning googoo">
    <span class="Toast-icon"><svg class="octicon octicon-alert" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>
-   <span class="Toast-content">You can include alert boxes</span>
+   <span class="Toast-content">Puedes incluir alertas</span>
 </div>
 
-<p>…and…</p>
-
+<p>Información:</p>
 <div class="Toast">
    <span class="Toast-icon"><svg class="octicon octicon-info" viewbox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 01-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 01-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>
-   <span class="Toast-content">You can include info boxes</span>
+   <span class="Toast-content">Puedes destacar información</span>
 </div>
 
 <h2 id="imágenes">
@@ -224,8 +248,8 @@ do_thing()
   </tbody>
 </table>
 
-<h2 id="tweetcards">
-<a class="anchor" href="#tweetcards" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tweetcards</h2>
+<h2 id="tweets">
+<a class="anchor" href="#tweets" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tweets</h2>
 
 <div class="jekyll-twitter-plugin">
 <blockquote class="twitter-tweet">
@@ -234,8 +258,8 @@ do_thing()
 <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 
-<h2 id="footnotes">
-<a class="anchor" href="#footnotes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Footnotes</h2>
+<h2 id="notas-a-pie-de-página">
+<a class="anchor" href="#notas-a-pie-de-p%C3%A1gina" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notas a pie de página</h2>
 
 <div class="footnotes">
   <ol>
