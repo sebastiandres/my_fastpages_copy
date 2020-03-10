@@ -21,9 +21,9 @@ var documents = [{
     "body": "WarningDo not manually save images into this folder. This is used by GitHub Actions to automatically copy images.  Any images you save into this folder could be deleted at build time. "
     }, {
     "id": 4,
-    "url": "https://sebastiandres.github.io/2020/03/09/PostDesdeWord.html",
-    "title": "Postdesdeword",
-    "body": "2020/03/09 - Es posible hacer un post desde Word, sin problemas. Puedes poner listas numeradas:    Por     Ejemplo     Así  O listas no-numeradas:    Por     Ejemplo     Asá  También puedes insertar imágenes Insertar links como éste O incluso código (¿?) hw = “hello World” print(hw) "
+    "url": "https://sebastiandres.github.io/2020/03/09/Post_desde_word.html",
+    "title": "Post_desde_word",
+    "body": "2020/03/09 - -– title: “My Title” summary: “Awesome summary” toc: false comments: true image: images/some_folder/your_image. png categories: [word, fastpages, jupyter] metadata_key1: metadata_value1 metadata_key2: metadata_value2 -– Ejemplo de un tituloEs posible hacer un post desde Word, sin problemas. Convierte todas las fonts a una Font común y con el mismo tamaño. Pero respeta las negritas y las itálicas. Puedes poner listas numeradas:    Por     Ejemplo     Así  O listas no-numeradas:    Por     Ejemplo     Asá  MediaImágenes: También puedes insertar imágenes Enlaces: Insertar links como éste Pero código no resulta bien. "
     }, {
     "id": 5,
     "url": "https://sebastiandres.github.io/fastpages/jupyter/2020/02/20/traduccion.html",
