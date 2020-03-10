@@ -6,6 +6,4 @@ layout: home
 search: exclude
 ---
 
-Blog de sebastiandres - contruido con [fastpages](https://github.com/fastai/fastpages).
-
 # Entradas
