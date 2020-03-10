@@ -7,6 +7,6 @@ search: exclude
 ---
 
 Blog generado automáticamente con [fastpages](https://github.com/fastai/fastpages)
-a partir del [repositorio](https://github.com/sebastiandres/blog).
+a partir del [repositorio](https://github.com/sebastiandres/blog)[.](https://github.com/sebastiandres/blog/actions)
 
 # Entradas

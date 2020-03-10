@@ -4,7 +4,9 @@ toc: false
 categories: [opinión, backport, medium]
 ---
 # Consejos de libros al mejor precio
-Post espejo de [https://medium.com/@sebastiandres/consejos-al-mejor-precio-ff9546984ca2](medium).
+
+Post espejo de [medium](https://medium.com/@sebastiandres/consejos-al-mejor-precio-ff9546984ca2).
+
 ---
 
 Para mi sorpresa, hay muchas personas que no conocen los 2 principales sitios que uso para abastecerme de libros a buen precio: BP Digital y BookDepository. ¡Ojalá este post sea útil en difundir esta información!
@@ -14,7 +16,7 @@ BP Digital — biblioteca pública digital — permite pedir libros en formato d
 * **Pros**: es completamente gratis. También me gusta que los libros sean prestados durante un periodo fijo (15 días, + 7 renovación) porque permite no holgazanear demasiado y terminar la lectura pedida.
 * **Contras**: Sólo en formato digital y requiere un rut chileno o identificador válido para residentes en Chile. Tienen muy pocos en idioma distinto al español.
 
-Link: [http://www.bpdigital.cl/]
+Link: (http://www.bpdigital.cl/)
 
 Consejos: 
 1. Pedir un libro a la vez, puesto que el periodo de préstamo es corto.
@@ -30,7 +32,7 @@ Además, permite acceder fácilmente a libros que no están en Chile, como Weapo
 * Pros: El precio indicado es el precio final (incluye envío). Se tiene un catálogo muy grande y permite hacer reservas (pre-order). Los libros llegan en perfecto estado y pueden incluso devolverse (aunque nunca he hecho uso de esta funcionalidad).
 * Contras: Se demora entre 2 y 5 semanas en llegar a Chile.
 
-Link: [https://www.bookdepository.com/]
+Link: [https://www.bookdepository.com/] (https://www.bookdepository.com/)
 
 Consejos: 
 1. Revisar bien el idioma del libro. En una oportunidad encargué un libro y aunque el título venía en inglés, el contenido venía en alemán. Al revisar, efectivamente en la página se indicaba que el libro venía en idioma alemán. 
