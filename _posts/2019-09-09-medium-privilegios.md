@@ -2,6 +2,7 @@
 title: Titulo 
 toc: false
 categories: [opinión, backport, medium]
+comments: true
 ---
 # Reconociendo nuestros privilegios: reflexiones sobre el talento, la suerte y la pobreza.
 
