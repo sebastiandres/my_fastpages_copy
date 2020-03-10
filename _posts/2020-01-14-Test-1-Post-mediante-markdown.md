@@ -123,18 +123,10 @@ print(1+1)
 
 ## Videos
 
-Opción 1:
-
-> youtube: https://youtu.be/u6XAPnuFjJc
+{% include youtube.html content='https://youtu.be/XfoYk_Z5AkI' %}
 
 ```
-> youtube: https://youtu.be/u6XAPnuFjJc
-```
-
-Opción 2:
-
-```
-{% youtube https://youtu.be/your-link %}
+{% include youtube.html content='https://youtu.be/XfoYk_Z5AkI' %}
 ```
 
 ## Tablas
@@ -162,6 +154,18 @@ Alerta:
 Información:
 {% include info.html text="Puedes destacar información" %}
 
+Warning:
+{% include warning.html content='There will be no second warning!' %}
+
+Important:
+{% include important.html content='Pay attention! It&#8217;s important.' %}
+
+Tip:
+{% include tip.html content='This is my tip.' %}
+
+Nota:
+{% include note.html content='Take note of this.' %}
+
 ```
 Citas:
 > Esta es una cita
@@ -171,6 +175,18 @@ Alerta:
 
 Información:
 {% include info.html text="Puedes destacar información" %}
+
+Warning:
+{% include warning.html content='There will be no second warning!' %}
+
+Important:
+{% include important.html content='Pay attention! It&#8217;s important.' %}
+
+Tip:
+{% include tip.html content='This is my tip.' %}
+
+Nota:
+{% include note.html content='Take note of this.' %}
 ```
 
 
