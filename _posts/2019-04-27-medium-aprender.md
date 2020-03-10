@@ -2,6 +2,7 @@
 title: Titulo 
 toc: false
 categories: [opinión, backport, medium]
+comments: true
 ---
 # Lo que nos motiva a aprender y trabajar
 Post espejo de [https://medium.com/@sebastiandres/lo-que-nos-motiva-a-aprender-y-trabajar-95eb30c9cf95](medium)

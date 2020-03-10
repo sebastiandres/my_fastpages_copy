@@ -2,6 +2,7 @@
 title: Titulo 
 toc: false
 categories: [opinión, backport, medium]
+comments: true
 ---
 # Finanzas Modernas — Educación y manejo en Web y Apps.
 

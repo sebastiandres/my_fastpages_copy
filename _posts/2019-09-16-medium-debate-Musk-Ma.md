@@ -2,6 +2,7 @@
 title: Titulo 
 toc: false
 categories: [opinión, backport, medium]
+comments: true
 ---
 # Elon Musk y Jack Ma: ¿Quién tiene la razón?
 
@@ -9,7 +10,7 @@ https://planetachatbot.com/debate-de-elon-musk-y-jack-ma-3d24c6bd48f2
 
 En Agosto del 2019 Elon Musk y Jack Ma sostuvieron un panel intercambiando opuestas opiniones en el contexto del World Artificial Intelligence Conference. Los temas que los CEOs de Space X & Tesla y Alibaba&Aliexpress seleccionaron fueron los siguientes: Inteligencia Artificial, Marte, Trabajo y Educación. El panel dura cerca de 46 minutos y fue interesante porque Elon y Jack tienen opiniones bastante distintas y no lo disimularon.
 
-> https://www.youtube.com/watch?v=f3lUEnMaiAU
+> youtube: https://www.youtube.com/watch?v=f3lUEnMaiAU
 
 ## Round 1: Inteligencia Artificial — primer acto (00:00–09:30)
 * Elon Musk: “Ya somos cyborgs, estamos integrados con nuestros computadores y smartphones. Pero el ancho de banda de entrada es demasiado lento”. “Los humanos seremos aburridos y lentos para una Inteligencia Artificial (IA). El lenguaje humano hablado será lentísimo para las IAs, les parecerá como canto de ballenas”. “Hace 40 años, existió el juego pong. Hoy los juegos son foto-realistas con millones de personas jugando en línea simultáneamente. A cualquier tasa de desarrollo que consideres, por extrapolación, la realidad virtual será indistinguible de la realidad. Eso, obien la civilización terminará. Esas son las opciones”. “La velocidad de cambio de la tecnología supera nuestra velocidad de entenderla”. “Los humanos son un gestor de arranque (bootloader) biológico de IA”.

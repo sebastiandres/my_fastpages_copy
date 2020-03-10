@@ -2,6 +2,7 @@
 title: Redirigiendo al blog
 toc: false
 categories: [opinión, backport, medium]
+comments: true
 ---
 # Consejos de libros al mejor precio
 
@@ -12,6 +13,7 @@ Post espejo de [medium](https://medium.com/@sebastiandres/consejos-al-mejor-prec
 Para mi sorpresa, hay muchas personas que no conocen los 2 principales sitios que uso para abastecerme de libros a buen precio: BP Digital y BookDepository. ¡Ojalá este post sea útil en difundir esta información!
 
 ## BP Digital
+
 BP Digital — biblioteca pública digital — permite pedir libros en formato digital. El catálogo es bastante amplio y recientemente me sorprendí de encontrar los 3 libros que pensaba comprar para leer en el verano. Por ejemplo, se encuentran las colecciones de Roberto Ampuero, Hernan Rivera Letelier, Isabel Allende, Roberto Bolaño, Phillip K Dick, Isaac Asimov, George R. R. Martin, incluyendo al reciente Yuval Noah Harari. Tienen cerca de 13,000 libros, aunque la mayor parte sólo en español.
 * **Pros**: es completamente gratis. También me gusta que los libros sean prestados durante un periodo fijo (15 días, + 7 renovación) porque permite no holgazanear demasiado y terminar la lectura pedida.
 * **Contras**: Sólo en formato digital y requiere un rut chileno o identificador válido para residentes en Chile. Tienen muy pocos en idioma distinto al español.
@@ -23,6 +25,7 @@ Consejos:
 2. Poner en reserva los libros de alta demanda, porque puede demorar en liberarse el deseado.
 
 ## BookDepository
+
 BookDepository (BD) es una librería electrónica con más de 20 millones de libros y que hace envíos gratis a todo el mundo sin monto mínimo. Eso hace increíblemente más fácil evaluar si conviene comprar un libro o no en comparación con las librerías locales. Por lo que he comparado, BD es hasta un 50% más barato que comprar el libro en Chile, con la ventaja de contar con el libro en inglés (o el idioma original). Permite comprar con tarjeta de crédito, o con paypal, y no he tenido ningún problema hasta ahora (+20 libros). Algunos ejemplos:
 * Artemis — Andy Weir. BD: 14.77 USD. Chile: > 30 USD.
 * Surely you’re joking Mr Feynman — Richard Feynman. BD: 14.32 USD. Chile: >25 USD.
