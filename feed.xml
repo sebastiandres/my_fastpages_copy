@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://sebastiandres.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sebastiandres.github.io/" rel="alternate" type="text/html" /><updated>2020-03-09T20:42:40-05:00</updated><id>https://sebastiandres.github.io/feed.xml</id><title type="html">sebastiandres</title><subtitle>Blog de sebastiandres</subtitle><entry><title type="html">Post Desde Word</title><link href="https://sebastiandres.github.io/2020/03/09/Post-desde-word.html" rel="alternate" type="text/html" title="Post Desde Word" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://sebastiandres.github.io/2020/03/09/Post-desde-word</id><content type="html" xml:base="https://sebastiandres.github.io/2020/03/09/Post-desde-word.html">&lt;p&gt;-–&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://sebastiandres.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sebastiandres.github.io/" rel="alternate" type="text/html" /><updated>2020-03-09T20:47:42-05:00</updated><id>https://sebastiandres.github.io/feed.xml</id><title type="html">sebastiandres</title><subtitle>Blog de sebastiandres</subtitle><entry><title type="html">Post Desde Word</title><link href="https://sebastiandres.github.io/2020/03/09/Post-desde-word.html" rel="alternate" type="text/html" title="Post Desde Word" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://sebastiandres.github.io/2020/03/09/Post-desde-word</id><content type="html" xml:base="https://sebastiandres.github.io/2020/03/09/Post-desde-word.html">&lt;p&gt;-–&lt;/p&gt;
 
 &lt;p&gt;title: “My Title”&lt;/p&gt;
 
@@ -655,7 +655,7 @@
 &lt;/div&gt;
 &lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
 &lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
-&lt;p&gt;&lt;img src=&quot;/images/copied_from_nb/my_icons/fastai_logo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//images/copied_from_nb/my_icons/fastai_logo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -813,7 +813,7 @@
 
 &lt;h2 id=&quot;images&quot;&gt;Images&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/logo.png&quot; alt=&quot;&quot; title=&quot;fast.ai's logo&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//images/logo.png&quot; alt=&quot;&quot; title=&quot;fast.ai's logo&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
 
