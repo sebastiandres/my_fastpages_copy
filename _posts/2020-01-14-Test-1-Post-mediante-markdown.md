@@ -125,15 +125,13 @@ print(1+1)
 
 Opción 1:
 
-> youtube: https://youtu.be/your-link
+> youtube: https://youtu.be/u6XAPnuFjJc
 
 ```
-> youtube: https://youtu.be/your-link
+> youtube: https://youtu.be/u6XAPnuFjJc
 ```
 
 Opción 2:
-
-{% youtube https://youtu.be/your-link %}
 
 ```
 {% youtube https://youtu.be/your-link %}
