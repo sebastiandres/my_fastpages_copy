@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://sebastiandres.github.io/my_fastpages_copy/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sebastiandres.github.io/my_fastpages_copy/" rel="alternate" type="text/html" /><updated>2020-03-09T21:03:26-05:00</updated><id>https://sebastiandres.github.io/my_fastpages_copy/feed.xml</id><title type="html">sebastiandres</title><subtitle>Blog de sebastiandres</subtitle><entry><title type="html">Test 3 Post Mediante Word</title><link href="https://sebastiandres.github.io/my_fastpages_copy/2020/03/09/Test-3-Post-mediante-word.html" rel="alternate" type="text/html" title="Test 3 Post Mediante Word" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://sebastiandres.github.io/my_fastpages_copy/2020/03/09/Test-3-Post-mediante-word</id><content type="html" xml:base="https://sebastiandres.github.io/my_fastpages_copy/2020/03/09/Test-3-Post-mediante-word.html">&lt;p&gt;-–&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://sebastiandres.github.io/my_fastpages_copy/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sebastiandres.github.io/my_fastpages_copy/" rel="alternate" type="text/html" /><updated>2020-03-10T07:40:58-05:00</updated><id>https://sebastiandres.github.io/my_fastpages_copy/feed.xml</id><title type="html">sebastiandres</title><subtitle>Blog de sebastiandres</subtitle><entry><title type="html">Redirigiendo al blog</title><link href="https://sebastiandres.github.io/my_fastpages_copy/html/fastpages/2020/03/10/Redirect.html" rel="alternate" type="text/html" title="Redirigiendo al blog" /><published>2020-03-10T00:00:00-05:00</published><updated>2020-03-10T00:00:00-05:00</updated><id>https://sebastiandres.github.io/my_fastpages_copy/html/fastpages/2020/03/10/Redirect</id><content type="html" xml:base="https://sebastiandres.github.io/my_fastpages_copy/html/fastpages/2020/03/10/Redirect.html">&lt;p&gt;Aún no termino de traducir los posts “originales” y ya estoy pensando en el próximo post. Es un buen signo de que el nuevo sistema es más fácil de usar.&lt;/p&gt;
+
+&lt;p&gt;Al seguir las instrucciones para configurar fastpages, pide que el repositorio no sea “github_username.github.io”. En mi caso y después de algunas pruebas, me incliné por “blog”, por lo que el blog queda en https://sebastiandres.github.io/blog/. Sin embargo, me pareció que rompe la expectativa, puesto que https://sebastiandres.github.io arroja un error (página 404-no encontrada).&lt;/p&gt;
+
+&lt;p&gt;Se me ocurrió que una forma fácil de solucionar lo anterior es tener un repositorio “github_username.github.io”, en mi caso sebastiandres.github.io, y que contuviera una página html que redirigiera a https://sebastiandres.github.io/blog/. Un “hack” de 2 minutos y que permite responder a la expectativa, sin mayores dolores de cabeza de configuración o código:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;lang=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;en&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;http-equiv=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Refresh&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0; url=https://sebastiandres.github.io/my_fastpages_copy/&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Redirigiendo al &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://sebastiandres.github.io/my_fastpages_copy/&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;blog&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">Aún no termino de traducir los posts “originales” y ya estoy pensando en el próximo post. Es un buen signo de que el nuevo sistema es más fácil de usar.</summary></entry><entry><title type="html">Test 3 Post Mediante Word</title><link href="https://sebastiandres.github.io/my_fastpages_copy/2020/03/09/Test-3-Post-mediante-word.html" rel="alternate" type="text/html" title="Test 3 Post Mediante Word" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://sebastiandres.github.io/my_fastpages_copy/2020/03/09/Test-3-Post-mediante-word</id><content type="html" xml:base="https://sebastiandres.github.io/my_fastpages_copy/2020/03/09/Test-3-Post-mediante-word.html">&lt;p&gt;-–&lt;/p&gt;
 
 &lt;p&gt;title: “My Title”&lt;/p&gt;
 
@@ -764,39 +779,39 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://sebastiandres.github.io/my_fastpages_copy/images/chart-preview.png" /><media:content medium="image" url="https://sebastiandres.github.io/my_fastpages_copy/images/chart-preview.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Test 1: Post mediante Markdown</title><link href="https://sebastiandres.github.io/my_fastpages_copy/fastpages/markdown/2020/01/14/Test-1-Post-mediante-markdown.html" rel="alternate" type="text/html" title="Test 1: Post mediante Markdown" /><published>2020-01-14T00:00:00-06:00</published><updated>2020-01-14T00:00:00-06:00</updated><id>https://sebastiandres.github.io/my_fastpages_copy/fastpages/markdown/2020/01/14/Test-1-Post-mediante-markdown</id><content type="html" xml:base="https://sebastiandres.github.io/my_fastpages_copy/fastpages/markdown/2020/01/14/Test-1-Post-mediante-markdown.html">&lt;h2 id=&quot;basic-setup&quot;&gt;Basic setup&lt;/h2&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://sebastiandres.github.io/my_fastpages_copy/images/chart-preview.png" /><media:content medium="image" url="https://sebastiandres.github.io/my_fastpages_copy/images/chart-preview.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Test 1: Post mediante Markdown</title><link href="https://sebastiandres.github.io/my_fastpages_copy/fastpages/markdown/2020/01/14/Test-1-Post-mediante-markdown-copy.html" rel="alternate" type="text/html" title="Test 1: Post mediante Markdown" /><published>2020-01-14T00:00:00-06:00</published><updated>2020-01-14T00:00:00-06:00</updated><id>https://sebastiandres.github.io/my_fastpages_copy/fastpages/markdown/2020/01/14/Test-1-Post-mediante-markdown%20copy</id><content type="html" xml:base="https://sebastiandres.github.io/my_fastpages_copy/fastpages/markdown/2020/01/14/Test-1-Post-mediante-markdown-copy.html">&lt;h2 id=&quot;configuración-básica&quot;&gt;Configuración básica&lt;/h2&gt;
 
-&lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
+&lt;p&gt;Un blog post files debe tener el siguiente formato:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR-MONTH-DAY-filename.md&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AAAA-MM-DD-filename.md&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR&lt;/code&gt; is a four-digit number, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MONTH&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DAY&lt;/code&gt; are both two-digit numbers, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;filename&lt;/code&gt; is whatever file name you choose, to remind yourself what this post is about. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.md&lt;/code&gt; is the file extension for markdown files.&lt;/p&gt;
+&lt;p&gt;Donde &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AAAA&lt;/code&gt; es el año con 34 dígitos, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MM&lt;/code&gt; es el mes con 2 dígitos, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DD&lt;/code&gt; es el día con 2 dígitos, y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;filename&lt;/code&gt; es un nombre de referencia para recordarte de que se trataba el post (el título real se indica adentro). La extensión &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.md&lt;/code&gt; se usa para archivos markdown.&lt;/p&gt;
 
-&lt;p&gt;The first line of the file should start with a single hash character, then a space, then your title. This is how you create a “&lt;em&gt;level 1 heading&lt;/em&gt;” in markdown. Then you can create level 2, 3, etc headings as you wish but repeating the hash character, such as you see in the line &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;## File names&lt;/code&gt; above.&lt;/p&gt;
+&lt;p&gt;La primera línea del archivo debe comenzar con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;# Mi título&lt;/code&gt; para que se defina “Mi título” como el título del post. Dentro del post, se pueden hacer subtítulos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;## Mi subtítulo&lt;/code&gt; (y sub-subtítulos, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;### Mi sub-subtítulo&lt;/code&gt;, pero ya es desaconsejado.)&lt;/p&gt;
 
-&lt;h2 id=&quot;basic-formatting&quot;&gt;Basic formatting&lt;/h2&gt;
+&lt;h2 id=&quot;formato-básico&quot;&gt;Formato básico&lt;/h2&gt;
 
-&lt;p&gt;You can use &lt;em&gt;italics&lt;/em&gt;, &lt;strong&gt;bold&lt;/strong&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;code font text&lt;/code&gt;, and create &lt;a href=&quot;https://www.markdownguide.org/cheat-sheet/&quot;&gt;links&lt;/a&gt;. Here’s a footnote &lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Here’s a horizontal rule:&lt;/p&gt;
+&lt;p&gt;Se pueden usar &lt;em&gt;cursivas&lt;/em&gt;, &lt;strong&gt;negritas&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;negritas cursvias&lt;/em&gt;&lt;/strong&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;codigo&lt;/code&gt;, y crear &lt;a href=&quot;https://www.markdownguide.org/cheat-sheet/&quot;&gt;links&lt;/a&gt;. También notas a pie de página &lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. También una línea horizontal:&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&quot;lists&quot;&gt;Lists&lt;/h2&gt;
+&lt;h2 id=&quot;listas&quot;&gt;Listas&lt;/h2&gt;
 
-&lt;p&gt;Here’s a list:&lt;/p&gt;
+&lt;p&gt;Acá hay una lista (regular):&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;item 1&lt;/li&gt;
   &lt;li&gt;item 2&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;And a numbered list:&lt;/p&gt;
+&lt;p&gt;Acá hay una lista numerada:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;item 1&lt;/li&gt;
   &lt;li&gt;item 2&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&quot;boxes-and-stuff&quot;&gt;Boxes and stuff&lt;/h2&gt;
+&lt;h2 id=&quot;citas-y-otras-formas-de-destacar&quot;&gt;Citas y otras formas de destacar&lt;/h2&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;This is a quotation&lt;/p&gt;
@@ -814,19 +829,19 @@
    &lt;span class=&quot;Toast-content&quot;&gt;You can include info boxes&lt;/span&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&quot;images&quot;&gt;Images&lt;/h2&gt;
+&lt;h2 id=&quot;imágenes&quot;&gt;Imágenes&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/my_fastpages_copy/images/logo.png&quot; alt=&quot;&quot; title=&quot;fast.ai's logo&quot; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+&lt;h2 id=&quot;código&quot;&gt;Código&lt;/h2&gt;
 
-&lt;p&gt;General preformatted text:&lt;/p&gt;
+&lt;p&gt;Texto preformateado general:&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Do a thing
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Do a thing in a programming language
 do_thing()
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Python code and output:&lt;/p&gt;
+&lt;p&gt;Código de python y su salida:&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Prints '2'
 &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -835,19 +850,23 @@ do_thing()
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;2
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;tables&quot;&gt;Tables&lt;/h2&gt;
+&lt;h2 id=&quot;tablas&quot;&gt;Tablas&lt;/h2&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th&gt;Column 1&lt;/th&gt;
-      &lt;th&gt;Column 2&lt;/th&gt;
+      &lt;th&gt;Columna 1&lt;/th&gt;
+      &lt;th&gt;Columna 2&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;A thing&lt;/td&gt;
-      &lt;td&gt;Another thing&lt;/td&gt;
+      &lt;td&gt;Una cosa&lt;/td&gt;
+      &lt;td&gt;Otra cosa&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Una cosa más&lt;/td&gt;
+      &lt;td&gt;Otra cosa más&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -863,7 +882,7 @@ do_thing()
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;This is the footnote. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Esta es la nota al pie de página. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">Basic setup</summary></entry></feed>
+&lt;/div&gt;</content><author><name></name></author><summary type="html">Configuración básica</summary></entry></feed>
