@@ -21,9 +21,9 @@ var documents = [{
     "body": "WarningDo not manually save images into this folder. This is used by GitHub Actions to automatically copy images.  Any images you save into this folder could be deleted at build time. "
     }, {
     "id": 4,
-    "url": "https://sebastiandres.github.io/2020/03/09/Post_desde_word.html",
-    "title": "Post_desde_word",
-    "body": "2020/03/09 - -– title: “My Title” summary: “Awesome summary” toc: false comments: true image: images/some_folder/your_image. png categories: [word, fastpages, jupyter] metadata_key1: metadata_value1 metadata_key2: metadata_value2 -– Ejemplo de un tituloEs posible hacer un post desde Word, sin problemas. Convierte todas las fonts a una Font común y con el mismo tamaño. Pero respeta las negritas y las itálicas. Puedes poner listas numeradas:    Por     Ejemplo     Así  O listas no-numeradas:    Por     Ejemplo     Asá  MediaImágenes: También puedes insertar imágenes Enlaces: Insertar links como éste Pero código no resulta bien. "
+    "url": "https://sebastiandres.github.io/2020/03/09/Post-desde-word.html",
+    "title": "Post Desde Word",
+    "body": "2020/03/09 - -– title: “My Title” summary: “Awesome summary” toc: false comments: true categories: [word, fastpages, jupyter] metadata_key1: metadata_value1 metadata_key2: metadata_value2 -– Ejemplo de un títuloEs posible hacer un post desde Word, sin problemas. Convierte todas las fonts a una Font común y con el mismo tamaño. Pero respeta las negritas y las itálicas. Puedes poner listas numeradas:    Por     Ejemplo     Así  O listas no-numeradas:    Por     Ejemplo     Asá  Enlaces: Insertar links como éste Nota mental: Evitar estas funcionalidades   Código no funciona bien: todo lo convierte a la font nativa del sitio web (blog).     Sólo indexa hasta nivel de título: subtitulo y demás quedan con jerarquía de título.     Las imágenes no quedan bien indexadas (al menos, no me resultó). De todas maneras, desaconsejado.  "
     }, {
     "id": 5,
     "url": "https://sebastiandres.github.io/fastpages/jupyter/2020/02/20/traduccion.html",

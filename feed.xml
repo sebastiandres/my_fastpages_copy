@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://sebastiandres.github.io/my_fastpages_copy/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sebastiandres.github.io/my_fastpages_copy/" rel="alternate" type="text/html" /><updated>2020-03-09T20:23:25-05:00</updated><id>https://sebastiandres.github.io/my_fastpages_copy/feed.xml</id><title type="html">sebastiandres</title><subtitle>Blog de sebastiandres</subtitle><entry><title type="html">Post_desde_word</title><link href="https://sebastiandres.github.io/my_fastpages_copy/2020/03/09/Post_desde_word.html" rel="alternate" type="text/html" title="Post_desde_word" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://sebastiandres.github.io/my_fastpages_copy/2020/03/09/Post_desde_word</id><content type="html" xml:base="https://sebastiandres.github.io/my_fastpages_copy/2020/03/09/Post_desde_word.html">&lt;p&gt;-–&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://sebastiandres.github.io/my_fastpages_copy/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sebastiandres.github.io/my_fastpages_copy/" rel="alternate" type="text/html" /><updated>2020-03-09T20:34:11-05:00</updated><id>https://sebastiandres.github.io/my_fastpages_copy/feed.xml</id><title type="html">sebastiandres</title><subtitle>Blog de sebastiandres</subtitle><entry><title type="html">Post Desde Word</title><link href="https://sebastiandres.github.io/my_fastpages_copy/2020/03/09/Post-desde-word.html" rel="alternate" type="text/html" title="Post Desde Word" /><published>2020-03-09T00:00:00-05:00</published><updated>2020-03-09T00:00:00-05:00</updated><id>https://sebastiandres.github.io/my_fastpages_copy/2020/03/09/Post-desde-word</id><content type="html" xml:base="https://sebastiandres.github.io/my_fastpages_copy/2020/03/09/Post-desde-word.html">&lt;p&gt;-–&lt;/p&gt;
 
 &lt;p&gt;title: “My Title”&lt;/p&gt;
 
@@ -8,8 +8,6 @@
 
 &lt;p&gt;comments: true&lt;/p&gt;
 
-&lt;p&gt;image: images/some_folder/your_image.png&lt;/p&gt;
-
 &lt;p&gt;categories: [word, fastpages, jupyter]&lt;/p&gt;
 
 &lt;p&gt;metadata_key1: metadata_value1&lt;/p&gt;
@@ -18,7 +16,7 @@
 
 &lt;p&gt;-–&lt;/p&gt;
 
-&lt;h1 id=&quot;ejemplo-de-un-titulo&quot;&gt;Ejemplo de un titulo&lt;/h1&gt;
+&lt;h1 id=&quot;ejemplo-de-un-título&quot;&gt;Ejemplo de un título&lt;/h1&gt;
 
 &lt;p&gt;Es posible hacer un post desde Word, sin problemas. Convierte todas las fonts a una Font común y con el mismo tamaño. Pero respeta las &lt;strong&gt;negritas&lt;/strong&gt; y las &lt;em&gt;itálicas&lt;/em&gt;.&lt;/p&gt;
 
@@ -50,19 +48,23 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;media&quot;&gt;Media&lt;/h1&gt;
-
-&lt;h2 id=&quot;imágenes&quot;&gt;Imágenes&lt;/h2&gt;
-
-&lt;p&gt;También puedes insertar imágenes&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/img/2020-03-09-Post_desde_word/media/image1.jpg&quot; alt=&quot;Un hermoso Lore Ipsum&quot; /&gt;&lt;/p&gt;
-
 &lt;h2 id=&quot;enlaces&quot;&gt;Enlaces&lt;/h2&gt;
 
 &lt;p&gt;Insertar links como &lt;a href=&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;&gt;éste&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Pero código no resulta bien.&lt;/p&gt;</content><author><name></name></author><summary type="html">-–</summary></entry><entry><title type="html">Fastpages - Tutorial en Español</title><link href="https://sebastiandres.github.io/my_fastpages_copy/fastpages/jupyter/2020/02/20/traduccion.html" rel="alternate" type="text/html" title="Fastpages - Tutorial en Español" /><published>2020-02-20T00:00:00-06:00</published><updated>2020-02-20T00:00:00-06:00</updated><id>https://sebastiandres.github.io/my_fastpages_copy/fastpages/jupyter/2020/02/20/traduccion</id><content type="html" xml:base="https://sebastiandres.github.io/my_fastpages_copy/fastpages/jupyter/2020/02/20/traduccion.html">&lt;!--
+&lt;h1 id=&quot;nota-mental-evitar-estas-funcionalidades&quot;&gt;Nota mental: Evitar estas funcionalidades&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Código no funciona bien: todo lo convierte a la font nativa del sitio web (blog).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Sólo indexa hasta nivel de título: subtitulo y demás quedan con jerarquía de título.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Las imágenes no quedan bien indexadas (al menos, no me resultó). De todas maneras, desaconsejado.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">-–</summary></entry><entry><title type="html">Fastpages - Tutorial en Español</title><link href="https://sebastiandres.github.io/my_fastpages_copy/fastpages/jupyter/2020/02/20/traduccion.html" rel="alternate" type="text/html" title="Fastpages - Tutorial en Español" /><published>2020-02-20T00:00:00-06:00</published><updated>2020-02-20T00:00:00-06:00</updated><id>https://sebastiandres.github.io/my_fastpages_copy/fastpages/jupyter/2020/02/20/traduccion</id><content type="html" xml:base="https://sebastiandres.github.io/my_fastpages_copy/fastpages/jupyter/2020/02/20/traduccion.html">&lt;!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
