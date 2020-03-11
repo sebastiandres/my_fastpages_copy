@@ -13,7 +13,7 @@ Lo que me ha sorprendido al leer el libro es que los elementos principales de la
 <center>
 <iframe width="600" height="400" src="https://youtube.com/embed/u6XAPnuFjJc" frameborder="0" allowfullscreen></iframe>
 </center>
-Daniel H. Pink — The surprising truth about what motivate us (11 minutos, 2010)
+*Daniel H. Pink — The surprising truth about what motivate us (11 minutos, 2010)*
 
 El libro de November, y el video de Daniel Pink, llegan a la misma conclusión: lo que nos motiva como trabajadores y cómo estudiantes el sentido (purpose), la autonomía (autonomy) y la maestría (mastery).
 

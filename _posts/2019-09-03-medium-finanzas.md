@@ -1,11 +1,11 @@
 ---
-title: Titulo 
+description: Educación y manejo en Web y Apps.
 toc: false
-categories: [opinión, backport, medium]
+categories: [opinión, finanzas, medium]
 comments: true
 ---
 
-# Finanzas Modernas — Educación y manejo en Web y Apps.
+# Finanzas Modernas
 
 Confieso que no me siento particularmente educado de economía y finanzas como para hacer un post sobre este tema. De hecho, la única asignatura que he reprobado en mi vida fue “Ingeniería Económica”.
 
