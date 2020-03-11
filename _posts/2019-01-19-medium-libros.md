@@ -1,14 +1,16 @@
 ---
-title: Redirigiendo al blog
+description: ¿Libros a buen precio? BP Digital y BookDepository.
 toc: false
-categories: [opinión, backport, medium]
+categories: [opinión, literatura, medium]
 comments: true
 ---
 
 # Consejos de libros al mejor precio
 
 ---
-Post publicado inicialmente en [medium](https://medium.com/@sebastiandres/consejos-al-mejor-precio-ff9546984ca2) del 19-01-2019.
+
+Inicialmente publicado en [medium](https://medium.com/@sebastiandres/consejos-al-mejor-precio-ff9546984ca2) el 19-01-2019.
+
 ---
 
 Para mi sorpresa, hay muchas personas que no conocen los 2 principales sitios que uso para abastecerme de libros a buen precio: BP Digital y BookDepository. ¡Ojalá este post sea útil en difundir esta información!
@@ -24,6 +26,7 @@ Link: [http://www.bpdigital.cl/](http://www.bpdigital.cl/)
 Consejos:
 1. Leer un libro a la vez, puesto que el periodo de préstamo es corto.
 2. Pedir varios libros al mismo tiempo, y poner en reserva los libros de alta demanda, porque puede demorar en liberarse el deseado.
+
 
 ## BookDepository
 
