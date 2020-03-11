@@ -18,8 +18,8 @@ baseurl: "/blog" # the subpath of your site, e.g. "/blog".  WARNING: if you are 
 
 # Email and twitter are optional:
 email: 
-twitter_username: "sebastiandres"
-linkedin_username: "sebastiandres"
+twitter_username: 
+linkedin_username:
 
 # Set this to true to get LaTeX math equation support
 use_math: true

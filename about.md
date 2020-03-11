@@ -1,13 +1,11 @@
 ---
 layout: page
-title: About Me
+title: Autor
 permalink: /about/
 ---
 
-This is where you put the contents of your *About* page. Like all your pages, it's in [Markdown](https://guides.github.com/features/mastering-markdown/) format.
+* Twitter: [https://twitter.com/sebastiandres]
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+* Github: [https://www.github.com/sebastiandres/]
 
-
-
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+* Linkedin: [https://www.linkedin.com/in/sebastiandres/]
