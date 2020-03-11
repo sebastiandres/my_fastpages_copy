@@ -6,12 +6,6 @@ comments: true
 ---
 # Finanzas Modernas — Educación y manejo en Web y Apps.
 
----
-
-Inicialmente publicado en [medium](https://medium.com/@sebastiandres/finanzas-modernas-educaci%C3%B3n-y-manejo-en-web-y-apps-8d6a20bdaf26) el 19-01-2019.
-
----
-
 Confieso que no me siento particularmente educado de economía y finanzas como para hacer un post sobre este tema. De hecho, la única asignatura que he reprobado en mi vida fue “Ingeniería Económica”.
 
 Soy el primero en reconocerlo, encuentro que las finanzas son un tema particularmente aburrido. Pero en todo juego es necesario conocer las reglas para saber cuáles estrategias te acercan más a tus metas. Por eso “minimizar” el tiempo dedicado a las finanzas “maximizando” los beneficios es la mejor idea. Conversando con algunos amigos y conocidos — incluso de la banca — me he di cuenta que no todos conocen los distintos recursos que han ido apareciendo respecto a como informarse y manejar finanzas de manera moderna, y que agradecen que les haya contado de estas webs y apps. Este post, al igual que la de [Consejos de libros al mejor precio](https://medium.com/@sebastiandres/consejos-al-mejor-precio-ff9546984ca2), sirve para facilitar la difusión de estos tips.
@@ -47,6 +41,10 @@ En [Fintual](https://fintual.cl/r/sebastianf27) no tienen oficinas comerciales f
 
 También tienen un sistema de referidos. Al usar el [link](https://fintual.cl/r/sebastianf27) me darán el 1% de tu inversión durante el primer año, de lo cual puedes cobrarme la mitad mediante la aplicación de MACH. Así tendrás una rentabilidad adicional del 0.5%. WIN-WIN.
 
+**¡Espero que alguno de estos consejos les hayan sido útiles, y si conocen de alguno que consideren importante y no esté acá, ¡no duden en contármelo!**
+
 ---
 
-¡Espero que alguno de estos consejos les hayan sido útiles, y si conocen de alguno que consideren importante y no esté acá, ¡no duden en contármelo!
+Inicialmente publicado en [medium](https://medium.com/@sebastiandres/finanzas-modernas-educaci%C3%B3n-y-manejo-en-web-y-apps-8d6a20bdaf26) el 19-01-2019.
+
+---

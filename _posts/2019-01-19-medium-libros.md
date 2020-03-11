@@ -7,12 +7,6 @@ comments: true
 
 # Consejos de libros al mejor precio
 
----
-
-Inicialmente publicado en [medium](https://medium.com/@sebastiandres/consejos-al-mejor-precio-ff9546984ca2) el 19-01-2019.
-
----
-
 Para mi sorpresa, hay muchas personas que no conocen los 2 principales sitios que uso para abastecerme de libros a buen precio: BP Digital y BookDepository. ¡Ojalá este post sea útil en difundir esta información!
 
 ## BP Digital
@@ -28,7 +22,7 @@ Consejos:
 2. Pedir varios libros al mismo tiempo, y poner en reserva los libros de alta demanda, porque puede demorar en liberarse el deseado.
 
 
-## BookDepository
+## BookDepository
 
 BookDepository (BD) es una librería electrónica con más de 20 millones de libros y que hace envíos gratis a todo el mundo sin monto mínimo. Eso hace increíblemente más fácil evaluar si conviene comprar un libro o no en comparación con las librerías locales. Por lo que he comparado, BD es hasta un 50% más barato que comprar el libro en Chile, con la ventaja (o desventaja, según se mire) de contar con el libro en principalmente en inglés (o el idioma original). Permite comprar con tarjeta de crédito, o con paypal, y no he tenido ningún problema hasta ahora (+20 libros). Algunos ejemplos:
 * *Artemis* — Andy Weir. BD: 14.77 USD. Chile: > 30 USD.
@@ -45,3 +39,9 @@ Link: [https://www.bookdepository.com/](https://www.bookdepository.com/)
 Consejos: 
 1. Revisar bien el idioma del libro. En una oportunidad encargué un libro y aunque el título venía en inglés, el contenido venía en alemán. Al revisar, efectivamente en la página se indicaba que el libro venía en idioma alemán. 
 2. Revisar la sección de ofertas (bargains) que tiene algunos libros interesantes a precios inmejorables. Sobretodo para releer a los clásicos en idioma original.
+
+---
+
+Inicialmente publicado en [medium](https://medium.com/@sebastiandres/consejos-al-mejor-precio-ff9546984ca2) el 19-01-2019.
+
+---
