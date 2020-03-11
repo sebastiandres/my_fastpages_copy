@@ -96,7 +96,7 @@
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      4 min read
     
 </span></p>
 
@@ -120,11 +120,14 @@
 <li class="toc-entry toc-h1"><a href="#configuración-avanzada">Configuración avanzada</a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#formato-básico">Formato básico</a></li>
+<li class="toc-entry toc-h2"><a href="#se-pueden-usar-cursivas-negritas-negritas-cursivas-código-también-notas-a-pie-de-página--también-una-línea-horizontal">Se pueden usar cursivas, negritas, negritas cursivas, código. También notas a pie de página 1. También una línea horizontal:</a></li>
+<li class="toc-entry toc-h2"><a href="#links">Links</a></li>
 <li class="toc-entry toc-h2"><a href="#listas">Listas</a></li>
-<li class="toc-entry toc-h2"><a href="#citas-y-otras-formas-de-destacar">Citas y otras formas de destacar</a></li>
-<li class="toc-entry toc-h2"><a href="#imágenes">Imágenes</a></li>
 <li class="toc-entry toc-h2"><a href="#código">Código</a></li>
+<li class="toc-entry toc-h2"><a href="#imágenes">Imágenes</a></li>
+<li class="toc-entry toc-h2"><a href="#videos">Videos</a></li>
 <li class="toc-entry toc-h2"><a href="#tablas">Tablas</a></li>
+<li class="toc-entry toc-h2"><a href="#citas-y-otras-formas-de-destacar">Citas y otras formas de destacar</a></li>
 <li class="toc-entry toc-h2"><a href="#tweets">Tweets</a></li>
 <li class="toc-entry toc-h2"><a href="#notas-a-pie-de-página">Notas a pie de página</a></li>
 </ul>
@@ -149,12 +152,14 @@
 toc: true
 description: Ejemplo usando markdown con fastpages.
 categories: [fastpages, markdown]
+comments: true
 ---
 # Test 1: Post mediante Markdown
 
 ## Configuración básica
 
 Un blog post files debe tener el siguiente formato:
+
 </code></pre></div></div>
 
 <p>Para desactivar la funcionalidad basta con eliminarla o dejarla vacía.</p>
@@ -162,9 +167,24 @@ Un blog post files debe tener el siguiente formato:
 <h2 id="formato-básico">
 <a class="anchor" href="#formato-b%C3%A1sico" aria-hidden="true"><span class="octicon octicon-link"></span></a>Formato básico</h2>
 
-<p>Se pueden usar <em>cursivas</em>, <strong>negritas</strong>, <strong><em>negritas cursivas</em></strong>, <code class="language-plaintext highlighter-rouge">código</code>, y crear <a href="https://www.markdownguide.org/cheat-sheet/">links</a>. También notas a pie de página <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. También una línea horizontal:</p>
+<h2 id="se-pueden-usar-cursivas-negritas-negritas-cursivas-código-también-notas-a-pie-de-página--también-una-línea-horizontal">
+<a class="anchor" href="#se-pueden-usar-cursivas-negritas-negritas-cursivas-c%C3%B3digo-tambi%C3%A9n-notas-a-pie-de-p%C3%A1gina--tambi%C3%A9n-una-l%C3%ADnea-horizontal" aria-hidden="true"><span class="octicon octicon-link"></span></a>Se pueden usar <em>cursivas</em>, <strong>negritas</strong>, <strong><em>negritas cursivas</em></strong>, <code class="language-plaintext highlighter-rouge">código</code>. También notas a pie de página <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. También una línea horizontal:</h2>
 
-<hr>
+<p>´´´
+Se pueden usar <em>cursivas</em>, <strong>negritas</strong>, <strong><em>negritas cursivas</em></strong>, <code class="language-plaintext highlighter-rouge">código</code>. También notas a pie de página <sup id="fnref:1:1"><a href="#fn:1" class="footnote">1</a></sup>. También una línea horizontal:
+—
+´´´</p>
+
+<h2 id="links">
+<a class="anchor" href="#links" aria-hidden="true"><span class="octicon octicon-link"></span></a>Links</h2>
+
+<p>Se pueden crear <a href="https://www.markdownguide.org/cheat-sheet/">links</a> o simplemenente <a href="">https://www.markdownguide.org/cheat-sheet/</a>, (https://www.markdownguide.org/cheat-sheet/).</p>
+
+<p>´´´
+Se pueden crear <a href="https://www.markdownguide.org/cheat-sheet/">links</a> o simplemenente <a href="">https://www.markdownguide.org/cheat-sheet/</a>, (https://www.markdownguide.org/cheat-sheet/).
+´´´</p>
+
+<p>OBS: Siempre se me olvida el orden. Regla nemotécnica “cuasi = no es” (CUACI NOE): cuadrado antes de círculo, nombre antes de enlace.</p>
 
 <h2 id="listas">
 <a class="anchor" href="#listas" aria-hidden="true"><span class="octicon octicon-link"></span></a>Listas</h2>
@@ -183,30 +203,21 @@ Un blog post files debe tener el siguiente formato:
   <li>item 2</li>
 </ol>
 
-<h2 id="citas-y-otras-formas-de-destacar">
-<a class="anchor" href="#citas-y-otras-formas-de-destacar" aria-hidden="true"><span class="octicon octicon-link"></span></a>Citas y otras formas de destacar</h2>
+<p>´´´
+Acá hay una lista (regular):</p>
 
-<p>Citas:</p>
-<blockquote>
-  <p>Esta es una cita</p>
-</blockquote>
+<ul>
+  <li>item 1</li>
+  <li>item 2</li>
+</ul>
 
-<p>Alerta:</p>
-<div class="Toast Toast--warning googoo">
-   <span class="Toast-icon"><svg class="octicon octicon-alert" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>
-   <span class="Toast-content">Puedes incluir alertas</span>
-</div>
+<p>Acá hay una lista numerada:</p>
 
-<p>Información:</p>
-<div class="Toast">
-   <span class="Toast-icon"><svg class="octicon octicon-info" viewbox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 01-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 01-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>
-   <span class="Toast-content">Puedes destacar información</span>
-</div>
-
-<h2 id="imágenes">
-<a class="anchor" href="#im%C3%A1genes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Imágenes</h2>
-
-<p><img src="/blog/images/logo.png" alt="" title="fast.ai's logo"></p>
+<ol>
+  <li>item 1</li>
+  <li>item 2
+´´´</li>
+</ol>
 
 <h2 id="código">
 <a class="anchor" href="#c%C3%B3digo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Código</h2>
@@ -224,6 +235,42 @@ do_thing()
 </code></pre></div></div>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Texto preformateado general:
+
+    # Do a thing in a programming language
+    do_thing()
+
+Código de python y su salida:
+
+```python
+# Prints '2'
+print(1+1)
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2 ```
+</code></pre></div></div>
+
+<h2 id="imágenes">
+<a class="anchor" href="#im%C3%A1genes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Imágenes</h2>
+
+<p><img src="/blog/images/logo.png" alt="" title="fast.ai's logo"></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![](/blog/images/logo.png "fast.ai's logo")
+</code></pre></div></div>
+
+<h2 id="videos">
+<a class="anchor" href="#videos" aria-hidden="true"><span class="octicon octicon-link"></span></a>Videos</h2>
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XfoYk_Z5AkI" frameborder="0" allowfullscreen=""></iframe>
+</center>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&lt;center&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/XfoYk_Z5AkI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/center&gt;
 </code></pre></div></div>
 
 <h2 id="tablas">
@@ -248,6 +295,98 @@ do_thing()
   </tbody>
 </table>
 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| Columna 1 | Columna 2 |
+|-|-|
+| Una cosa | Otra cosa |
+| Una cosa más | Otra cosa más |
+</code></pre></div></div>
+
+<h2 id="citas-y-otras-formas-de-destacar">
+<a class="anchor" href="#citas-y-otras-formas-de-destacar" aria-hidden="true"><span class="octicon octicon-link"></span></a>Citas y otras formas de destacar</h2>
+
+<p>Citas:</p>
+<blockquote>
+  <p>Esta es una cita</p>
+</blockquote>
+
+<p>Alerta:</p>
+<div class="Toast Toast--warning googoo">
+   <span class="Toast-icon"><svg class="octicon octicon-alert" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>
+   <span class="Toast-content">Puedes incluir alertas</span>
+</div>
+
+<p>Información:</p>
+<div class="Toast">
+   <span class="Toast-icon"><svg class="octicon octicon-info" viewbox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 01-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 01-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>
+   <span class="Toast-content">Puedes destacar información</span>
+</div>
+
+<p>Warning:</p>
+<div class="flash flash-error">
+    <svg class="octicon octicon-alert" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg>
+    <strong>Warning: </strong>There will be no second warning!
+</div>
+
+<p>Important:</p>
+<div class="flash flash-warn">
+    <svg class="octicon octicon-zap" viewbox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 7H6l3-7-9 9h4l-3 7 9-9z"></path></svg>
+    <strong>Important: </strong>Pay attention! It’s important.
+</div>
+
+<p>Tip:</p>
+<div class="flash flash-success">
+    <svg class="octicon octicon-checklist" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 8.5l-6 6-3-3L8.5 10l1.5 1.5L14.5 7 16 8.5zM5.7 12.2l.8.8H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h7c.55 0 1 .45 1 1v6.5l-.8-.8c-.39-.39-1.03-.39-1.42 0L5.7 10.8a.996.996 0 000 1.41v-.01zM4 4h5V3H4v1zm0 2h5V5H4v1zm0 2h3V7H4v1zM3 9H2v1h1V9zm0-2H2v1h1V7zm0-2H2v1h1V5zm0-2H2v1h1V3z"></path></svg>
+    <strong>Tip: </strong>This is my tip.
+</div>
+
+<p>Nota:</p>
+<div class="flash">
+    <svg class="octicon octicon-info" viewbox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 01-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 01-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg>
+    <strong>Note: </strong>Take note of this.
+</div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Citas:
+&gt; Esta es una cita
+
+Alerta:
+&lt;div class="Toast Toast--warning googoo"&gt;
+   &lt;span class="Toast-icon"&gt;&lt;svg class="octicon octicon-alert octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/&gt;&lt;/svg&gt;&lt;/span&gt;
+   &lt;span class="Toast-content"&gt;Puedes incluir alertas&lt;/span&gt;
+&lt;/div&gt;
+
+
+Información:
+&lt;div class="Toast"&gt;
+   &lt;span class="Toast-icon"&gt;&lt;svg class="octicon octicon-info octicon octicon-info" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 01-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 01-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"/&gt;&lt;/svg&gt;&lt;/span&gt;
+   &lt;span class="Toast-content"&gt;Puedes destacar información&lt;/span&gt;
+&lt;/div&gt;
+
+
+Warning:
+&lt;div class="flash flash-error"&gt;
+    &lt;svg class="octicon octicon-alert octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/&gt;&lt;/svg&gt;
+    &lt;strong&gt;Warning: &lt;/strong&gt;There will be no second warning!
+&lt;/div&gt;
+
+Important:
+&lt;div class="flash flash-warn"&gt;
+    &lt;svg class="octicon octicon-zap octicon octicon-zap" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M10 7H6l3-7-9 9h4l-3 7 9-9z"/&gt;&lt;/svg&gt;
+    &lt;strong&gt;Important: &lt;/strong&gt;Pay attention! It&amp;#8217;s important.
+&lt;/div&gt;
+
+Tip:
+&lt;div class="flash flash-success"&gt;
+    &lt;svg class="octicon octicon-checklist octicon octicon-checklist" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M16 8.5l-6 6-3-3L8.5 10l1.5 1.5L14.5 7 16 8.5zM5.7 12.2l.8.8H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h7c.55 0 1 .45 1 1v6.5l-.8-.8c-.39-.39-1.03-.39-1.42 0L5.7 10.8a.996.996 0 000 1.41v-.01zM4 4h5V3H4v1zm0 2h5V5H4v1zm0 2h3V7H4v1zM3 9H2v1h1V9zm0-2H2v1h1V7zm0-2H2v1h1V5zm0-2H2v1h1V3z"/&gt;&lt;/svg&gt;
+    &lt;strong&gt;Tip: &lt;/strong&gt;This is my tip.
+&lt;/div&gt;
+
+Nota:
+&lt;div class="flash"&gt;
+    &lt;svg class="octicon octicon-info octicon octicon-info" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"&gt;&lt;path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 01-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 01-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"/&gt;&lt;/svg&gt;
+    &lt;strong&gt;Note: &lt;/strong&gt;Take note of this.
+&lt;/div&gt;
+</code></pre></div></div>
+
 <h2 id="tweets">
 <a class="anchor" href="#tweets" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tweets</h2>
 
@@ -258,18 +397,33 @@ do_thing()
 <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class='jekyll-twitter-plugin'&gt;&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;Altair 4.0 is released! &lt;a href="https://t.co/PCyrIOTcvv"&gt;https://t.co/PCyrIOTcvv&lt;/a&gt;&lt;br&gt;Try it with:&lt;br&gt;&lt;br&gt;  pip install -U altair&lt;br&gt;&lt;br&gt;The full list of changes is at &lt;a href="https://t.co/roXmzcsT58"&gt;https://t.co/roXmzcsT58&lt;/a&gt; ...read on for some highlights. &lt;a href="https://t.co/vWJ0ZveKbZ"&gt;pic.twitter.com/vWJ0ZveKbZ&lt;/a&gt;&lt;/p&gt;&amp;mdash; Jake VanderPlas (@jakevdp) &lt;a href="https://twitter.com/jakevdp/status/1204765621767901185?ref_src=twsrc%5Etfw"&gt;December 11, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+&lt;/div&gt;
+</code></pre></div></div>
+
 <h2 id="notas-a-pie-de-página">
 <a class="anchor" href="#notas-a-pie-de-p%C3%A1gina" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notas a pie de página</h2>
 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[^1]: Esta es la nota al pie de página.
+</code></pre></div></div>
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>Esta es la nota al pie de página. <a href="#fnref:1" class="reversefootnote">↩</a></p>
+      <p>Esta es la nota al pie de página. <a href="#fnref:1" class="reversefootnote">↩</a> <a href="#fnref:1:1" class="reversefootnote">↩<sup>2</sup></a></p>
     </li>
   </ol>
 </div>
 
-  </div><a class="u-url" href="/blog/fastpages/markdown/2020/01/14/Test-1-Post-mediante-markdown.html" hidden></a>
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="sebastiandres/blog"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/blog/fastpages/markdown/2020/01/14/Test-1-Post-mediante-markdown.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
