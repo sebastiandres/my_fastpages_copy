@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://sebastiandres.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sebastiandres.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-03-11T11:57:44-05:00</updated><id>https://sebastiandres.github.io/blog/feed.xml</id><title type="html">sebastiandres</title><subtitle>Blog de sebastiandres</subtitle><entry><title type="html">Blog en github.io - Redirigiendo la página</title><link href="https://sebastiandres.github.io/blog/html/fastpages/2020/03/10/Redirect.html" rel="alternate" type="text/html" title="Blog en github.io - Redirigiendo la página" /><published>2020-03-10T00:00:00-05:00</published><updated>2020-03-10T00:00:00-05:00</updated><id>https://sebastiandres.github.io/blog/html/fastpages/2020/03/10/Redirect</id><content type="html" xml:base="https://sebastiandres.github.io/blog/html/fastpages/2020/03/10/Redirect.html">&lt;p&gt;Aún no termino de traducir los posts “originales” y ya estoy pensando en el próximo post. Es un buen signo de que el nuevo sistema es más fácil de usar.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://sebastiandres.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sebastiandres.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-03-11T12:17:16-05:00</updated><id>https://sebastiandres.github.io/blog/feed.xml</id><title type="html">sebastiandres</title><subtitle>Blog de sebastiandres</subtitle><entry><title type="html">Blog en github.io - Redirigiendo la página</title><link href="https://sebastiandres.github.io/blog/html/fastpages/2020/03/10/Redirect.html" rel="alternate" type="text/html" title="Blog en github.io - Redirigiendo la página" /><published>2020-03-10T00:00:00-05:00</published><updated>2020-03-10T00:00:00-05:00</updated><id>https://sebastiandres.github.io/blog/html/fastpages/2020/03/10/Redirect</id><content type="html" xml:base="https://sebastiandres.github.io/blog/html/fastpages/2020/03/10/Redirect.html">&lt;p&gt;Aún no termino de traducir los posts “originales” y ya estoy pensando en el próximo post. Es un buen signo de que el nuevo sistema es más fácil de usar.&lt;/p&gt;
 
 &lt;p&gt;Al seguir las instrucciones para configurar fastpages, pide que el repositorio no sea “github_username.github.io”. En mi caso y después de algunas pruebas, me incliné por “blog”, por lo que el blog queda en &lt;a href=&quot;https://sebastiandres.github.io/blog/&quot;&gt;https://sebastiandres.github.io/blog/&lt;/a&gt;. Sin embargo, me pareció que rompe la expectativa tradicional, puesto que &lt;a href=&quot;https://sebastiandres.github.io/&quot;&gt;https://sebastiandres.github.io/&lt;/a&gt; arroja un error (página 404-no encontrada).&lt;/p&gt;
 
@@ -83,11 +83,11 @@
 &lt;/ol&gt;
 
 &lt;h2 id=&quot;andrew-godwin-httpstwittercomandrewgodwin&quot;&gt;Andrew Godwin &lt;a href=&quot;@andrewgodwin&quot;&gt;https://twitter.com/andrewgodwin&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;The Scientist and the engineer: video / slides original / slides respaldo&lt;/p&gt;
+&lt;p&gt;The Scientist and the engineer: &lt;a href=&quot;https://speakerdeck.com/andrewgodwin/the-scientist-and-the-engineer&quot;&gt;slides original&lt;/a&gt; / &lt;a href=&quot;https://drive.google.com/file/d/1bfZAgeNa4vkB6MDGQF7ZuVXd27pvmA61/view?usp=sharing&quot;&gt;slides respaldo&lt;/a&gt;&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;youtube:&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;center&gt;
+&lt;iframe width=&quot;600&quot; height=&quot;400&quot; src=&quot;https://youtube.com/embed/862xL6jm_PQ&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;TLDR;&lt;/strong&gt; Los sistemas actuales son demasiado grandes para una sola persona. La comunicación y delegación son parte crucial de la ingeniería.&lt;/li&gt;
@@ -101,11 +101,11 @@ In practice there is”&lt;/em&gt; — Benjamin Brewster.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;sarah-guido-sarah_guido&quot;&gt;Sarah Guido @sarah_guido&lt;/h2&gt;
-&lt;p&gt;Data Science Retrospective: video / slides original / slides respaldo&lt;/p&gt;
+&lt;p&gt;Data Science Retrospective: &lt;a href=&quot;https://www.slideshare.net/SarahGuido/data-science-retrospective&quot;&gt;slides original&lt;/a&gt; / &lt;a href=&quot;https://drive.google.com/file/d/19dlfJCQoE3DFU7IVf6GpnMJpl_P9634H/view?usp=sharing&quot;&gt;slides respaldo&lt;/a&gt;&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;youtube:&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;center&gt;
+&lt;iframe width=&quot;600&quot; height=&quot;400&quot; src=&quot;https://youtube.com/embed/Apsrm8tiV54&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;TLDR;&lt;/strong&gt; La industria siempre creará hype. Lo que no cambia (ni cambiará) es que los datos nunca serán perfectos.&lt;/li&gt;
@@ -118,11 +118,11 @@ Job offers for data science ask for: Python or R, SQL, basic knowledge of statis
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;wes-mckinney-wesmckinn&quot;&gt;Wes McKinney @wesmckinn&lt;/h2&gt;
-&lt;p&gt;Python for Data Analysis: Past, Present, and Future: video /original / respaldo&lt;/p&gt;
+&lt;p&gt;Python for Data Analysis: Past, Present, and Future: &lt;a href=&quot;https://www.slideshare.net/wesm/pycon-colombia-2020-python-for-data-analysis-past-present-and-future&quot;&gt;slides original&lt;/a&gt; / &lt;a href=&quot;https://drive.google.com/file/d/1Gzcwg1Pew1GAEuzz3itpM_FiFer2zqOt/view?usp=sharing&quot;&gt;slides respaldo&lt;/a&gt;&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;youtube:&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;center&gt;
+&lt;iframe width=&quot;600&quot; height=&quot;400&quot; src=&quot;https://youtube.com/embed/ZTXFQ2sEarQ&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;TLDR;&lt;/strong&gt; El crecimiento de python se debe a una tormenta perfecta de librerías, y el éxito de pandas a que puede leer csv (entre otras cosas).&lt;/li&gt;
@@ -137,11 +137,11 @@ Apache Arrow is “a common standard designed for speed, for data processing lib
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;ines-montani-_inesmontani&quot;&gt;Ines Montani @_inesmontani&lt;/h2&gt;
-&lt;p&gt;The Future of NLP in Python: video /original / respaldo&lt;/p&gt;
+&lt;p&gt;The Future of NLP in Python: &lt;a href=&quot;https://speakerdeck.com/inesmontani/the-future-of-nlp-in-python-keynote-pycon-colombia-2020&quot;&gt;slide original&lt;/a&gt; / &lt;a href=&quot;https://drive.google.com/file/d/1z1ErZYM_3L8NiQHlJGJOZBIqpSHMi_pz/view?usp=sharing&quot;&gt;slide respaldo&lt;/a&gt;&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;youtube:&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;center&gt;
+&lt;iframe width=&quot;600&quot; height=&quot;400&quot; src=&quot;https://youtube.com/embed/YDAgQO1DX0Q&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;TLDR;&lt;/strong&gt; Lo más dificil es tener buenos sets de datos. Es necesario crear software que nos ayude con eso.&lt;/li&gt;
@@ -157,11 +157,11 @@ Apache Arrow is “a common standard designed for speed, for data processing lib
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;emily-morehouse-emilyemorehouse&quot;&gt;Emily Morehouse @emilyemorehouse&lt;/h2&gt;
-&lt;p&gt;We go further together: video /original / respaldo&lt;/p&gt;
+&lt;p&gt;We go further together: &lt;a href=&quot;https://drive.google.com/file/d/1KZeyDkd-UphbHOWi_kv9KkN83mnDUU9s/view&quot;&gt;slide original&lt;/a&gt; / &lt;a href=&quot;https://drive.google.com/file/d/1bwv7hLyo09J2aP1nnGu7LypxJac2A758/view?usp=sharing&quot;&gt;slide respaldo&lt;/a&gt;&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;youtube:&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;center&gt;
+&lt;iframe width=&quot;600&quot; height=&quot;400&quot; src=&quot;https://youtube.com/embed/TSphDJdco8M&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;TLDR;&lt;/strong&gt; nadie es perfecto todo el tiempo, incluso los python core developers tienen dudas y han superpuesto al síndrome del impostor. Todos pueden contribuir, y la documentación está subvalorada.&lt;/li&gt;
@@ -173,11 +173,11 @@ Apache Arrow is “a common standard designed for speed, for data processing lib
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;fernando-perez-fperez_org&quot;&gt;Fernando Perez @fperez_org&lt;/h2&gt;
-&lt;p&gt;Jupyter, física y comunidades abiertas: video /original / respaldo&lt;/p&gt;
+&lt;p&gt;Jupyter, física y comunidades abiertas: &lt;a href=&quot;https://docs.google.com/presentation/d/1KAvDHwslapwO4l98M0HWRjyHEsGxzVFVT2tX_6e1dPQ&quot;&gt;slides original&lt;/a&gt; / &lt;a href=&quot;https://drive.google.com/file/d/1eBAYRkIZ-IX-bZnGgnSv9IWxVK5hkBh_/view?usp=sharing&quot;&gt;slides respaldo&lt;/a&gt;&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;youtube:&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;center&gt;
+&lt;iframe width=&quot;600&quot; height=&quot;400&quot; src=&quot;https://youtube.com/embed/XFynShM1xLU&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;TLDR;&lt;/strong&gt; El trabajo en comunidad es muy importante. La comunidad de python y de python científico comparten valores y han aprendido de manera recíproca.
@@ -508,33 +508,57 @@ Nota:
 
 &lt;p&gt;Inicialmente publicado en &lt;a href=&quot;https://planetachatbot.com/debate-de-elon-musk-y-jack-ma-3d24c6bd48f2&quot;&gt;medium&lt;/a&gt; el 16-09-2019.&lt;/p&gt;
 
-&lt;hr /&gt;</content><author><name></name></author><summary type="html">En Agosto del 2019 Elon Musk y Jack Ma sostuvieron un panel intercambiando opuestas opiniones en el contexto del World Artificial Intelligence Conference. Los temas que los CEOs de Space X &amp;amp; Tesla y Alibaba&amp;amp;Aliexpress seleccionaron fueron los siguientes: Inteligencia Artificial, Marte, Trabajo y Educación. El panel dura cerca de 46 minutos y fue interesante porque Elon y Jack tienen opiniones bastante distintas y no lo disimularon.</summary></entry><entry><title type="html">Reconociendo nuestros privilegios: reflexiones sobre el talento, la suerte y la pobreza.</title><link href="https://sebastiandres.github.io/blog/opini%C3%B3n/backport/medium/2019/09/09/medium-privilegios.html" rel="alternate" type="text/html" title="Reconociendo nuestros privilegios: reflexiones sobre el talento, la suerte y la pobreza." /><published>2019-09-09T00:00:00-05:00</published><updated>2019-09-09T00:00:00-05:00</updated><id>https://sebastiandres.github.io/blog/opini%C3%B3n/backport/medium/2019/09/09/medium-privilegios</id><content type="html" xml:base="https://sebastiandres.github.io/blog/opini%C3%B3n/backport/medium/2019/09/09/medium-privilegios.html">&lt;p&gt;https://medium.com/@sebastiandres/reconociendo-nuestros-privilegios-reflexiones-sobre-el-talento-la-suerte-y-la-pobreza-7b7cf89ad8c8&lt;/p&gt;
+&lt;hr /&gt;</content><author><name></name></author><summary type="html">En Agosto del 2019 Elon Musk y Jack Ma sostuvieron un panel intercambiando opuestas opiniones en el contexto del World Artificial Intelligence Conference. Los temas que los CEOs de Space X &amp;amp; Tesla y Alibaba&amp;amp;Aliexpress seleccionaron fueron los siguientes: Inteligencia Artificial, Marte, Trabajo y Educación. El panel dura cerca de 46 minutos y fue interesante porque Elon y Jack tienen opiniones bastante distintas y no lo disimularon.</summary></entry><entry><title type="html">Reconociendo nuestros privilegios</title><link href="https://sebastiandres.github.io/blog/opini%C3%B3n/backport/medium/2019/09/09/medium-privilegios.html" rel="alternate" type="text/html" title="Reconociendo nuestros privilegios" /><published>2019-09-09T00:00:00-05:00</published><updated>2019-09-09T00:00:00-05:00</updated><id>https://sebastiandres.github.io/blog/opini%C3%B3n/backport/medium/2019/09/09/medium-privilegios</id><content type="html" xml:base="https://sebastiandres.github.io/blog/opini%C3%B3n/backport/medium/2019/09/09/medium-privilegios.html">&lt;p&gt;Hace poco re-compartí en facebook un video que me pareció interesante. No pensé que recibiría mucha atención, e incluso pensé que podía ser un poco cliché. Tanto así que reconozco incluso que no lo vi completo; al mirarlo nuevamente con mayor detalle me di cuenta que los últimos 40 segundos tienen un texto bíblico. El video es el siguiente:&lt;/p&gt;
 
-&lt;p&gt;Hace poco re-compartí en facebook un video que me pareció interesante. No pensé que recibiría mucha atención, e incluso pensé que podía ser un poco cliché. Tanto así que reconozco incluso que no lo vi completo; al mirarlo nuevamente con mayor detalle me di cuenta que los últimos 40 segundos tienen un texto bíblico. El video es el siguiente:&lt;/p&gt;
+&lt;center&gt;
+&lt;iframe width=&quot;600&quot; height=&quot;400&quot; src=&quot;https://www.youtube.com/embed/WNHw5eVzv5U&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+&lt;p&gt;Carrera por los 100 dólares ¿Cuánto influyen nuestros privilegios?&lt;/p&gt;
 
-&lt;p&gt;Carrera por los 100 dólares ¿Cuánto influyen nuestros privilegios? — https://www.youtube.com/watch?v=WNHw5eVzv5U
-Uno de mis amigos de facebook respondió con vehemencia, manifestando “lo inútil que eran estos videos que no cambian nada” y que “los ‘buenistas’ han hecho un conjunto de leyes completamente injusto y arbitrario tratando de ‘arreglar’ una supuesta diferencia”. Intercambiamos varios mensajes al respecto, pero el tono de la conversación comenzó a subir y probablemente ambos quedamos con la idea de que el otro no escucha razones. Pero no deja de ser válido el auto-cuestionarse:
+&lt;p&gt;Uno de mis amigos de facebook respondió con vehemencia, manifestando “lo inútil que eran estos videos que no cambian nada” y que “los ‘buenistas’ han hecho un conjunto de leyes completamente injusto y arbitrario tratando de ‘arreglar’ una supuesta diferencia”. Intercambiamos varios mensajes al respecto, pero el tono de la conversación comenzó a subir y probablemente ambos quedamos con la idea de que el otro no escucha razones. Pero no deja de ser válido el auto-cuestionarse:
 ¿Existen estas diferencias o privilegios?
 ¿Porqué son estas diferencias importantes y deberían reconocerse?
 Me parece que el primer punto es evidente y está fuera de debate. Las diferencias existen debido a las distintas configuraciones familiares, sociales y económicas, y con toda seguridad siempre existirán. Ese no es el punto en cuestión.
 Respecto al segundo punto, existe un webcomic del ilustrador Toby Morris que también habla sobre los privilegios y que lo ilustra de otra manera. El enlace original está en este link y encontré la versión traducida en este otro sitio. Coloco acá las imágenes para hacer más directa y lineal la lectura:&lt;/p&gt;
 
-&lt;p&gt;On a Plate — https://marcianosmx.com/en-bandeja-de-plata-una-historia-sobre-los-privilegios/
-El punto central del video y del comic es el mismo. De manera frecuente, quien ha tenido privilegios ignora que los ha tenido, y piensa que todo su éxito ha sido únicamente personal. Esta situación ha sido incluso estudiada, como muestra el siguiente video del investigador y sicólogo Paul Piff:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/images/1_IpLw7imp_5g5Af5VIfhBlQ.gif&quot; alt=&quot;&quot; title=&quot;1&quot; /&gt;
+&lt;img src=&quot;/blog/images/2_I-Qin_2FUx5zHnw16L7WiQ.gif&quot; alt=&quot;&quot; title=&quot;2&quot; /&gt;
+&lt;img src=&quot;/blog/images/3_c_9UfU9Bf-kepBaJAnzYGw.gif&quot; alt=&quot;&quot; title=&quot;3&quot; /&gt;
+&lt;img src=&quot;/blog/images/4_iazMOxw7tHO5FVZBYovWYw.gif&quot; alt=&quot;&quot; title=&quot;4&quot; /&gt;
+On a Plate — https://marcianosmx.com/en-bandeja-de-plata-una-historia-sobre-los-privilegios/&lt;/p&gt;
 
-&lt;p&gt;Paul Pill — ¿El dinero nos hace “malvados”? — https://www.youtube.com/watch?v=tzBeZ8FQC_o
-Un resumen muy corto del video sería: (1) en un juego de monopoly con condiciones desiguales para los jugadores, los ganadores atribuyen su éxito a condiciones innatas y no a la gran ventaja que arbitrariamente se les ha otorgado, es decir, no reconocen sus privilegios, y (2) en diversos experimentos las poblaciones más ricas tienden a demostrar menos empatía hacia otros. No es que ser rico te obligue a ser “malvado” ni que para ser rico haya que ser “malvado”, sino que el cerebro necesita racionalizar los hechos para poder justificar que exista una diferencia. De manera natural, los humanos buscamos evitar aquello que nos produce alguna emoción conflictiva, y resulta cognitivamente conflictivo admitir que el éxito puede deberse, además de trabajo y esfuerzo, a variables completamente fuera de nuestro control.
+&lt;p&gt;El punto central del video y del comic es el mismo. De manera frecuente, quien ha tenido privilegios ignora que los ha tenido, y piensa que todo su éxito ha sido únicamente personal. Esta situación ha sido incluso estudiada, como muestra el siguiente video del investigador y sicólogo Paul Piff:&lt;/p&gt;
+
+&lt;center&gt;
+&lt;iframe width=&quot;600&quot; height=&quot;400&quot; src=&quot;https://www.youtube.com/embed/tzBeZ8FQC_o&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+&lt;p&gt;Paul Pill — ¿El dinero nos hace “malvados”?&lt;/p&gt;
+
+&lt;p&gt;Un resumen muy corto del video sería: (1) en un juego de monopoly con condiciones desiguales para los jugadores, los ganadores atribuyen su éxito a condiciones innatas y no a la gran ventaja que arbitrariamente se les ha otorgado, es decir, no reconocen sus privilegios, y (2) en diversos experimentos las poblaciones más ricas tienden a demostrar menos empatía hacia otros. No es que ser rico te obligue a ser “malvado” ni que para ser rico haya que ser “malvado”, sino que el cerebro necesita racionalizar los hechos para poder justificar que exista una diferencia. De manera natural, los humanos buscamos evitar aquello que nos produce alguna emoción conflictiva, y resulta cognitivamente conflictivo admitir que el éxito puede deberse, además de trabajo y esfuerzo, a variables completamente fuera de nuestro control.
 ¿Es más importante la suerte que el talento innato?
 Un estudio publicado por 3 italianos en 2018 responde parcialmente la pregunta sobre la importancia de la suerte y el talento. El artículo original de Pluchino, Biondo y Raspisarda es éste, y aunque hay un buen resumen en este artículo, mencionaré los principales puntos a continuación. La idea central del artículo es cuantificar el rol de la suerte y el talento en el éxito de una persona. Para ello hicieron un modelo muy simple en el cual simularon la evolución profesional de 1000 personas durante 40 años. Cada individuo poseía distinto grado de talento natural fijo, y que este talento les permitiría sacar mayor provecho de las oportunidades de suerte en su (simulada) vida. Todos los individuos comenzaban con 10 unidades de éxito pero distinto nivel de talento, y cada 6 meses, los individuos recibían al azar una cierta cantidad de eventos de buena o mala suerte. En caso de buena suerte, su éxito se incrementa proporcionalmente a su talento. En caso de mala suerte, su éxito se dividía a la mitad. ¿Qué pasó al cabo de 40 años? Los individuos que poseían los mayores valores de éxito eran — en promedio — sólo ligeramente más talentosos que una persona promedio. De hecho tener un muy alto talento sólo en un 3% de los casos permitía estar en el grupo de los más exitosos. Raya para la suma: la distribución inicial de talento influía mucho pero mucho menos que la suerte. Sin embargo, resulta natural elevar algunas críticas contra la simpleza del experimento, pues el resultado depende en gran medida de los valores elegidos como condiciones iniciales para el experimento y está lejos de representar la complejidad de la vida humana. El supuesto que el valor inicial de éxito sea el mismo para todos es una simplificación enorme.
 Todos estamos expuestos a rachas de mala suerte: enfermedades personales o familiares, despidos, accidentes, deudas imprevistas, por citar sólo algunos. Estas situaciones finalmente impidan que las personas puedan ejercer y contribuir con sus talentos a la sociedad. Esto lo expone con gran claridad el historiador Rutger Bregman en el siguiente video:&lt;/p&gt;
 
-&lt;p&gt;Rutger Bregman — La pobreza no es falta de carácter. — https://www.youtube.com/watch?v=ydKcaIE6O1k
-Rutger Bregman menciona que la pobreza no es una falta de educación, o un defecto de personalidad de ciertas personas. Las condiciones de pobreza producen un efecto similar a consumir alcohol o una noche sin dormir; reducen la capacidad intelectual de manera transitoria. No se menciona porqué, pero imagino que debe estar relacionado a los químicos liberados en condiciones de stress. Adicionalmente, Rutget menciona que la pobreza induce una “mentalidad de escasez” que aniquila la capacidad de planificación a futuro; sólo se atiende a la supervivencia y a lo inmediato. Retomando el video inicial, y para no perder el hilo, la pobreza y los privilegios, son un problema que cuesta caro porque generan una enorme pérdida de potencial humano.
-¿Y cómo estamos en Chile hoy en día?
-Daniel Matamala en esta columna de La Tercera, relata los resultados de Meneses, Blanco y Paredes. Para ello, usaron bases de datos del Simce, de la PSU y del seguro de cesantía. Y se reproduce lo que de ya sabíamos: el sueldo percibido reproduce la estructura social y no los talentos de las personas. Y resulta difícil decirlo mejor que el periodista, que concluye:
-«Estas no son anécdotas ni impresiones. Son datos duros de más de 75 mil chilenos, y que probablemente subestiman la realidad, porque se refieren sólo a ingresos del trabajo, y no a otros como acciones, dividendos o herencias, que son mayores entre quienes vienen de un estrato alto.
-Datos que desmienten la mitología de una sociedad que dice recompensar el talento y el esfuerzo de sus hijos. En el mercado del trabajo pesan el elitismo disfrazado de “roce social”, la endogamia vestida de “redes” y la discriminación enmascarada como “buena presencia”.»
-Los datos dicen que existe una movilidad social mucho más reducida de lo que debería. Donde el talento de muchos se pierde bajo el peso de sus carencias, de falta de condiciones y privilegios, y por no poseer un colchón económica para superponerse a las malas rachas. Y para peor, donde frecuentemente los privilegiados no se reconocen como tal.&lt;/p&gt;</content><author><name></name></author><summary type="html">https://medium.com/@sebastiandres/reconociendo-nuestros-privilegios-reflexiones-sobre-el-talento-la-suerte-y-la-pobreza-7b7cf89ad8c8</summary></entry><entry><title type="html">Finanzas Modernas — Educación y manejo en Web y Apps.</title><link href="https://sebastiandres.github.io/blog/opini%C3%B3n/backport/medium/2019/09/03/medium-finanzas.html" rel="alternate" type="text/html" title="Finanzas Modernas — Educación y manejo en Web y Apps." /><published>2019-09-03T00:00:00-05:00</published><updated>2019-09-03T00:00:00-05:00</updated><id>https://sebastiandres.github.io/blog/opini%C3%B3n/backport/medium/2019/09/03/medium-finanzas</id><content type="html" xml:base="https://sebastiandres.github.io/blog/opini%C3%B3n/backport/medium/2019/09/03/medium-finanzas.html">&lt;p&gt;Confieso que no me siento particularmente educado de economía y finanzas como para hacer un post sobre este tema. De hecho, la única asignatura que he reprobado en mi vida fue “Ingeniería Económica”.&lt;/p&gt;
+&lt;center&gt;
+&lt;iframe width=&quot;600&quot; height=&quot;400&quot; src=&quot;https://www.youtube.com/embed/ydKcaIE6O1k&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+&lt;p&gt;Rutger Bregman — La pobreza no es falta de carácter.&lt;/p&gt;
+
+&lt;p&gt;Rutger Bregman menciona que la pobreza no es una falta de educación, o un defecto de personalidad de ciertas personas. Las condiciones de pobreza producen un efecto similar a consumir alcohol o una noche sin dormir; reducen la capacidad intelectual de manera transitoria. No se menciona porqué, pero imagino que debe estar relacionado a los químicos liberados en condiciones de stress. Adicionalmente, Rutget menciona que la pobreza induce una “mentalidad de escasez” que aniquila la capacidad de planificación a futuro; sólo se atiende a la supervivencia y a lo inmediato. Retomando el video inicial, y para no perder el hilo, la pobreza y los privilegios, son un problema que cuesta caro porque generan una enorme pérdida de potencial humano.
+¿Y cómo estamos en Chile hoy en día?&lt;/p&gt;
+
+&lt;p&gt;Daniel Matamala en esta columna de La Tercera, relata los resultados de Meneses, Blanco y Paredes. Para ello, usaron bases de datos del Simce, de la PSU y del seguro de cesantía. Y se reproduce lo que de ya sabíamos: el sueldo percibido reproduce la estructura social y no los talentos de las personas. Y resulta difícil decirlo mejor que el periodista, que concluye:
+«Estas no son anécdotas ni impresiones. Son datos duros de más de 75 mil chilenos, y que probablemente subestiman la realidad, porque se refieren sólo a ingresos del trabajo, y no a otros como acciones, dividendos o herencias, que son mayores entre quienes vienen de un estrato alto.&lt;/p&gt;
+
+&lt;p&gt;Estos datos desmienten la idea de una sociedad que dice recompensar el talento y el esfuerzo de sus hijos. En el mercado del trabajo pesan el elitismo disfrazado de “roce social”, la endogamia vestida de “redes” y la discriminación enmascarada como “buena presencia”.»&lt;/p&gt;
+
+&lt;p&gt;Los datos dicen que existe una movilidad social mucho más reducida de lo que debería. Donde el talento de muchos se pierde bajo el peso de sus carencias, de falta de condiciones y privilegios, y por no poseer un colchón económica para superponerse a las malas rachas. Y para peor, donde frecuentemente los privilegiados no se reconocen como tal.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Inicialmente publicado en &lt;a href=&quot;https://medium.com/@sebastiandres/reconociendo-nuestros-privilegios-reflexiones-sobre-el-talento-la-suerte-y-la-pobreza-7b7cf89ad8c8&quot;&gt;medium&lt;/a&gt; el 19-01-2019.&lt;/p&gt;
+
+&lt;hr /&gt;</content><author><name></name></author><summary type="html">Hace poco re-compartí en facebook un video que me pareció interesante. No pensé que recibiría mucha atención, e incluso pensé que podía ser un poco cliché. Tanto así que reconozco incluso que no lo vi completo; al mirarlo nuevamente con mayor detalle me di cuenta que los últimos 40 segundos tienen un texto bíblico. El video es el siguiente:</summary></entry><entry><title type="html">Finanzas Modernas</title><link href="https://sebastiandres.github.io/blog/opini%C3%B3n/finanzas/medium/2019/09/03/medium-finanzas.html" rel="alternate" type="text/html" title="Finanzas Modernas" /><published>2019-09-03T00:00:00-05:00</published><updated>2019-09-03T00:00:00-05:00</updated><id>https://sebastiandres.github.io/blog/opini%C3%B3n/finanzas/medium/2019/09/03/medium-finanzas</id><content type="html" xml:base="https://sebastiandres.github.io/blog/opini%C3%B3n/finanzas/medium/2019/09/03/medium-finanzas.html">&lt;p&gt;Confieso que no me siento particularmente educado de economía y finanzas como para hacer un post sobre este tema. De hecho, la única asignatura que he reprobado en mi vida fue “Ingeniería Económica”.&lt;/p&gt;
 
 &lt;p&gt;Soy el primero en reconocerlo, encuentro que las finanzas son un tema particularmente aburrido. Pero en todo juego es necesario conocer las reglas para saber cuáles estrategias te acercan más a tus metas. Por eso “minimizar” el tiempo dedicado a las finanzas “maximizando” los beneficios es la mejor idea. Conversando con algunos amigos y conocidos — incluso de la banca — me he di cuenta que no todos conocen los distintos recursos que han ido apareciendo respecto a como informarse y manejar finanzas de manera moderna, y que agradecen que les haya contado de estas webs y apps. Este post, al igual que la de &lt;a href=&quot;https://medium.com/@sebastiandres/consejos-al-mejor-precio-ff9546984ca2&quot;&gt;Consejos de libros al mejor precio&lt;/a&gt;, sirve para facilitar la difusión de estos tips.&lt;/p&gt;
 
@@ -578,7 +602,7 @@ Lo que me ha sorprendido al leer el libro es que los elementos principales de la
 &lt;center&gt;
 &lt;iframe width=&quot;600&quot; height=&quot;400&quot; src=&quot;https://youtube.com/embed/u6XAPnuFjJc&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/center&gt;
-&lt;p&gt;Daniel H. Pink — The surprising truth about what motivate us (11 minutos, 2010)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Daniel H. Pink — The surprising truth about what motivate us (11 minutos, 2010)&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;El libro de November, y el video de Daniel Pink, llegan a la misma conclusión: lo que nos motiva como trabajadores y cómo estudiantes el sentido (purpose), la autonomía (autonomy) y la maestría (mastery).&lt;/p&gt;
 
