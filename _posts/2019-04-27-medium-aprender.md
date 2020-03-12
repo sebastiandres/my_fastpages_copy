@@ -28,7 +28,7 @@ El libro de November, y el video de Daniel Pink, llegan a la misma conclusión: 
 <center>
 <iframe width="600" height="400" src="https://youtube.com/embed/ebJHzpEy4bE" frameborder="0" allowfullscreen></iframe>
 </center>
-Alan November — Who Owns the Learning (11 minutos, 2011)
+*Alan November — Who Owns the Learning (11 minutos, 2011)*
 
 ---
 

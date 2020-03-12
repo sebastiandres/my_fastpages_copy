@@ -32,7 +32,7 @@ La [Comunidad FyF](https://www.felicesyforrados.cl/) da indicaciones sobre cuán
 Más que cambiar de fondo tan frecuentemente, me gusta que me informen sobre cómo van rentando los fondos, qué eventos han gatillado las sugerencias de cambio de fondo, cuáles son los trucos y trampas que hacen las AFPs y los consejos sobre cómo invertir bien los ahorros.
 
 
-## MACH
+## MACH 
 [MACH](https://bajamach.com/oftdA9ngHZ) es una cuenta y app respaldada por BCI. No tiene página web, sino que debes configurar todo desde el celular. Es una “monedero digital”, funciona sólo con la plata que has depositado desde tu banco o que te han pagado otras personas; no puedes endeudarte. Sirve para pagar en Chile pero también en el extranjero, y tiene la gracia que no piden antecedentes ni tiene costos asociados. Es increíblemente fácil, en 5 minutos ya tienes la app configurada. Para pagarle o cobrarle a una persona, la buscas entre tus contactos, colocas el monto y listo. Es ideal para pagarse entre amigos para dividir cuentas de restoranes, regalos y viajes, además de pago de cuentas en línea, entre otros.
 Tiene un sistema de referidos, por lo que si usas el [link](https://bajamach.com/oftdA9ngHZ) me darán 1.000 pesos de los cuales puedes cobrarme la mitad mediante la misma aplicación de MACH; así podrás probar inmediatamente cómo funciona. Warning: el botón de “cobrar” de MACH es un poco adictivo.
 
