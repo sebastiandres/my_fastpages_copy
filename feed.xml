@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://sebastiandres.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sebastiandres.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-03-11T12:17:16-05:00</updated><id>https://sebastiandres.github.io/blog/feed.xml</id><title type="html">sebastiandres</title><subtitle>Blog de sebastiandres</subtitle><entry><title type="html">Blog en github.io - Redirigiendo la página</title><link href="https://sebastiandres.github.io/blog/html/fastpages/2020/03/10/Redirect.html" rel="alternate" type="text/html" title="Blog en github.io - Redirigiendo la página" /><published>2020-03-10T00:00:00-05:00</published><updated>2020-03-10T00:00:00-05:00</updated><id>https://sebastiandres.github.io/blog/html/fastpages/2020/03/10/Redirect</id><content type="html" xml:base="https://sebastiandres.github.io/blog/html/fastpages/2020/03/10/Redirect.html">&lt;p&gt;Aún no termino de traducir los posts “originales” y ya estoy pensando en el próximo post. Es un buen signo de que el nuevo sistema es más fácil de usar.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://sebastiandres.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sebastiandres.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-03-11T19:30:19-05:00</updated><id>https://sebastiandres.github.io/blog/feed.xml</id><title type="html">sebastiandres</title><entry><title type="html">Blog en github.io - Redirigiendo la página</title><link href="https://sebastiandres.github.io/blog/html/fastpages/2020/03/10/Redirect.html" rel="alternate" type="text/html" title="Blog en github.io - Redirigiendo la página" /><published>2020-03-10T00:00:00-05:00</published><updated>2020-03-10T00:00:00-05:00</updated><id>https://sebastiandres.github.io/blog/html/fastpages/2020/03/10/Redirect</id><content type="html" xml:base="https://sebastiandres.github.io/blog/html/fastpages/2020/03/10/Redirect.html">&lt;p&gt;Aún no termino de traducir los posts “originales” y ya estoy pensando en el próximo post. Es un buen signo de que el nuevo sistema es más fácil de usar.&lt;/p&gt;
 
 &lt;p&gt;Al seguir las instrucciones para configurar fastpages, pide que el repositorio no sea “github_username.github.io”. En mi caso y después de algunas pruebas, me incliné por “blog”, por lo que el blog queda en &lt;a href=&quot;https://sebastiandres.github.io/blog/&quot;&gt;https://sebastiandres.github.io/blog/&lt;/a&gt;. Sin embargo, me pareció que rompe la expectativa tradicional, puesto que &lt;a href=&quot;https://sebastiandres.github.io/&quot;&gt;https://sebastiandres.github.io/&lt;/a&gt; arroja un error (página 404-no encontrada).&lt;/p&gt;
 
@@ -513,7 +513,7 @@ Nota:
 &lt;center&gt;
 &lt;iframe width=&quot;600&quot; height=&quot;400&quot; src=&quot;https://www.youtube.com/embed/WNHw5eVzv5U&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/center&gt;
-&lt;p&gt;Carrera por los 100 dólares ¿Cuánto influyen nuestros privilegios?&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Carrera por los 100 dólares ¿Cuánto influyen nuestros privilegios?&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Uno de mis amigos de facebook respondió con vehemencia, manifestando “lo inútil que eran estos videos que no cambian nada” y que “los ‘buenistas’ han hecho un conjunto de leyes completamente injusto y arbitrario tratando de ‘arreglar’ una supuesta diferencia”. Intercambiamos varios mensajes al respecto, pero el tono de la conversación comenzó a subir y probablemente ambos quedamos con la idea de que el otro no escucha razones. Pero no deja de ser válido el auto-cuestionarse:
 ¿Existen estas diferencias o privilegios?
@@ -521,18 +521,22 @@ Nota:
 Me parece que el primer punto es evidente y está fuera de debate. Las diferencias existen debido a las distintas configuraciones familiares, sociales y económicas, y con toda seguridad siempre existirán. Ese no es el punto en cuestión.
 Respecto al segundo punto, existe un webcomic del ilustrador Toby Morris que también habla sobre los privilegios y que lo ilustra de otra manera. El enlace original está en este link y encontré la versión traducida en este otro sitio. Coloco acá las imágenes para hacer más directa y lineal la lectura:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/blog/images/1_IpLw7imp_5g5Af5VIfhBlQ.gif&quot; alt=&quot;&quot; title=&quot;1&quot; /&gt;
-&lt;img src=&quot;/blog/images/2_I-Qin_2FUx5zHnw16L7WiQ.gif&quot; alt=&quot;&quot; title=&quot;2&quot; /&gt;
-&lt;img src=&quot;/blog/images/3_c_9UfU9Bf-kepBaJAnzYGw.gif&quot; alt=&quot;&quot; title=&quot;3&quot; /&gt;
-&lt;img src=&quot;/blog/images/4_iazMOxw7tHO5FVZBYovWYw.gif&quot; alt=&quot;&quot; title=&quot;4&quot; /&gt;
-On a Plate — https://marcianosmx.com/en-bandeja-de-plata-una-historia-sobre-los-privilegios/&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/images/1_IpLw7imp_5g5Af5VIfhBlQ.gif&quot; alt=&quot;&quot; title=&quot;1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/images/2_I-Qin_2FUx5zHnw16L7WiQ.gif&quot; alt=&quot;&quot; title=&quot;2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/images/3_c_9UfU9Bf-kepBaJAnzYGw.gif&quot; alt=&quot;&quot; title=&quot;3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/images/4_iazMOxw7tHO5FVZBYovWYw.gif&quot; alt=&quot;&quot; title=&quot;4&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;On a Plate — https://marcianosmx.com/en-bandeja-de-plata-una-historia-sobre-los-privilegios/&lt;/p&gt;
 
 &lt;p&gt;El punto central del video y del comic es el mismo. De manera frecuente, quien ha tenido privilegios ignora que los ha tenido, y piensa que todo su éxito ha sido únicamente personal. Esta situación ha sido incluso estudiada, como muestra el siguiente video del investigador y sicólogo Paul Piff:&lt;/p&gt;
 
 &lt;center&gt;
 &lt;iframe width=&quot;600&quot; height=&quot;400&quot; src=&quot;https://www.youtube.com/embed/tzBeZ8FQC_o&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/center&gt;
-&lt;p&gt;Paul Pill — ¿El dinero nos hace “malvados”?&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Paul Pill — ¿El dinero nos hace “malvados”?&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Un resumen muy corto del video sería: (1) en un juego de monopoly con condiciones desiguales para los jugadores, los ganadores atribuyen su éxito a condiciones innatas y no a la gran ventaja que arbitrariamente se les ha otorgado, es decir, no reconocen sus privilegios, y (2) en diversos experimentos las poblaciones más ricas tienden a demostrar menos empatía hacia otros. No es que ser rico te obligue a ser “malvado” ni que para ser rico haya que ser “malvado”, sino que el cerebro necesita racionalizar los hechos para poder justificar que exista una diferencia. De manera natural, los humanos buscamos evitar aquello que nos produce alguna emoción conflictiva, y resulta cognitivamente conflictivo admitir que el éxito puede deberse, además de trabajo y esfuerzo, a variables completamente fuera de nuestro control.
 ¿Es más importante la suerte que el talento innato?
@@ -542,7 +546,7 @@ Todos estamos expuestos a rachas de mala suerte: enfermedades personales o famil
 &lt;center&gt;
 &lt;iframe width=&quot;600&quot; height=&quot;400&quot; src=&quot;https://www.youtube.com/embed/ydKcaIE6O1k&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/center&gt;
-&lt;p&gt;Rutger Bregman — La pobreza no es falta de carácter.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Rutger Bregman — La pobreza no es falta de carácter.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Rutger Bregman menciona que la pobreza no es una falta de educación, o un defecto de personalidad de ciertas personas. Las condiciones de pobreza producen un efecto similar a consumir alcohol o una noche sin dormir; reducen la capacidad intelectual de manera transitoria. No se menciona porqué, pero imagino que debe estar relacionado a los químicos liberados en condiciones de stress. Adicionalmente, Rutget menciona que la pobreza induce una “mentalidad de escasez” que aniquila la capacidad de planificación a futuro; sólo se atiende a la supervivencia y a lo inmediato. Retomando el video inicial, y para no perder el hilo, la pobreza y los privilegios, son un problema que cuesta caro porque generan una enorme pérdida de potencial humano.
 ¿Y cómo estamos en Chile hoy en día?&lt;/p&gt;
@@ -581,8 +585,8 @@ Matías publicó hace poco un libro &lt;a href=&quot;https://con-manzanitas.mysh
 
 &lt;p&gt;Más que cambiar de fondo tan frecuentemente, me gusta que me informen sobre cómo van rentando los fondos, qué eventos han gatillado las sugerencias de cambio de fondo, cuáles son los trucos y trampas que hacen las AFPs y los consejos sobre cómo invertir bien los ahorros.&lt;/p&gt;
 
-&lt;p&gt;## MACH
-&lt;a href=&quot;https://bajamach.com/oftdA9ngHZ&quot;&gt;MACH&lt;/a&gt; es una cuenta y app respaldada por BCI. No tiene página web, sino que debes configurar todo desde el celular. Es una “monedero digital”, funciona sólo con la plata que has depositado desde tu banco o que te han pagado otras personas; no puedes endeudarte. Sirve para pagar en Chile pero también en el extranjero, y tiene la gracia que no piden antecedentes ni tiene costos asociados. Es increíblemente fácil, en 5 minutos ya tienes la app configurada. Para pagarle o cobrarle a una persona, la buscas entre tus contactos, colocas el monto y listo. Es ideal para pagarse entre amigos para dividir cuentas de restoranes, regalos y viajes, además de pago de cuentas en línea, entre otros.
+&lt;h2 id=&quot;mach&quot;&gt;MACH&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://bajamach.com/oftdA9ngHZ&quot;&gt;MACH&lt;/a&gt; es una cuenta y app respaldada por BCI. No tiene página web, sino que debes configurar todo desde el celular. Es una “monedero digital”, funciona sólo con la plata que has depositado desde tu banco o que te han pagado otras personas; no puedes endeudarte. Sirve para pagar en Chile pero también en el extranjero, y tiene la gracia que no piden antecedentes ni tiene costos asociados. Es increíblemente fácil, en 5 minutos ya tienes la app configurada. Para pagarle o cobrarle a una persona, la buscas entre tus contactos, colocas el monto y listo. Es ideal para pagarse entre amigos para dividir cuentas de restoranes, regalos y viajes, además de pago de cuentas en línea, entre otros.
 Tiene un sistema de referidos, por lo que si usas el &lt;a href=&quot;https://bajamach.com/oftdA9ngHZ&quot;&gt;link&lt;/a&gt; me darán 1.000 pesos de los cuales puedes cobrarme la mitad mediante la misma aplicación de MACH; así podrás probar inmediatamente cómo funciona. Warning: el botón de “cobrar” de MACH es un poco adictivo.&lt;/p&gt;
 
 &lt;h2 id=&quot;fintual&quot;&gt;Fintual&lt;/h2&gt;
@@ -617,7 +621,7 @@ Lo que me ha sorprendido al leer el libro es que los elementos principales de la
 &lt;center&gt;
 &lt;iframe width=&quot;600&quot; height=&quot;400&quot; src=&quot;https://youtube.com/embed/ebJHzpEy4bE&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/center&gt;
-&lt;p&gt;Alan November — Who Owns the Learning (11 minutos, 2011)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Alan November — Who Owns the Learning (11 minutos, 2011)&lt;/em&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
