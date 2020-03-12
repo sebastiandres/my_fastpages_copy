@@ -1,10 +1,10 @@
 ---
-title: Titulo 
+description: ¿Quién tiene la razón en IA y Tech? 
 toc: false
-categories: [opinión, backport, medium]
+categories: [opinión, tecnología, medium]
 comments: true
 ---
-# Elon Musk y Jack Ma: ¿Quién tiene la razón?
+# Elon Musk y Jack Ma
 
 En Agosto del 2019 Elon Musk y Jack Ma sostuvieron un panel intercambiando opuestas opiniones en el contexto del World Artificial Intelligence Conference. Los temas que los CEOs de Space X & Tesla y Alibaba&Aliexpress seleccionaron fueron los siguientes: Inteligencia Artificial, Marte, Trabajo y Educación. El panel dura cerca de 46 minutos y fue interesante porque Elon y Jack tienen opiniones bastante distintas y no lo disimularon.
 

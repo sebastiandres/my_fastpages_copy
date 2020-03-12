@@ -7,8 +7,6 @@ comments: true
 
 # Keynotes de la PyCon 2020 Colombia
 
-Post espejo de [https://medium.com/@sebastiandres/keynotes-de-la-pycon-2020-colombia-807aaa22fa37](medium)
-
 > “Came for the language, stayed for the community” - Brett Cannon
 
 Todos los keynote speakers recalcaron la importancia del trabajo en equipo y la colaboración de la comunidad de Python, como refleja la frase de Brett Cannon de la PyCon US del 2014. Los principales elementos comunes fueron:
@@ -16,7 +14,7 @@ Todos los keynote speakers recalcaron la importancia del trabajo en equipo y la 
 2. **Documentación y respaldos**:La documentación es crucial para facilitar la colaboración de las comunidades, y para respaldar hacia el futuro: lo que no se documenta se pierde. Emily mencionó que “Documentar es ahorrar dinero”, y que es un esfuerzo necesario. Esto lo mencionó también Nick Sweeting en una charla: damos por sentado que todo lo que leemos hoy estará disponible en todos lados y en el futuro. Respaldar es importante.
 3. **Sobre el fracaso**: Todos tenemos nuestros fracasos. Hacerlos visibles es importante para mostrar a otros que es normal, y que forma parte del crecimiento y aprendizaje. Fernando mencionó ejemplos de sus fracasos (desconectar el internet en todo Colombia, un curso práctico de computación fallido). Emily habló de sus inseguridades, la falta de confianza para abordar desafíos y de la necesidad de salir de la zona de confort.
 
-## Andrew Godwin [https://twitter.com/andrewgodwin](@andrewgodwin)
+## Andrew Godwin [@andrewgodwin](https://twitter.com/andrewgodwin)
 The Scientist and the engineer: [slides original](https://speakerdeck.com/andrewgodwin/the-scientist-and-the-engineer) / [slides respaldo](https://drive.google.com/file/d/1bfZAgeNa4vkB6MDGQF7ZuVXd27pvmA61/view?usp=sharing)
 
 <center>
@@ -32,7 +30,7 @@ In practice there is”* — Benjamin Brewster.
 * Learn when and how to forget. You can’t remember all the details all the time. Besides, it’s inefficient. Abstract - Verify - Forget.
 * Scientists observe and question: They are always asking “why?” and “how?”. Engineers build and invent: they look at a question and think of solutions. Be the scientist and the engineer: Model your systems. Ask the tough questions. Build them for the real world.
 
-## Sarah Guido @sarah_guido
+## Sarah Guido [@sarah_guido](https://twitter.com/sarah_guido)
 Data Science Retrospective: [slides original](https://www.slideshare.net/SarahGuido/data-science-retrospective) / [slides respaldo](https://drive.google.com/file/d/19dlfJCQoE3DFU7IVf6GpnMJpl_P9634H/view?usp=sharing)
 
 <center>
@@ -47,7 +45,7 @@ Specialized roles are now required: data engineer, machine learning engineer, bu
 Job offers for data science ask for: Python or R, SQL, basic knowledge of statistics and Machine Learning, data intuition, ability to communicate and to be independent. Communications is a must.
 * Data in the wild is still messy: and that’s not ever going to change.
 
-## Wes McKinney @wesmckinn
+## Wes McKinney [@wesmckinn](https://twitter.com/wesmckinn) 
 Python for Data Analysis: Past, Present, and Future: [slides original](https://www.slideshare.net/wesm/pycon-colombia-2020-python-for-data-analysis-past-present-and-future) / [slides respaldo](https://drive.google.com/file/d/1Gzcwg1Pew1GAEuzz3itpM_FiFer2zqOt/view?usp=sharing)
 
 <center>
@@ -65,7 +63,7 @@ See: “PyData NYC 2013: 10 Things I Hate About pandas”
 Apache Arrow is “a common standard designed for speed, for data processing libraries”.  It should be CPU/GPU friendly, memory map huge datasets, and relocate data structures without serialization.
 * Reflexión personal: en 10 años parecerá natural que exista un estándar para dataframe data. ¿Se imaginan lo complejo e ineficiente que sería si cada lenguaje manejara un estándar distinto de chars, enteros y flotantes?
 
-## Ines Montani @_inesmontani
+## Ines Montani [@_inesmontani](https://twitter.com/_inesmontani)
 The Future of NLP in Python: [slide original](https://speakerdeck.com/inesmontani/the-future-of-nlp-in-python-keynote-pycon-colombia-2020) / [slide respaldo](https://drive.google.com/file/d/1z1ErZYM_3L8NiQHlJGJOZBIqpSHMi_pz/view?usp=sharing)
 
 <center>
@@ -83,7 +81,7 @@ The Future of NLP in Python: [slide original](https://speakerdeck.com/inesmontan
 * Problem 3: We needed something so we built it.
 * Problem 4: It all depends on the data. It’s better to pay someone on your team to precisely gather/create the data you need. Move fast and train things. Have several models and choose based on results.
 
-## Emily Morehouse @emilyemorehouse
+## Emily Morehouse [@emilyemorehouse](https://twitter.com/emilyemorehouse)
 We go further together: [slide original](https://drive.google.com/file/d/1KZeyDkd-UphbHOWi_kv9KkN83mnDUU9s/view) / [slide respaldo](https://drive.google.com/file/d/1bwv7hLyo09J2aP1nnGu7LypxJac2A758/view?usp=sharing)
 
 <center>
@@ -97,7 +95,7 @@ We go further together: [slide original](https://drive.google.com/file/d/1KZeyDk
 * Time is money. Documentation saves time. Ergo, documentation saves money.
 * Mentoring is crucial. Reach out to others, and to overcome impostor syndrome.
 
-## Fernando Perez @fperez_org
+## Fernando Perez [@fperez_org](https://twitter.com/fperez_org)
 Jupyter, física y comunidades abiertas: [slides original](https://docs.google.com/presentation/d/1KAvDHwslapwO4l98M0HWRjyHEsGxzVFVT2tX_6e1dPQ) / [slides respaldo](https://drive.google.com/file/d/1eBAYRkIZ-IX-bZnGgnSv9IWxVK5hkBh_/view?usp=sharing)
 
 <center>
@@ -115,3 +113,10 @@ La comunidad de python científico persigue los ideales de la ciencia: (1) la bu
 * ¿Impacto generado? Agujeros negros! LIGO 2015 (Nobel 17), primera imagen de un agujero negro 2019 (Nobel ?).
 * Cool stuff: Pangeo — volúmenes ridículamente grandes de datos geológicos, ICESat (icepyx), simpeg, GeoSci.xyz, JupyterBook, cursos de ciencias de datos en Berkeley +2000 alumnos simultáneos,
 * Hay un libro sobre como usar Jupyter como herramienta pedagógica: libro.
+
+
+---
+
+Inicialmente publicado en [medium](https://medium.com/@sebastiandres/keynotes-de-la-pycon-2020-colombia-807aaa22fa37) el 11-02-2020.
+
+---
