@@ -1,6 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://sebastiandres.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sebastiandres.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-03-11T19:30:19-05:00</updated><id>https://sebastiandres.github.io/blog/feed.xml</id><title type="html">sebastiandres</title><entry><title type="html">Blog en github.io - Redirigiendo la página</title><link href="https://sebastiandres.github.io/blog/html/fastpages/2020/03/10/Redirect.html" rel="alternate" type="text/html" title="Blog en github.io - Redirigiendo la página" /><published>2020-03-10T00:00:00-05:00</published><updated>2020-03-10T00:00:00-05:00</updated><id>https://sebastiandres.github.io/blog/html/fastpages/2020/03/10/Redirect</id><content type="html" xml:base="https://sebastiandres.github.io/blog/html/fastpages/2020/03/10/Redirect.html">&lt;p&gt;Aún no termino de traducir los posts “originales” y ya estoy pensando en el próximo post. Es un buen signo de que el nuevo sistema es más fácil de usar.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://sebastiandres.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sebastiandres.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-03-11T19:51:51-05:00</updated><id>https://sebastiandres.github.io/blog/feed.xml</id><title type="html">sebastiandres</title><entry><title type="html">Blog en github.io</title><link href="https://sebastiandres.github.io/blog/html/fastpages/2020/03/10/Redirect.html" rel="alternate" type="text/html" title="Blog en github.io" /><published>2020-03-10T00:00:00-05:00</published><updated>2020-03-10T00:00:00-05:00</updated><id>https://sebastiandres.github.io/blog/html/fastpages/2020/03/10/Redirect</id><content type="html" xml:base="https://sebastiandres.github.io/blog/html/fastpages/2020/03/10/Redirect.html">&lt;p&gt;Aún no termino de traducir los posts “originales” y ya estoy pensando en el próximo post. Es un buen signo de que el nuevo sistema es más fácil de usar.&lt;/p&gt;
 
 &lt;p&gt;Al seguir las instrucciones para configurar fastpages, pide que el repositorio no sea “github_username.github.io”. En mi caso y después de algunas pruebas, me incliné por “blog”, por lo que el blog queda en &lt;a href=&quot;https://sebastiandres.github.io/blog/&quot;&gt;https://sebastiandres.github.io/blog/&lt;/a&gt;. Sin embargo, me pareció que rompe la expectativa tradicional, puesto que &lt;a href=&quot;https://sebastiandres.github.io/&quot;&gt;https://sebastiandres.github.io/&lt;/a&gt; arroja un error (página 404-no encontrada).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/images/404.png&quot; alt=&quot;&quot; title=&quot;404 - not found&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;sebastiandres.github.io No funcionaba.*&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;Se me ocurrió que una forma fácil de solucionar lo anterior es tener un repositorio “github_username.github.io”, en mi caso sebastiandres.github.io, y que contuviera una página html que redirigiera a &lt;a href=&quot;https://sebastiandres.github.io/blog/&quot;&gt;https://sebastiandres.github.io/blog/&lt;/a&gt;. Un “hack” de 2 minutos y que permite responder a la expectativa, sin mayores dolores de cabeza de configuración o código:&lt;/p&gt;
 
@@ -69,9 +74,7 @@
 
 &lt;h1 id=&quot;balance&quot;&gt;Balance&lt;/h1&gt;
 
-&lt;p&gt;A menos que ya tengas contenido en Word, mejor trabajar con markdown o jupyter notebooks, para mayor libertad de elementos multimedia.&lt;/p&gt;</content><author><name></name></author><summary type="html">Es posible hacer un post desde Word, sin problemas. Convierte todas las fonts a una Font común y con el mismo color y tamaño. Pero respeta las negritas y las itálicas.</summary></entry><entry><title type="html">Keynotes de la PyCon 2020 Colombia</title><link href="https://sebastiandres.github.io/blog/opini%C3%B3n/backport/medium/2020/02/11/medium-pycon.html" rel="alternate" type="text/html" title="Keynotes de la PyCon 2020 Colombia" /><published>2020-02-11T00:00:00-06:00</published><updated>2020-02-11T00:00:00-06:00</updated><id>https://sebastiandres.github.io/blog/opini%C3%B3n/backport/medium/2020/02/11/medium-pycon</id><content type="html" xml:base="https://sebastiandres.github.io/blog/opini%C3%B3n/backport/medium/2020/02/11/medium-pycon.html">&lt;p&gt;Post espejo de &lt;a href=&quot;medium&quot;&gt;https://medium.com/@sebastiandres/keynotes-de-la-pycon-2020-colombia-807aaa22fa37&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
+&lt;p&gt;A menos que ya tengas contenido en Word, mejor trabajar con markdown o jupyter notebooks, para mayor libertad de elementos multimedia.&lt;/p&gt;</content><author><name></name></author><summary type="html">Es posible hacer un post desde Word, sin problemas. Convierte todas las fonts a una Font común y con el mismo color y tamaño. Pero respeta las negritas y las itálicas.</summary></entry><entry><title type="html">Keynotes de la PyCon 2020 Colombia</title><link href="https://sebastiandres.github.io/blog/opini%C3%B3n/backport/medium/2020/02/11/medium-pycon.html" rel="alternate" type="text/html" title="Keynotes de la PyCon 2020 Colombia" /><published>2020-02-11T00:00:00-06:00</published><updated>2020-02-11T00:00:00-06:00</updated><id>https://sebastiandres.github.io/blog/opini%C3%B3n/backport/medium/2020/02/11/medium-pycon</id><content type="html" xml:base="https://sebastiandres.github.io/blog/opini%C3%B3n/backport/medium/2020/02/11/medium-pycon.html">&lt;blockquote&gt;
   &lt;p&gt;“Came for the language, stayed for the community” - Brett Cannon&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -82,7 +85,7 @@
   &lt;li&gt;&lt;strong&gt;Sobre el fracaso&lt;/strong&gt;: Todos tenemos nuestros fracasos. Hacerlos visibles es importante para mostrar a otros que es normal, y que forma parte del crecimiento y aprendizaje. Fernando mencionó ejemplos de sus fracasos (desconectar el internet en todo Colombia, un curso práctico de computación fallido). Emily habló de sus inseguridades, la falta de confianza para abordar desafíos y de la necesidad de salir de la zona de confort.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&quot;andrew-godwin-httpstwittercomandrewgodwin&quot;&gt;Andrew Godwin &lt;a href=&quot;@andrewgodwin&quot;&gt;https://twitter.com/andrewgodwin&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;andrew-godwin-andrewgodwin&quot;&gt;Andrew Godwin &lt;a href=&quot;https://twitter.com/andrewgodwin&quot;&gt;@andrewgodwin&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;The Scientist and the engineer: &lt;a href=&quot;https://speakerdeck.com/andrewgodwin/the-scientist-and-the-engineer&quot;&gt;slides original&lt;/a&gt; / &lt;a href=&quot;https://drive.google.com/file/d/1bfZAgeNa4vkB6MDGQF7ZuVXd27pvmA61/view?usp=sharing&quot;&gt;slides respaldo&lt;/a&gt;&lt;/p&gt;
 
 &lt;center&gt;
@@ -100,7 +103,7 @@ In practice there is”&lt;/em&gt; — Benjamin Brewster.&lt;/li&gt;
   &lt;li&gt;Scientists observe and question: They are always asking “why?” and “how?”. Engineers build and invent: they look at a question and think of solutions. Be the scientist and the engineer: Model your systems. Ask the tough questions. Build them for the real world.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;sarah-guido-sarah_guido&quot;&gt;Sarah Guido @sarah_guido&lt;/h2&gt;
+&lt;h2 id=&quot;sarah-guido-sarah_guido&quot;&gt;Sarah Guido &lt;a href=&quot;https://twitter.com/sarah_guido&quot;&gt;@sarah_guido&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Data Science Retrospective: &lt;a href=&quot;https://www.slideshare.net/SarahGuido/data-science-retrospective&quot;&gt;slides original&lt;/a&gt; / &lt;a href=&quot;https://drive.google.com/file/d/19dlfJCQoE3DFU7IVf6GpnMJpl_P9634H/view?usp=sharing&quot;&gt;slides respaldo&lt;/a&gt;&lt;/p&gt;
 
 &lt;center&gt;
@@ -117,7 +120,7 @@ Job offers for data science ask for: Python or R, SQL, basic knowledge of statis
   &lt;li&gt;Data in the wild is still messy: and that’s not ever going to change.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;wes-mckinney-wesmckinn&quot;&gt;Wes McKinney @wesmckinn&lt;/h2&gt;
+&lt;h2 id=&quot;wes-mckinney-wesmckinn&quot;&gt;Wes McKinney &lt;a href=&quot;https://twitter.com/wesmckinn&quot;&gt;@wesmckinn&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Python for Data Analysis: Past, Present, and Future: &lt;a href=&quot;https://www.slideshare.net/wesm/pycon-colombia-2020-python-for-data-analysis-past-present-and-future&quot;&gt;slides original&lt;/a&gt; / &lt;a href=&quot;https://drive.google.com/file/d/1Gzcwg1Pew1GAEuzz3itpM_FiFer2zqOt/view?usp=sharing&quot;&gt;slides respaldo&lt;/a&gt;&lt;/p&gt;
 
 &lt;center&gt;
@@ -136,7 +139,7 @@ Apache Arrow is “a common standard designed for speed, for data processing lib
   &lt;li&gt;Reflexión personal: en 10 años parecerá natural que exista un estándar para dataframe data. ¿Se imaginan lo complejo e ineficiente que sería si cada lenguaje manejara un estándar distinto de chars, enteros y flotantes?&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;ines-montani-_inesmontani&quot;&gt;Ines Montani @_inesmontani&lt;/h2&gt;
+&lt;h2 id=&quot;ines-montani-_inesmontani&quot;&gt;Ines Montani &lt;a href=&quot;https://twitter.com/_inesmontani&quot;&gt;@_inesmontani&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;The Future of NLP in Python: &lt;a href=&quot;https://speakerdeck.com/inesmontani/the-future-of-nlp-in-python-keynote-pycon-colombia-2020&quot;&gt;slide original&lt;/a&gt; / &lt;a href=&quot;https://drive.google.com/file/d/1z1ErZYM_3L8NiQHlJGJOZBIqpSHMi_pz/view?usp=sharing&quot;&gt;slide respaldo&lt;/a&gt;&lt;/p&gt;
 
 &lt;center&gt;
@@ -156,7 +159,7 @@ Apache Arrow is “a common standard designed for speed, for data processing lib
   &lt;li&gt;Problem 4: It all depends on the data. It’s better to pay someone on your team to precisely gather/create the data you need. Move fast and train things. Have several models and choose based on results.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;emily-morehouse-emilyemorehouse&quot;&gt;Emily Morehouse @emilyemorehouse&lt;/h2&gt;
+&lt;h2 id=&quot;emily-morehouse-emilyemorehouse&quot;&gt;Emily Morehouse &lt;a href=&quot;https://twitter.com/emilyemorehouse&quot;&gt;@emilyemorehouse&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;We go further together: &lt;a href=&quot;https://drive.google.com/file/d/1KZeyDkd-UphbHOWi_kv9KkN83mnDUU9s/view&quot;&gt;slide original&lt;/a&gt; / &lt;a href=&quot;https://drive.google.com/file/d/1bwv7hLyo09J2aP1nnGu7LypxJac2A758/view?usp=sharing&quot;&gt;slide respaldo&lt;/a&gt;&lt;/p&gt;
 
 &lt;center&gt;
@@ -172,7 +175,7 @@ Apache Arrow is “a common standard designed for speed, for data processing lib
   &lt;li&gt;Mentoring is crucial. Reach out to others, and to overcome impostor syndrome.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;fernando-perez-fperez_org&quot;&gt;Fernando Perez @fperez_org&lt;/h2&gt;
+&lt;h2 id=&quot;fernando-perez-fperez_org&quot;&gt;Fernando Perez &lt;a href=&quot;https://twitter.com/fperez_org&quot;&gt;@fperez_org&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Jupyter, física y comunidades abiertas: &lt;a href=&quot;https://docs.google.com/presentation/d/1KAvDHwslapwO4l98M0HWRjyHEsGxzVFVT2tX_6e1dPQ&quot;&gt;slides original&lt;/a&gt; / &lt;a href=&quot;https://drive.google.com/file/d/1eBAYRkIZ-IX-bZnGgnSv9IWxVK5hkBh_/view?usp=sharing&quot;&gt;slides respaldo&lt;/a&gt;&lt;/p&gt;
 
 &lt;center&gt;
@@ -191,7 +194,13 @@ La comunidad de python científico persigue los ideales de la ciencia: (1) la bu
   &lt;li&gt;¿Impacto generado? Agujeros negros! LIGO 2015 (Nobel 17), primera imagen de un agujero negro 2019 (Nobel ?).&lt;/li&gt;
   &lt;li&gt;Cool stuff: Pangeo — volúmenes ridículamente grandes de datos geológicos, ICESat (icepyx), simpeg, GeoSci.xyz, JupyterBook, cursos de ciencias de datos en Berkeley +2000 alumnos simultáneos,&lt;/li&gt;
   &lt;li&gt;Hay un libro sobre como usar Jupyter como herramienta pedagógica: libro.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Post espejo de https://medium.com/@sebastiandres/keynotes-de-la-pycon-2020-colombia-807aaa22fa37</summary></entry><entry><title type="html">Test 1: Post mediante Markdown</title><link href="https://sebastiandres.github.io/blog/fastpages/markdown/2020/01/14/Test-1-Post-mediante-markdown.html" rel="alternate" type="text/html" title="Test 1: Post mediante Markdown" /><published>2020-01-14T00:00:00-06:00</published><updated>2020-01-14T00:00:00-06:00</updated><id>https://sebastiandres.github.io/blog/fastpages/markdown/2020/01/14/Test-1-Post-mediante-markdown</id><content type="html" xml:base="https://sebastiandres.github.io/blog/fastpages/markdown/2020/01/14/Test-1-Post-mediante-markdown.html">&lt;h2 id=&quot;configuración-básica&quot;&gt;Configuración básica&lt;/h2&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Inicialmente publicado en &lt;a href=&quot;https://medium.com/@sebastiandres/keynotes-de-la-pycon-2020-colombia-807aaa22fa37&quot;&gt;medium&lt;/a&gt; el 11-02-2020.&lt;/p&gt;
+
+&lt;hr /&gt;</content><author><name></name></author><summary type="html">“Came for the language, stayed for the community” - Brett Cannon</summary></entry><entry><title type="html">Test 1: Post mediante Markdown</title><link href="https://sebastiandres.github.io/blog/fastpages/markdown/2020/01/14/Test-1-Post-mediante-markdown.html" rel="alternate" type="text/html" title="Test 1: Post mediante Markdown" /><published>2020-01-14T00:00:00-06:00</published><updated>2020-01-14T00:00:00-06:00</updated><id>https://sebastiandres.github.io/blog/fastpages/markdown/2020/01/14/Test-1-Post-mediante-markdown</id><content type="html" xml:base="https://sebastiandres.github.io/blog/fastpages/markdown/2020/01/14/Test-1-Post-mediante-markdown.html">&lt;h2 id=&quot;configuración-básica&quot;&gt;Configuración básica&lt;/h2&gt;
 
 &lt;p&gt;Un blog post files debe tener el siguiente formato:&lt;/p&gt;
 
@@ -456,7 +465,7 @@ Nota:
       &lt;p&gt;Esta es la nota al pie de página. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt; &lt;a href=&quot;#fnref:1:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">Configuración básica</summary></entry><entry><title type="html">Elon Musk y Jack Ma: ¿Quién tiene la razón?</title><link href="https://sebastiandres.github.io/blog/opini%C3%B3n/backport/medium/2019/09/16/medium-debate-Musk-Ma.html" rel="alternate" type="text/html" title="Elon Musk y Jack Ma: ¿Quién tiene la razón?" /><published>2019-09-16T00:00:00-05:00</published><updated>2019-09-16T00:00:00-05:00</updated><id>https://sebastiandres.github.io/blog/opini%C3%B3n/backport/medium/2019/09/16/medium-debate-Musk-Ma</id><content type="html" xml:base="https://sebastiandres.github.io/blog/opini%C3%B3n/backport/medium/2019/09/16/medium-debate-Musk-Ma.html">&lt;p&gt;En Agosto del 2019 Elon Musk y Jack Ma sostuvieron un panel intercambiando opuestas opiniones en el contexto del World Artificial Intelligence Conference. Los temas que los CEOs de Space X &amp;amp; Tesla y Alibaba&amp;amp;Aliexpress seleccionaron fueron los siguientes: Inteligencia Artificial, Marte, Trabajo y Educación. El panel dura cerca de 46 minutos y fue interesante porque Elon y Jack tienen opiniones bastante distintas y no lo disimularon.&lt;/p&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">Configuración básica</summary></entry><entry><title type="html">Elon Musk y Jack Ma</title><link href="https://sebastiandres.github.io/blog/opini%C3%B3n/tecnolog%C3%ADa/medium/2019/09/16/medium-debate-Musk-Ma.html" rel="alternate" type="text/html" title="Elon Musk y Jack Ma" /><published>2019-09-16T00:00:00-05:00</published><updated>2019-09-16T00:00:00-05:00</updated><id>https://sebastiandres.github.io/blog/opini%C3%B3n/tecnolog%C3%ADa/medium/2019/09/16/medium-debate-Musk-Ma</id><content type="html" xml:base="https://sebastiandres.github.io/blog/opini%C3%B3n/tecnolog%C3%ADa/medium/2019/09/16/medium-debate-Musk-Ma.html">&lt;p&gt;En Agosto del 2019 Elon Musk y Jack Ma sostuvieron un panel intercambiando opuestas opiniones en el contexto del World Artificial Intelligence Conference. Los temas que los CEOs de Space X &amp;amp; Tesla y Alibaba&amp;amp;Aliexpress seleccionaron fueron los siguientes: Inteligencia Artificial, Marte, Trabajo y Educación. El panel dura cerca de 46 minutos y fue interesante porque Elon y Jack tienen opiniones bastante distintas y no lo disimularon.&lt;/p&gt;
 
 &lt;center&gt;
 &lt;iframe width=&quot;600&quot; height=&quot;400&quot; src=&quot;https://www.youtube.com/embed/f3lUEnMaiAU&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
@@ -521,13 +530,13 @@ Nota:
 Me parece que el primer punto es evidente y está fuera de debate. Las diferencias existen debido a las distintas configuraciones familiares, sociales y económicas, y con toda seguridad siempre existirán. Ese no es el punto en cuestión.
 Respecto al segundo punto, existe un webcomic del ilustrador Toby Morris que también habla sobre los privilegios y que lo ilustra de otra manera. El enlace original está en este link y encontré la versión traducida en este otro sitio. Coloco acá las imágenes para hacer más directa y lineal la lectura:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/blog/images/1_IpLw7imp_5g5Af5VIfhBlQ.gif&quot; alt=&quot;&quot; title=&quot;1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/images/privilegios/1_IpLw7imp_5g5Af5VIfhBlQ.gif&quot; alt=&quot;&quot; title=&quot;1&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/blog/images/2_I-Qin_2FUx5zHnw16L7WiQ.gif&quot; alt=&quot;&quot; title=&quot;2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/images/privilegios/2_I-Qin_2FUx5zHnw16L7WiQ.gif&quot; alt=&quot;&quot; title=&quot;2&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/blog/images/3_c_9UfU9Bf-kepBaJAnzYGw.gif&quot; alt=&quot;&quot; title=&quot;3&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/images/privilegios/3_c_9UfU9Bf-kepBaJAnzYGw.gif&quot; alt=&quot;&quot; title=&quot;3&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/blog/images/4_iazMOxw7tHO5FVZBYovWYw.gif&quot; alt=&quot;&quot; title=&quot;4&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/images/privilegios/4_iazMOxw7tHO5FVZBYovWYw.gif&quot; alt=&quot;&quot; title=&quot;4&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;On a Plate — https://marcianosmx.com/en-bandeja-de-plata-una-historia-sobre-los-privilegios/&lt;/p&gt;
 
