@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://sebastiandres.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sebastiandres.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-03-11T19:51:51-05:00</updated><id>https://sebastiandres.github.io/blog/feed.xml</id><title type="html">sebastiandres</title><entry><title type="html">Blog en github.io</title><link href="https://sebastiandres.github.io/blog/html/fastpages/2020/03/10/Redirect.html" rel="alternate" type="text/html" title="Blog en github.io" /><published>2020-03-10T00:00:00-05:00</published><updated>2020-03-10T00:00:00-05:00</updated><id>https://sebastiandres.github.io/blog/html/fastpages/2020/03/10/Redirect</id><content type="html" xml:base="https://sebastiandres.github.io/blog/html/fastpages/2020/03/10/Redirect.html">&lt;p&gt;Aún no termino de traducir los posts “originales” y ya estoy pensando en el próximo post. Es un buen signo de que el nuevo sistema es más fácil de usar.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://sebastiandres.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sebastiandres.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-03-12T19:39:59-05:00</updated><id>https://sebastiandres.github.io/blog/feed.xml</id><title type="html">sebastiandres</title><entry><title type="html">Blog en github.io</title><link href="https://sebastiandres.github.io/blog/html/fastpages/2020/03/10/Redirect.html" rel="alternate" type="text/html" title="Blog en github.io" /><published>2020-03-10T00:00:00-05:00</published><updated>2020-03-10T00:00:00-05:00</updated><id>https://sebastiandres.github.io/blog/html/fastpages/2020/03/10/Redirect</id><content type="html" xml:base="https://sebastiandres.github.io/blog/html/fastpages/2020/03/10/Redirect.html">&lt;p&gt;Aún no termino de traducir los posts “originales” y ya estoy pensando en el próximo post. Es un buen signo de que el nuevo sistema es más fácil de usar.&lt;/p&gt;
 
 &lt;p&gt;Al seguir las instrucciones para configurar fastpages, pide que el repositorio no sea “github_username.github.io”. En mi caso y después de algunas pruebas, me incliné por “blog”, por lo que el blog queda en &lt;a href=&quot;https://sebastiandres.github.io/blog/&quot;&gt;https://sebastiandres.github.io/blog/&lt;/a&gt;. Sin embargo, me pareció que rompe la expectativa tradicional, puesto que &lt;a href=&quot;https://sebastiandres.github.io/&quot;&gt;https://sebastiandres.github.io/&lt;/a&gt; arroja un error (página 404-no encontrada).&lt;/p&gt;
 
@@ -129,11 +129,12 @@ Job offers for data science ask for: Python or R, SQL, basic knowledge of statis
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;TLDR;&lt;/strong&gt; El crecimiento de python se debe a una tormenta perfecta de librerías, y el éxito de pandas a que puede leer csv (entre otras cosas).&lt;/li&gt;
-  &lt;li&gt;Pandas first version still at Pypi: https://pypi.org/project/pandas/0.1/ Wes is no longer working on pandas since 2013, don’t insist!
+  &lt;li&gt;Pandas first version still at Pypi: &lt;a href=&quot;https://pypi.org/project/pandas/0.1/&quot;&gt;https://pypi.org/project/pandas/0.1/&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Wes is no longer working on pandas since 2013, don’t insist!
 Python growth is due to several things, pandas being one of them. There was the need of data wrangling, and there was a “perfect storm” of packages. And packaging of libraries was improved.&lt;/li&gt;
   &lt;li&gt;The success of pandas, mostly due to being able to read csv.
 Python being readable makes everyone can contribute. The new pandas logo is an example of non cs contributions with huge impact
-See: “PyData NYC 2013: 10 Things I Hate About pandas”&lt;/li&gt;
+See: &lt;a href=&quot;https://www.slideshare.net/wesm/practical-medium-data-analytics-with-python&quot;&gt;“PyData NYC 2013: 10 Things I Hate About pandas”&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Pandas has taken responsability of too many things. It is more productive to have a common computational framework to . This is why
 Apache Arrow is “a common standard designed for speed, for data processing libraries”.  It should be CPU/GPU friendly, memory map huge datasets, and relocate data structures without serialization.&lt;/li&gt;
   &lt;li&gt;Reflexión personal: en 10 años parecerá natural que exista un estándar para dataframe data. ¿Se imaginan lo complejo e ineficiente que sería si cada lenguaje manejara un estándar distinto de chars, enteros y flotantes?&lt;/li&gt;
@@ -187,16 +188,16 @@ Apache Arrow is “a common standard designed for speed, for data processing lib
 Fernando desconectó un cable para prestarlo y dejó sin internet a toda Colombia por algunas horas.&lt;/li&gt;
   &lt;li&gt;La gente se sorprende de la comunidad de python: mucha colaboración, no hay envidias ni competencias, a diferencia de conferencias de otras áreas.&lt;/li&gt;
   &lt;li&gt;IPython partió como un hack de una tarde, y se juntó con otros 2 proyectos que tenía funcionalidades similares (Interactive Python, Lazy Python).&lt;/li&gt;
-  &lt;li&gt;Mail original anunciando IPython: link&lt;/li&gt;
+  &lt;li&gt;Mail original anunciando IPython: &lt;a href=&quot;https://mail.python.org/pipermail/python-list/2001-December/093408.html&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Fue crucial encontrar apoyo y colaboradores en el camino: Eric Jones (Enthought), Scipy, John Hunter (matplotlib), Tarvis Oliphant (numpy — scipy), Wes McKinney (pandas) y muchos más, además del apoyo de la comunidad de python (Guido et al.).
 La comunidad de python científico persigue los ideales de la ciencia: (1) la búsqueda de conocimiento verificable (2) reproducibilidad (3) esfuerzo colectivo en beneficio de la humanidad.&lt;/li&gt;
   &lt;li&gt;Toda contribución tiene valor, y las necesitamos a todas: diversidad geográfica, cultural, lingüística, etc!&lt;/li&gt;
   &lt;li&gt;¿Impacto generado? Agujeros negros! LIGO 2015 (Nobel 17), primera imagen de un agujero negro 2019 (Nobel ?).&lt;/li&gt;
   &lt;li&gt;Cool stuff: Pangeo — volúmenes ridículamente grandes de datos geológicos, ICESat (icepyx), simpeg, GeoSci.xyz, JupyterBook, cursos de ciencias de datos en Berkeley +2000 alumnos simultáneos,&lt;/li&gt;
-  &lt;li&gt;Hay un libro sobre como usar Jupyter como herramienta pedagógica: libro.&lt;/li&gt;
+  &lt;li&gt;Hay un libro sobre como usar Jupyter como herramienta pedagógica: &lt;a href=&quot;https://jupyter4edu.github.io/jupyter-edu-book/&quot;&gt;libro&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;hr /&gt;
+&lt;h2 id=&quot;s&quot;&gt;s&lt;/h2&gt;
 
 &lt;p&gt;Inicialmente publicado en &lt;a href=&quot;https://medium.com/@sebastiandres/keynotes-de-la-pycon-2020-colombia-807aaa22fa37&quot;&gt;medium&lt;/a&gt; el 11-02-2020.&lt;/p&gt;
 
