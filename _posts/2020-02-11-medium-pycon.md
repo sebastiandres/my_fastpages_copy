@@ -54,11 +54,12 @@ Python for Data Analysis: Past, Present, and Future: [slides original](https://w
 
 
 * **TLDR;** El crecimiento de python se debe a una tormenta perfecta de librerías, y el éxito de pandas a que puede leer csv (entre otras cosas).
-* Pandas first version still at Pypi: https://pypi.org/project/pandas/0.1/ Wes is no longer working on pandas since 2013, don’t insist!
+* Pandas first version still at Pypi: [https://pypi.org/project/pandas/0.1/](https://pypi.org/project/pandas/0.1/).
+* Wes is no longer working on pandas since 2013, don’t insist!
 Python growth is due to several things, pandas being one of them. There was the need of data wrangling, and there was a “perfect storm” of packages. And packaging of libraries was improved.
 * The success of pandas, mostly due to being able to read csv.
 Python being readable makes everyone can contribute. The new pandas logo is an example of non cs contributions with huge impact
-See: “PyData NYC 2013: 10 Things I Hate About pandas”
+See: [“PyData NYC 2013: 10 Things I Hate About pandas”](https://www.slideshare.net/wesm/practical-medium-data-analytics-with-python)
 * Pandas has taken responsability of too many things. It is more productive to have a common computational framework to . This is why
 Apache Arrow is “a common standard designed for speed, for data processing libraries”.  It should be CPU/GPU friendly, memory map huge datasets, and relocate data structures without serialization.
 * Reflexión personal: en 10 años parecerá natural que exista un estándar para dataframe data. ¿Se imaginan lo complejo e ineficiente que sería si cada lenguaje manejara un estándar distinto de chars, enteros y flotantes?
@@ -106,15 +107,15 @@ Jupyter, física y comunidades abiertas: [slides original](https://docs.google.c
 Fernando desconectó un cable para prestarlo y dejó sin internet a toda Colombia por algunas horas.
 * La gente se sorprende de la comunidad de python: mucha colaboración, no hay envidias ni competencias, a diferencia de conferencias de otras áreas.
 * IPython partió como un hack de una tarde, y se juntó con otros 2 proyectos que tenía funcionalidades similares (Interactive Python, Lazy Python).
-* Mail original anunciando IPython: link
+* Mail original anunciando IPython: [link](https://mail.python.org/pipermail/python-list/2001-December/093408.html)
 * Fue crucial encontrar apoyo y colaboradores en el camino: Eric Jones (Enthought), Scipy, John Hunter (matplotlib), Tarvis Oliphant (numpy — scipy), Wes McKinney (pandas) y muchos más, además del apoyo de la comunidad de python (Guido et al.).
 La comunidad de python científico persigue los ideales de la ciencia: (1) la búsqueda de conocimiento verificable (2) reproducibilidad (3) esfuerzo colectivo en beneficio de la humanidad.
 * Toda contribución tiene valor, y las necesitamos a todas: diversidad geográfica, cultural, lingüística, etc!
 * ¿Impacto generado? Agujeros negros! LIGO 2015 (Nobel 17), primera imagen de un agujero negro 2019 (Nobel ?).
 * Cool stuff: Pangeo — volúmenes ridículamente grandes de datos geológicos, ICESat (icepyx), simpeg, GeoSci.xyz, JupyterBook, cursos de ciencias de datos en Berkeley +2000 alumnos simultáneos,
-* Hay un libro sobre como usar Jupyter como herramienta pedagógica: libro.
+* Hay un libro sobre como usar Jupyter como herramienta pedagógica: [libro](https://jupyter4edu.github.io/jupyter-edu-book/).
 
-
+s
 ---
 
 Inicialmente publicado en [medium](https://medium.com/@sebastiandres/keynotes-de-la-pycon-2020-colombia-807aaa22fa37) el 11-02-2020.
