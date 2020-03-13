@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" type="image/x-icon" href="/blog/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>sebastiandres</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="sebastiandres" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://sebastiandres.github.io/blog/2020/03/12/2020-02-20-Test-2-Post-mediante-jupyter-notebook.html" />
+<meta property="og:url" content="https://sebastiandres.github.io/blog/2020/03/12/2020-02-20-Test-2-Post-mediante-jupyter-notebook.html" />
+<meta property="og:site_name" content="sebastiandres" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-03-12T20:56:38-05:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"sebastiandres","dateModified":"2020-03-12T20:56:38-05:00","datePublished":"2020-03-12T20:56:38-05:00","url":"https://sebastiandres.github.io/blog/2020/03/12/2020-02-20-Test-2-Post-mediante-jupyter-notebook.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastiandres.github.io/blog/2020/03/12/2020-02-20-Test-2-Post-mediante-jupyter-notebook.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/blog/assets/main.css">
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://sebastiandres.github.io/blog/feed.xml" title="sebastiandres" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+          ]}
+        );
+      });
+    </script>
+  
+
+  <script>
+  function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+  }
+  window.onload = wrap_img;
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function(){
+      // add link icon to anchor tags
+      var elem = document.querySelectorAll(".anchor-link")
+      elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+      // remove paragraph tags in rendered toc (happens from notebooks)
+      var toctags = document.querySelectorAll(".toc-entry")
+      toctags.forEach(e => (e.firstElementChild.innerText = e.firstElementChild.innerText.replace('¶', '')))
+    });
+  </script>
+</head><body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">sebastiandres</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/about/">Autor</a><a class="page-link" href="/blog/about/">Ahora</a><a class="page-link" href="/blog/search/">Search</a><a class="page-link" href="/blog/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline"></h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-03-12T20:56:38-05:00" itemprop="datePublished">
+        Mar 12, 2020
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      4 min read
+    
+</span></p>
+
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2020-02-20-Test-2-Post-mediante-jupyter-notebook.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Acerca-de">Acerca de<a class="anchor-link" href="#Acerca-de"> </a></h1><p>Este notebook es una traducción del tutorial de <a href="https://github.com/fastai/fastpages">fastpages</a> con jupyter notebooks.</p>
+<p>Con <code>fastpages</code> podras guardar tus jupyter notebooks en una carpeta llamada <code>_notebooks</code>, ¡y se convertirán automáticamente en posts de Jekyll! &lt;- Explicar acá que es Jekyll.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Front-Matter">Front Matter<a class="anchor-link" href="#Front-Matter"> </a></h2><p>Front Matter is a markdown cell at the beginning of your notebook that allows you to inject metadata into your notebook. For example:</p>
+<ul>
+<li>Setting <code>toc: true</code> will automatically generate a table of contents</li>
+<li>Setting <code>badges: true</code> will automatically include GitHub and Google Colab links to your notebook.</li>
+<li>Setting <code>comments: true</code> will enable commenting on your blog post, powered by <a href="https://github.com/utterance/utterances">utterances</a>.</li>
+</ul>
+<p>More details and options for front matter can be viewed on the <a href="https://github.com/fastai/fastpages#front-matter-related-options">front matter section</a> of the README.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Markdown-Shortcuts">Markdown Shortcuts<a class="anchor-link" href="#Markdown-Shortcuts"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>put a <code>#hide</code> flag at the top of any cell you want to completely hide in the docs</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>put a <code>#collapse</code> flag at the top of any cell if you want to hide that cell by default, but stil have it be visible to the reader:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">altair</span> <span class="k">as</span> <span class="nn">alt</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+</p>
+    </details>
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>put a <code>#collapse_show</code> flag at the top of any cell if you want to <strong>show</strong> that cell by default, but give the reader the option to hide it:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description" open="">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse_show</span>
+<span class="n">cars</span> <span class="o">=</span> <span class="s1">&#39;https://vega.github.io/vega-datasets/data/cars.json&#39;</span>
+<span class="n">movies</span> <span class="o">=</span> <span class="s1">&#39;https://vega.github.io/vega-datasets/data/movies.json&#39;</span>
+<span class="n">sp500</span> <span class="o">=</span> <span class="s1">&#39;https://vega.github.io/vega-datasets/data/sp500.csv&#39;</span>
+<span class="n">stocks</span> <span class="o">=</span> <span class="s1">&#39;https://vega.github.io/vega-datasets/data/stocks.csv&#39;</span>
+<span class="n">flights</span> <span class="o">=</span> <span class="s1">&#39;https://vega.github.io/vega-datasets/data/flights-5k.json&#39;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+</p>
+    </details>
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Regular-Charts-with-Matplotlib">Regular Charts with Matplotlib<a class="anchor-link" href="#Regular-Charts-with-Matplotlib"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Don't forget to use ´%matplotlib inline´ and/or ´%matplotlib widget´ to allow for interactiveness in jupyter notebooks.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="s2">&quot;-or&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mf">2.0</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Some x label [x units]&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Some y label [y units]&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;Some Good Title&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Interactive-Charts-With-Altair">Interactive Charts With Altair<a class="anchor-link" href="#Interactive-Charts-With-Altair"> </a></h2><p>Charts made with Altair remain interactive.  Example charts taken from <a href="https://github.com/uwdata/visualization-curriculum">this repo</a>, specifically <a href="https://github.com/uwdata/visualization-curriculum/blob/master/altair_interaction.ipynb">this notebook</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Example-1:-DropDown">Example 1: DropDown<a class="anchor-link" href="#Example-1:-DropDown"> </a></h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># single-value selection over [Major_Genre, MPAA_Rating] pairs</span>
+<span class="c1"># use specific hard-wired values as the initial selected values</span>
+<span class="n">selection</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection_single</span><span class="p">(</span>
+    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Select&#39;</span><span class="p">,</span>
+    <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Major_Genre&#39;</span><span class="p">,</span> <span class="s1">&#39;MPAA_Rating&#39;</span><span class="p">],</span>
+    <span class="n">init</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Major_Genre&#39;</span><span class="p">:</span> <span class="s1">&#39;Drama&#39;</span><span class="p">,</span> <span class="s1">&#39;MPAA_Rating&#39;</span><span class="p">:</span> <span class="s1">&#39;R&#39;</span><span class="p">},</span>
+    <span class="n">bind</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Major_Genre&#39;</span><span class="p">:</span> <span class="n">alt</span><span class="o">.</span><span class="n">binding_select</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="n">genres</span><span class="p">),</span> <span class="s1">&#39;MPAA_Rating&#39;</span><span class="p">:</span> <span class="n">alt</span><span class="o">.</span><span class="n">binding_radio</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="n">mpaa</span><span class="p">)}</span>
+<span class="p">)</span>
+  
+<span class="c1"># scatter plot, modify opacity based on selection</span>
+<span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">movies</span><span class="p">)</span><span class="o">.</span><span class="n">mark_circle</span><span class="p">()</span><span class="o">.</span><span class="n">add_selection</span><span class="p">(</span>
+    <span class="n">selection</span>
+<span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Rotten_Tomatoes_Rating:Q&#39;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;IMDB_Rating:Q&#39;</span><span class="p">,</span>
+    <span class="n">tooltip</span><span class="o">=</span><span class="s1">&#39;Title:N&#39;</span><span class="p">,</span>
+    <span class="n">opacity</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">condition</span><span class="p">(</span><span class="n">selection</span><span class="p">,</span> <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mf">0.75</span><span class="p">),</span> <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mf">0.05</span><span class="p">))</span>
+<span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;VegaLite 3 object&gt;
+
+If you see this message, it means the renderer has not been properly enabled
+for the frontend that you are using. For more information, see
+https://altair-viz.github.io/user_guide/troubleshooting.html
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Example-2:-Tooltips">Example 2: Tooltips<a class="anchor-link" href="#Example-2:-Tooltips"> </a></h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">movies</span><span class="p">)</span><span class="o">.</span><span class="n">mark_circle</span><span class="p">()</span><span class="o">.</span><span class="n">add_selection</span><span class="p">(</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">selection_interval</span><span class="p">(</span><span class="n">bind</span><span class="o">=</span><span class="s1">&#39;scales&#39;</span><span class="p">,</span> <span class="n">encodings</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">])</span>
+<span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Rotten_Tomatoes_Rating:Q&#39;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;IMDB_Rating:Q&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Axis</span><span class="p">(</span><span class="n">minExtent</span><span class="o">=</span><span class="mi">30</span><span class="p">)),</span> <span class="c1"># use min extent to stabilize axis title placement</span>
+    <span class="n">tooltip</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Title:N&#39;</span><span class="p">,</span> <span class="s1">&#39;Release_Date:N&#39;</span><span class="p">,</span> <span class="s1">&#39;IMDB_Rating:Q&#39;</span><span class="p">,</span> <span class="s1">&#39;Rotten_Tomatoes_Rating:Q&#39;</span><span class="p">]</span>
+<span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span>
+    <span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
+    <span class="n">height</span><span class="o">=</span><span class="mi">400</span>
+<span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;VegaLite 3 object&gt;
+
+If you see this message, it means the renderer has not been properly enabled
+for the frontend that you are using. For more information, see
+https://altair-viz.github.io/user_guide/troubleshooting.html
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Example-3:-More-Tooltips">Example 3: More Tooltips<a class="anchor-link" href="#Example-3:-More-Tooltips"> </a></h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># select a point for which to provide details-on-demand</span>
+<span class="n">label</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection_single</span><span class="p">(</span>
+    <span class="n">encodings</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="c1"># limit selection to x-axis value</span>
+    <span class="n">on</span><span class="o">=</span><span class="s1">&#39;mouseover&#39;</span><span class="p">,</span>  <span class="c1"># select on mouseover events</span>
+    <span class="n">nearest</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>    <span class="c1"># select data point nearest the cursor</span>
+    <span class="n">empty</span><span class="o">=</span><span class="s1">&#39;none&#39;</span>     <span class="c1"># empty selection includes no data points</span>
+<span class="p">)</span>
+
+<span class="c1"># define our base line chart of stock prices</span>
+<span class="n">base</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">()</span><span class="o">.</span><span class="n">mark_line</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;date:T&#39;</span><span class="p">),</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;price:Q&#39;</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Scale</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="s1">&#39;log&#39;</span><span class="p">)),</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s1">&#39;symbol:N&#39;</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="n">alt</span><span class="o">.</span><span class="n">layer</span><span class="p">(</span>
+    <span class="n">base</span><span class="p">,</span> <span class="c1"># base line chart</span>
+    
+    <span class="c1"># add a rule mark to serve as a guide line</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">()</span><span class="o">.</span><span class="n">mark_rule</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;#aaa&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+        <span class="n">x</span><span class="o">=</span><span class="s1">&#39;date:T&#39;</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">transform_filter</span><span class="p">(</span><span class="n">label</span><span class="p">),</span>
+    
+    <span class="c1"># add circle marks for selected time points, hide unselected points</span>
+    <span class="n">base</span><span class="o">.</span><span class="n">mark_circle</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+        <span class="n">opacity</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">condition</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">add_selection</span><span class="p">(</span><span class="n">label</span><span class="p">),</span>
+
+    <span class="c1"># add white stroked text to provide a legible background for labels</span>
+    <span class="n">base</span><span class="o">.</span><span class="n">mark_text</span><span class="p">(</span><span class="n">align</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">dx</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">dy</span><span class="o">=-</span><span class="mi">5</span><span class="p">,</span> <span class="n">stroke</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">strokeWidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+        <span class="n">text</span><span class="o">=</span><span class="s1">&#39;price:Q&#39;</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">transform_filter</span><span class="p">(</span><span class="n">label</span><span class="p">),</span>
+
+    <span class="c1"># add text labels for stock prices</span>
+    <span class="n">base</span><span class="o">.</span><span class="n">mark_text</span><span class="p">(</span><span class="n">align</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">dx</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">dy</span><span class="o">=-</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+        <span class="n">text</span><span class="o">=</span><span class="s1">&#39;price:Q&#39;</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">transform_filter</span><span class="p">(</span><span class="n">label</span><span class="p">),</span>
+    
+    <span class="n">data</span><span class="o">=</span><span class="n">stocks</span>
+<span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span>
+    <span class="n">width</span><span class="o">=</span><span class="mi">700</span><span class="p">,</span>
+    <span class="n">height</span><span class="o">=</span><span class="mi">400</span>
+<span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;VegaLite 3 object&gt;
+
+If you see this message, it means the renderer has not been properly enabled
+for the frontend that you are using. For more information, see
+https://altair-viz.github.io/user_guide/troubleshooting.html
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Data-Tables">Data Tables<a class="anchor-link" href="#Data-Tables"> </a></h2><p>You can display tables per the usual way in your blog:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">movies</span> <span class="o">=</span> <span class="s1">&#39;https://vega.github.io/vega-datasets/data/movies.json&#39;</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="n">movies</span><span class="p">)</span>
+<span class="c1"># display table with pandas</span>
+<span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Title&#39;</span><span class="p">,</span> <span class="s1">&#39;Worldwide_Gross&#39;</span><span class="p">,</span> 
+    <span class="s1">&#39;Production_Budget&#39;</span><span class="p">,</span> <span class="s1">&#39;IMDB_Rating&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Title</th>
+      <th>Worldwide_Gross</th>
+      <th>Production_Budget</th>
+      <th>IMDB_Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>The Land Girls</td>
+      <td>146083.0</td>
+      <td>8000000.0</td>
+      <td>6.1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>First Love, Last Rites</td>
+      <td>10876.0</td>
+      <td>300000.0</td>
+      <td>6.9</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>I Married a Strange Person</td>
+      <td>203134.0</td>
+      <td>250000.0</td>
+      <td>6.8</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Let's Talk About Sex</td>
+      <td>373615.0</td>
+      <td>300000.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Slam</td>
+      <td>1087521.0</td>
+      <td>1000000.0</td>
+      <td>3.4</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Images">Images<a class="anchor-link" href="#Images"> </a></h2><h3 id="Local-Images">Local Images<a class="anchor-link" href="#Local-Images"> </a></h3><p>You can reference local images and they will be copied and rendered on your blog automatically.  You can include these with the following markdown syntax:</p>
+<p><code>![](my_icons/fastai_logo.png)</code></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="/blog/images/copied_from_nb/my_icons/fastai_logo.png" alt="" /></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Remote-Images">Remote Images<a class="anchor-link" href="#Remote-Images"> </a></h3><p>Remote images can be included with the following markdown syntax:</p>
+<p><code>![](https://image.flaticon.com/icons/svg/36/36686.svg)</code></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="https://image.flaticon.com/icons/svg/36/36686.svg" alt="" /></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Animated-Gifs">Animated Gifs<a class="anchor-link" href="#Animated-Gifs"> </a></h3><p>Animated Gifs work, too!</p>
+<p><code>![](https://upload.wikimedia.org/wikipedia/commons/7/71/ChessPawnSpecialMoves.gif)</code></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/7/71/ChessPawnSpecialMoves.gif" alt="" /></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Captions">Captions<a class="anchor-link" href="#Captions"> </a></h3><p>You can include captions with markdown images like this:</p>
+
+<pre><code>![](https://www.fast.ai/images/fastai_paper/show_batch.png "Credit: https://www.fast.ai/2020/02/13/fastai-A-Layered-API-for-Deep-Learning/")</code></pre>
+<p><img src="https://www.fast.ai/images/fastai_paper/show_batch.png" alt="" title="Credit: https://www.fast.ai/2020/02/13/fastai-A-Layered-API-for-Deep-Learning/" /></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Other-Elements">Other Elements<a class="anchor-link" href="#Other-Elements"> </a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Tweetcards">Tweetcards<a class="anchor-link" href="#Tweetcards"> </a></h2><p>Typing <code>&gt; twitter: https://twitter.com/jakevdp/status/1204765621767901185?s=20</code> will render this:
+
+<center>
+<div class="jekyll-twitter-plugin"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Altair 4.0 is released! <a href="https://t.co/PCyrIOTcvv">https://t.co/PCyrIOTcvv</a><br />Try it with:<br /><br />  pip install -U altair<br /><br />The full list of changes is at <a href="https://t.co/roXmzcsT58">https://t.co/roXmzcsT58</a> ...read on for some highlights. <a href="https://t.co/vWJ0ZveKbZ">pic.twitter.com/vWJ0ZveKbZ</a></p>&mdash; Jake VanderPlas (@jakevdp) <a href="https://twitter.com/jakevdp/status/1204765621767901185?ref_src=twsrc%5Etfw">December 11, 2019</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+</center></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Youtube-Videos">Youtube Videos<a class="anchor-link" href="#Youtube-Videos"> </a></h2><p>Typing <code>&gt; youtube: https://youtu.be/XfoYk_Z5AkI</code> will render this:
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XfoYk_Z5AkI" frameborder="0" allowfullscreen=""></iframe>
+</center></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Boxes-/-Callouts">Boxes / Callouts<a class="anchor-link" href="#Boxes-/-Callouts"> </a></h2><p>Typing <code>&gt; Warning: There will be no second warning!</code> will render this:
+<div class="flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z" /></svg>
+    <strong>Warning: </strong>There will be no second warning!
+</div></p>
+<p>Typing <code>&gt; Important: Pay attention! It's important.</code> will render this:
+<div class="flash flash-warn">
+    <svg class="octicon octicon-zap" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 7H6l3-7-9 9h4l-3 7 9-9z" /></svg>
+    <strong>Important: </strong>Pay attention! It&#8217;s important.
+</div></p>
+<p>Typing <code>&gt; Tip: This is my tip.</code> will render this:
+<div class="flash flash-success">
+    <svg class="octicon octicon-checklist" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 8.5l-6 6-3-3L8.5 10l1.5 1.5L14.5 7 16 8.5zM5.7 12.2l.8.8H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h7c.55 0 1 .45 1 1v6.5l-.8-.8c-.39-.39-1.03-.39-1.42 0L5.7 10.8a.996.996 0 000 1.41v-.01zM4 4h5V3H4v1zm0 2h5V5H4v1zm0 2h3V7H4v1zM3 9H2v1h1V9zm0-2H2v1h1V7zm0-2H2v1h1V5zm0-2H2v1h1V3z" /></svg>
+    <strong>Tip: </strong>This is my tip.
+</div></p>
+<p>Typing <code>&gt; Note: Take note of this.</code> will render this:
+<div class="flash">
+    <svg class="octicon octicon-info" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 01-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 01-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z" /></svg>
+    <strong>Note: </strong>Take note of this.
+</div></p>
+<p>Typing <code>&gt; Note: A doc link to [an example website: fast.ai](https://www.fast.ai/) should also work fine.</code> will render in the docs:
+<div class="flash">
+    <svg class="octicon octicon-info octicon octicon-info" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 01-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 01-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z" /></svg>
+    <strong>Note: </strong>A doc link to <a href="https://www.fast.ai/">an example website: fast.ai</a> should also work fine.
+</div></p>
+
+</div>
+</div>
+</div>
+</div>
+
+  </div><a class="u-url" href="/blog/2020/03/12/2020-02-20-Test-2-Post-mediante-jupyter-notebook.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">sebastiandres</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">sebastiandres</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list">
+  <li><a href="https://github.com/sebastiandres"><svg class="social svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg> <span class="username">sebastiandres</span></a></li></ul></div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

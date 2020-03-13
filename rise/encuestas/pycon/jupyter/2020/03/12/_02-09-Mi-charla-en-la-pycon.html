@@ -1,0 +1,1842 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" type="image/x-icon" href="/blog/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Mi Charla en la PyCon Colombia 2020 | sebastiandres</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Mi Charla en la PyCon Colombia 2020" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Slides comentadas." />
+<meta property="og:description" content="Slides comentadas." />
+<link rel="canonical" href="https://sebastiandres.github.io/blog/rise/encuestas/pycon/jupyter/2020/03/12/_02-09-Mi-charla-en-la-pycon.html" />
+<meta property="og:url" content="https://sebastiandres.github.io/blog/rise/encuestas/pycon/jupyter/2020/03/12/_02-09-Mi-charla-en-la-pycon.html" />
+<meta property="og:site_name" content="sebastiandres" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-03-12T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"Slides comentadas.","@type":"BlogPosting","headline":"Mi Charla en la PyCon Colombia 2020","dateModified":"2020-03-12T00:00:00-05:00","datePublished":"2020-03-12T00:00:00-05:00","url":"https://sebastiandres.github.io/blog/rise/encuestas/pycon/jupyter/2020/03/12/_02-09-Mi-charla-en-la-pycon.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastiandres.github.io/blog/rise/encuestas/pycon/jupyter/2020/03/12/_02-09-Mi-charla-en-la-pycon.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/blog/assets/main.css">
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://sebastiandres.github.io/blog/feed.xml" title="sebastiandres" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+          ]}
+        );
+      });
+    </script>
+  
+
+  <script>
+  function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+  }
+  window.onload = wrap_img;
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function(){
+      // add link icon to anchor tags
+      var elem = document.querySelectorAll(".anchor-link")
+      elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+      // remove paragraph tags in rendered toc (happens from notebooks)
+      var toctags = document.querySelectorAll(".toc-entry")
+      toctags.forEach(e => (e.firstElementChild.innerText = e.firstElementChild.innerText.replace('¶', '')))
+    });
+  </script>
+</head><body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">sebastiandres</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/about/">Autor</a><a class="page-link" href="/blog/about/">Ahora</a><a class="page-link" href="/blog/search/">Search</a><a class="page-link" href="/blog/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Mi Charla en la PyCon Colombia 2020</h1><p class="page-description">Slides comentadas.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-03-12T00:00:00-05:00" itemprop="datePublished">
+        Mar 12, 2020
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      9 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/blog/categories/#rise">rise</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#encuestas">encuestas</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#pycon">pycon</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#jupyter">jupyter</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+<a href="https://github.com/sebastiandres/blog/tree/master/_notebooks/2020_02-09-Mi-charla-en-la-pycon.ipynb" role="button">
+    <img class="notebook-badge-image" src="https://img.shields.io/static/v1?label=&message=View%20On%20GitHub&color=586069&logo=github&labelColor=2f363d">
+</a>
+</div><div class="px-2">
+    <a href="https://colab.research.google.com/github/sebastiandres/blog/blob/master/_notebooks/2020_02-09-Mi-charla-en-la-pycon.ipynb">
+        <img class="notebook-badge-image" src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2020_02-09-Mi-charla-en-la-pycon.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description" open="">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse_show</span>
+<span class="c1"># Set the thema and transitions for the slides</span>
+<span class="c1">#!/usr/bin/env python3</span>
+<span class="kn">from</span> <span class="nn">traitlets.config.manager</span> <span class="kn">import</span> <span class="n">BaseJSONConfigManager</span>
+<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<span class="n">path</span> <span class="o">=</span> <span class="n">Path</span><span class="o">.</span><span class="n">home</span><span class="p">()</span> <span class="o">/</span> <span class="s2">&quot;.jupyter&quot;</span> <span class="o">/</span> <span class="s2">&quot;nbconfig&quot;</span>
+<span class="n">cm</span> <span class="o">=</span> <span class="n">BaseJSONConfigManager</span><span class="p">(</span><span class="n">config_dir</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">path</span><span class="p">))</span>
+<span class="n">cm</span><span class="o">.</span><span class="n">update</span><span class="p">(</span>
+    <span class="s2">&quot;rise&quot;</span><span class="p">,</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;theme&quot;</span><span class="p">:</span> <span class="s2">&quot;sky&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;transition&quot;</span><span class="p">:</span> <span class="s2">&quot;none&quot;</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+</p>
+    </details>
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{&#39;theme&#39;: &#39;sky&#39;, &#39;transition&#39;: &#39;none&#39;, &#39;start_slideshow_at&#39;: &#39;selected&#39;}</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Presentaciones-y-encuestas-interactivas-con-jupyter-notebooks-y-RISE">Presentaciones y encuestas interactivas con jupyter notebooks y RISE<a class="anchor-link" href="#Presentaciones-y-encuestas-interactivas-con-jupyter-notebooks-y-RISE"> </a></h2><h3 id="pycon-Colombia-2020">pycon Colombia 2020<a class="anchor-link" href="#pycon-Colombia-2020"> </a></h3><h3 id="Sebastian-Flores">Sebastian Flores<a class="anchor-link" href="#Sebastian-Flores"> </a></h3><h4 id="07-Febrero-2020">07 Febrero 2020<a class="anchor-link" href="#07-Febrero-2020"> </a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Observaciones:</strong></p>
+<ul>
+<li>sebastiandres en twitter y github.</li>
+<li>Presentación en <a href="github.com/sebastiandres/charlas">github.com/sebastiandres/charlas</a></li>
+<li>Opiniones y críticas a título personal.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="&#160;Introducci&#243;n">&#160;Introducci&#243;n<a class="anchor-link" href="#&#160;Introducci&#243;n"> </a></h5><p>¿Porqué esta presentación?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="/blog/images/copied_from_nb/pycon/intro.png" alt="" /></p>
+<p>¿Se pueden hacer encuestas interactivas en presentaciones con jupyter notebooks?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Agenda">Agenda<a class="anchor-link" href="#Agenda"> </a></h5><ol>
+<li>Sobre hacer presentaciones con RISE.</li>
+<li>Solución 1: Quick &amp; dirty.</li>
+<li>Solución 2: ¡Pero quiero los datos!</li>
+<li>Solución 3: No confío en nadie.</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="0.1-Sobre-hacer-presentaciones-con-jupyter-y-RISE">0.1 Sobre hacer presentaciones con jupyter y RISE<a class="anchor-link" href="#0.1-Sobre-hacer-presentaciones-con-jupyter-y-RISE"> </a></h5><p>¿Consejos sobre hacer presentaciones en general?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Contenido pensado en tu audiencia. </li>
+<li>Ensayar, ensayar, ensayar.</li>
+<li>Incrementar el desafío.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="0.2-Sobre-hacer-presentaciones-con-jupyter-y-RISE">0.2 Sobre hacer presentaciones con jupyter y RISE<a class="anchor-link" href="#0.2-Sobre-hacer-presentaciones-con-jupyter-y-RISE"> </a></h5><p>Si forma parte importante de tu día a día, investiga y aprende a hacer mejores presentaciones.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Libro que considero muy bueno: Confessions of a public speaker - Scott Berkum.</p>
+<p><img src="/blog/images/copied_from_nb/pycon/libro_berkum.png" alt="" /></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="0.3-Sobre-hacer-presentaciones-con-jupyter-y-RISE">0.3 Sobre hacer presentaciones con jupyter y RISE<a class="anchor-link" href="#0.3-Sobre-hacer-presentaciones-con-jupyter-y-RISE"> </a></h5><p>¿jupyter notebook? ¿RISE?</p>
+<p><img src="/blog/images/copied_from_nb/pycon/stack.png" alt="" /></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="0.3-Sobre-hacer-presentaciones-con-jupyter-y-RISE">0.3 Sobre hacer presentaciones con jupyter y RISE<a class="anchor-link" href="#0.3-Sobre-hacer-presentaciones-con-jupyter-y-RISE"> </a></h5><p>¿Qué es la extensión RISE?</p>
+<p>Una celda de jupyter notebook se puede clasificar (adicionalmente al code/markdown) como:</p>
+<ul>
+<li><em>Slide</em>: Diapositiva normal.</li>
+<li><em>Fragment</em>: Fragmento de diapositiva.</li>
+<li><em>Sub-slide</em>: Opcional.</li>
+<li><em>Skip</em>: No mostrar.</li>
+<li><em>Notes</em>: Notas.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Toda la info en <a href="https://rise.readthedocs.io/">https://rise.readthedocs.io/</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="0.3-Sobre-hacer-presentaciones-con-jupyter-y-RISE">0.3 Sobre hacer presentaciones con jupyter y RISE<a class="anchor-link" href="#0.3-Sobre-hacer-presentaciones-con-jupyter-y-RISE"> </a></h5><p>¿Qué es la extensión RISE?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="/blog/images/copied_from_nb/pycon/RISE.png" alt="" /></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="0.4-Sobre-hacer-presentaciones-con-jupyter-y-RISE">0.4 Sobre hacer presentaciones con jupyter y RISE<a class="anchor-link" href="#0.4-Sobre-hacer-presentaciones-con-jupyter-y-RISE"> </a></h5><p>Ok, pero... ¿porqué? ¿Porqué? ¿PORQUÉ?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Tener una presentación autocontenida: los ejemplos (código) queda en jupyter notebook.</li>
+<li>Corregir directamente cuando sea necesario.</li>
+<li>Hacer participar a la audiencia.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="0.4-Sobre-hacer-presentaciones-con-jupyter-y-RISE">0.4 Sobre hacer presentaciones con jupyter y RISE<a class="anchor-link" href="#0.4-Sobre-hacer-presentaciones-con-jupyter-y-RISE"> </a></h5><p>Sí, incluso ejecutar código en python</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">200</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">200</span>
+<span class="n">x</span> <span class="ow">is</span> <span class="n">y</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>True</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">300</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">300</span>
+<span class="n">a</span> <span class="ow">is</span> <span class="n">b</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>False</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">cheeseburger</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">[</span><span class="s2">&quot;bread&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="s2">&quot;meat&quot;</span><span class="p">,</span> <span class="s2">&quot;cheese&quot;</span><span class="p">]</span><span class="o">*</span><span class="n">n</span> <span class="o">+</span> <span class="p">[</span><span class="s2">&quot;bread&quot;</span><span class="p">]</span>
+
+<span class="n">cheeseburger</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;bread&#39;, &#39;meat&#39;, &#39;cheese&#39;, &#39;meat&#39;, &#39;cheese&#39;, &#39;meat&#39;, &#39;cheese&#39;, &#39;bread&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="0.5-Sobre-hacer-presentaciones-con-jupyter-y-RISE">0.5 Sobre hacer presentaciones con jupyter y RISE<a class="anchor-link" href="#0.5-Sobre-hacer-presentaciones-con-jupyter-y-RISE"> </a></h5><p>¿Que he aprendido?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Usa "Ctrl +" y "Ctrl -" para controlar aspecto.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Entrega parte del control de contenido al público. Usa un teclado+mouse inalámbrico.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Plantea desafíos de código incompleto pero entrega propuestas de solución.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><code>git</code> es tu amigo.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Improvisa. Nunca será como planificaste.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="0.6-Descripci&#243;n-del-Problema">0.6 Descripci&#243;n del Problema<a class="anchor-link" href="#0.6-Descripci&#243;n-del-Problema"> </a></h5>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>¿Qué queremos?</strong></p>
+<p>Realizar encuesta interactiva sin salir del modo presentación (en RISE).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>¿Porqué?</strong></p>
+<p>Hacer encuestas para obtener retroalimentación de la audiencia cuando importa, sin cambiar pantalla o sistema.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="1.7-Descripci&#243;n-del-Problema">1.7 Descripci&#243;n del Problema<a class="anchor-link" href="#1.7-Descripci&#243;n-del-Problema"> </a></h5>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>¿Se puede?</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Sí, y de varias maneras distintas.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>¿Cómo?</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>IFrames.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="0.9-Descripci&#243;n-del-Problema">0.9 Descripci&#243;n del Problema<a class="anchor-link" href="#0.9-Descripci&#243;n-del-Problema"> </a></h5><p>Nuestro héroe se llama IFrame.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">IFrame</span>
+<span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;https://es.wikipedia.org/wiki/Iframe&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">400</span><span class="p">)</span> <span class="c1">#https://es.wikipedia.org/wiki/Iframe</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+        <iframe width="800" height="400" src="https://es.wikipedia.org/wiki/Iframe" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Otros:</p>
+<ul>
+<li><a href="https://www.pycon.co/">https://www.pycon.co/</a></li>
+<li><a href="https://rise.readthedocs.io/">https://rise.readthedocs.io/</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="0.10-Descripci&#243;n-del-Problema">0.10 Descripci&#243;n del Problema<a class="anchor-link" href="#0.10-Descripci&#243;n-del-Problema"> </a></h5><p>Más ejemplos ...</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">IFrame</span>
+<span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;https://www.python.org/&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+        <iframe width="800" height="300" src="https://www.python.org/" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>No siempre funciona:</p>
+<ul>
+<li><a href="https://www.python.org/">https://www.python.org/</a></li>
+<li>google, facebook, twitter, ...</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En general a los sitios (sobre todo los que requieren autentificación y desean hacer tracking de usuarios) bloquean los IFrames.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="1.1-Problema:-Realizar-encuestas-interactivas.">1.1 Problema: Realizar encuestas interactivas.<a class="anchor-link" href="#1.1-Problema:-Realizar-encuestas-interactivas."> </a></h5><p><strong>Solucion nivel 1:</strong></p>
+<p>KISS: Keep IT Simple, Stupid.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Podemos usar IFrame con los servicios de alguna compañía especializada en encuestas interactivas:</p>
+<ul>
+<li>Polleverywhere</li>
+<li>Mentimeter</li>
+<li>Muchos, muchos otros...</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Relato: Solución nivel 1. Meme de “cerebro”. Hay un principio elemental en programación: KISS. Keep it Simple, Stupid. No hay para que reinventar la rueda cuando podemos aprovechar lo que otras personas ya han hecho.</p>
+<p>Relato: Hay varias empresas que proporcionan servicios para realizar encuestas en vivo, que funciona a través de páginas web. Algunas de las empresas que pueden revisar para esto son: Mentimeter, Survey, Polleverywhere, por ejemplo. Spoiler Alert: Son todas bastante parecidas.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="1.2-Soluci&#243;n-nivel-1:-Encuesta">1.2 Soluci&#243;n nivel 1: Encuesta<a class="anchor-link" href="#1.2-Soluci&#243;n-nivel-1:-Encuesta"> </a></h5><p>Probemos este método con una encuesta simple:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">IFrame</span>
+<span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;https://pollev.com/sebastianflo711&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+        <iframe width="800" height="600" src="https://pollev.com/sebastianflo711" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="1.3-Soluci&#243;n-nivel-1:">1.3 Soluci&#243;n nivel 1:<a class="anchor-link" href="#1.3-Soluci&#243;n-nivel-1:"> </a></h5><p>Link encuesta: 
+<br />
+<br /></p>
+<div style="font-size:200%"> https://pollev.com/sebastianflo711 </div><p><strong>¿Qué debe cumplir un sitio de encuestas interactivas?</strong></p>
+<ul>
+<li>Encuesta acccesible por url pública, incrustable por iframe.</li>
+<li>Gráfico dinámico accesible por url pública, incrustable por iframe.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="1.3-Soluci&#243;n-nivel-1:">1.3 Soluci&#243;n nivel 1:<a class="anchor-link" href="#1.3-Soluci&#243;n-nivel-1:"> </a></h5><p>Veamos los resultados de la encuesta anterior.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">IFrame</span>
+<span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;https://www.polleverywhere.com/multiple_choice_polls/7Xwy472JbCrk3fITm12XM&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+<span class="c1"># Observación: ¡requiere estar autentificado como dueño de la encuesta!</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+        <iframe width="800" height="600" src="https://www.polleverywhere.com/multiple_choice_polls/7Xwy472JbCrk3fITm12XM" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="1.4-Soluci&#243;n-nivel-1:--Resumen">1.4 Soluci&#243;n nivel 1:  Resumen<a class="anchor-link" href="#1.4-Soluci&#243;n-nivel-1:--Resumen"> </a></h5><p>¿Cómo se debe usar?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Seleccionar algún proveedor.</li>
+<li>Crear y configurar la encuesta previamente.</li>
+<li>Obtener el enlace de las preguntas, e incrustarla con un iframe.</li>
+<li>Obtener el gráfico de las respuestas, e incrustarla con un iframe.</li>
+<li>Probar que funcione correctamente. Borrar respuestas de prueba. </li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="1.5-Pausa">1.5 Pausa<a class="anchor-link" href="#1.5-Pausa"> </a></h5><p>¿Que viene antes, el huevo o la gallina?</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Solución al problema</span>
+<span class="c1"># python3 permite usar unicode</span>
+<span class="nb">sorted</span><span class="p">([</span><span class="s1">&#39;</span><span class="se">\N{EGG}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\N{CHICKEN}</span><span class="s1">&#39;</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;🐔&#39;, &#39;🥚&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="2.1-Problema:-Realizar-encuestas-interactivas.">2.1 Problema: Realizar encuestas interactivas.<a class="anchor-link" href="#2.1-Problema:-Realizar-encuestas-interactivas."> </a></h5><p><strong>Solución Nivel 2</strong></p>
+<p>Una segunda opción que requiere un poco más de configuración pero entrega más control, es usar un servicio de encuestas tradicional:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Microsoft Forms</li>
+<li>Google Forms</li>
+<li>Survey Monkey</li>
+<li>Typeform</li>
+<li>Muchas otras...</li>
+</ul>
+<p>Se diferencia que nosotros podemos hacer los gráficos porque podemos descargar los datos.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="2.2-Soluci&#243;n-Nivel-2:-Encuesta-+-Datos">2.2 Soluci&#243;n Nivel 2: Encuesta + Datos<a class="anchor-link" href="#2.2-Soluci&#243;n-Nivel-2:-Encuesta-+-Datos"> </a></h5><p>Probemos este método con otra encuesta simple:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">long_url</span> <span class="o">=</span> <span class="s2">&quot;https://forms.office.com/Pages/ResponsePage.aspx?id=zu7OdUTRPU-clJ5rQCX8_4qs5cX1Y7dFhVdiCz848sBUNFU3UzU3OTNHVDhWNURSMEs2WDBUMDdCTi4u&quot;</span>
+<span class="n">short_url</span> <span class="o">=</span> <span class="s2">&quot;https://bit.ly/2uYDdhm&quot;</span>
+<span class="n">iframe_options</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;width&quot;</span><span class="p">:</span><span class="mi">800</span><span class="p">,</span> <span class="s2">&quot;height&quot;</span><span class="p">:</span><span class="mi">600</span><span class="p">}</span>
+<span class="n">IFrame</span><span class="p">(</span><span class="n">short_url</span><span class="p">,</span> <span class="o">**</span><span class="n">iframe_options</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+        <iframe width="800" height="600" src="https://bit.ly/2uYDdhm" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="2.3-Soluci&#243;n-Nivel-2:">2.3 Soluci&#243;n Nivel 2:<a class="anchor-link" href="#2.3-Soluci&#243;n-Nivel-2:"> </a></h5><p>Link encuesta: 
+<br />
+<br /></p>
+<div style="font-size:200%"> https://bit.ly/2uYDdhm </div><p><br />
+¿Qué debe cumplir un sitio de encuestas nivel 2?</p>
+<ul>
+<li>Encuesta accesible al público mediante un enlace abierto. Puede que no sea incrustable con un iframe.</li>
+<li>Opcionalmente, que cuente con gráficos en línea.</li>
+<li>Datos disponibles y puedan descargarse.</li>
+<li>Crear una función (en Python) para descargar e interpretar los datos.</li>
+<li>Probar que la encuesta funcione. Borrar las respuestas de prueba.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="2.4-Soluci&#243;n-Nivel-2:-Respuestas">2.4 Soluci&#243;n Nivel 2: Respuestas<a class="anchor-link" href="#2.4-Soluci&#243;n-Nivel-2:-Respuestas"> </a></h5>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">long_url</span> <span class="o">=</span> <span class="s2">&quot;https://forms.office.com/Pages/AnalysisPage.aspx?id=zu7OdUTRPU-clJ5rQCX8_4qs5cX1Y7dFhVdiCz848sBUNFU3UzU3OTNHVDhWNURSMEs2WDBUMDdCTi4u&amp;AnalyzerToken=ND54U8Erls95gHxjbyWus4LzH6FPyZ35&quot;</span>
+<span class="n">short_url</span> <span class="o">=</span> <span class="s2">&quot;https://bit.ly/37We2dE&quot;</span>
+<span class="n">iframe_options</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;width&quot;</span><span class="p">:</span><span class="mi">800</span><span class="p">,</span> <span class="s2">&quot;height&quot;</span><span class="p">:</span><span class="mi">800</span><span class="p">}</span>
+<span class="n">IFrame</span><span class="p">(</span><span class="n">short_url</span><span class="p">,</span> <span class="o">**</span><span class="n">iframe_options</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+        <iframe width="800" height="800" src="https://bit.ly/37We2dE" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="2.4-Soluci&#243;n-Nivel-2:-Respuestas--(versi&#243;n-2)">2.4 Soluci&#243;n Nivel 2: Respuestas  (versi&#243;n 2)<a class="anchor-link" href="#2.4-Soluci&#243;n-Nivel-2:-Respuestas--(versi&#243;n-2)"> </a></h5><ul>
+<li>Descargamos la planilla de datos con el resultado desde algún <a href="https://uplanner-my.sharepoint.com/:x:/r/personal/sebastian_flores_u-planner_com/_layouts/15/Doc.aspx?sourcedoc=%7B7D9BF52E-2931-4702-86ED-00792E617ECF%7D&amp;file=2020_02_09_encuesta2_pycon.xlsx&amp;action=default&amp;mobileredirect=true">enlace</a> </li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Alternative to ls data/*.xlsx</span>
+<span class="kn">import</span> <span class="nn">glob</span>
+<span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;pycon/*.xlsx&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;pycon/2020_02_08_encuesta2_pycon.xlsx&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">df_dict</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s2">&quot;pycon/2020_02_08_encuesta2_pycon.xlsx&quot;</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">df_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>odict_keys([&#39;Hoja1&#39;, &#39;_56F9DC9755BA473782653E2940F9&#39;, &#39;Form1&#39;])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df_dict</span><span class="p">[</span><span class="s2">&quot;Form1&quot;</span><span class="p">]</span>
+<span class="n">question</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">question</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Which one is the best pet?
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ID</th>
+      <th>Start time</th>
+      <th>Completion time</th>
+      <th>Email</th>
+      <th>Name</th>
+      <th>Which one is the best pet?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>9</td>
+      <td>2020-02-03 14:28:15</td>
+      <td>2020-02-03 14:28:27</td>
+      <td>anonymous</td>
+      <td>NaN</td>
+      <td>Python</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>10</td>
+      <td>2020-02-08 00:32:22</td>
+      <td>2020-02-08 00:32:27</td>
+      <td>anonymous</td>
+      <td>NaN</td>
+      <td>Python</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>11</td>
+      <td>2020-02-08 18:00:03</td>
+      <td>2020-02-08 18:00:08</td>
+      <td>anonymous</td>
+      <td>NaN</td>
+      <td>Cat</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>12</td>
+      <td>2020-02-08 18:00:04</td>
+      <td>2020-02-08 18:00:09</td>
+      <td>anonymous</td>
+      <td>NaN</td>
+      <td>Cat</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>13</td>
+      <td>2020-02-08 18:00:07</td>
+      <td>2020-02-08 18:00:12</td>
+      <td>anonymous</td>
+      <td>NaN</td>
+      <td>Cat</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="2.5-Soluci&#243;n-Nivel-2:-Respuestas">2.5 Soluci&#243;n Nivel 2: Respuestas<a class="anchor-link" href="#2.5-Soluci&#243;n-Nivel-2:-Respuestas"> </a></h5>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">question_df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">question</span><span class="p">]</span>
+<span class="n">answer_counts</span> <span class="o">=</span> <span class="n">question_df</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="n">answer_counts</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Cat       9
+Python    7
+Dog       3
+León      1
+RISE      1
+Pandas    1
+Name: Which one is the best pet?, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="n">answer_counts</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA7kAAAFpCAYAAABZBu/GAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDMuMC4zLCBodHRwOi8vbWF0cGxvdGxpYi5vcmcvnQurowAAFhhJREFUeJzt3X+s3Xd93/HXG19I4oSYlrhpMDQGGkqjuARiJrK0rIF0grobRdUaIEywSVgUWDK0aUv7z9g6OrMyClJbkMWP8iOUrYEyShCw8aOBiiAc4sQJIStjgSbQBhg1yfIT894f91jcGidxnHvON/dzHw/J8jmf7/d7zvtKR9Z9+vs951R3BwAAAEbwsKkHAAAAgNUicgEAABiGyAUAAGAYIhcAAIBhiFwAAACGIXIBAAAYhsgFAABgGCIXAACAYYhcAAAAhiFyAQAAGMbS1AOslpNOOqm3bt069RgAAADMwZVXXvnt7t58f/sNE7lbt27Nnj17ph4DAACAOaiqrx3Jfi5XBgAAYBgiFwAAgGGIXAAAAIYhcgEAABiGyAUAAGAYIhcAAIBhiFwAAACGIXIBAAAYhsgFAABgGCIXAACAYYhcAAAAhrE09QCrZd/N+7P14sumHmNdunHXjqlHAAAASOJMLgAAAAMRuQAAAAxD5AIAADAMkQsAAMAwRC4AAADDELkAAAAMQ+QCAAAwDJELAADAMEQuAAAAw7jfyK2qA1W1t6qurao/qaqNq/HEVXXbajwOAAAAHHQkZ3Lv6O4zu/uMJHcnefmcZwIAAICj8kAvV/5Mkp9Okqr6YFVdWVXXVdXOgztU1W1V9dqqurqqrqiqk2frj6+qz1XVF6rqt1fsf0JVfaKqvlhV+6rqebP146vqstnjXFtV5z/4HxcAAICRHXHkVtVSkucm2Tdb+ufdfVaS7UkurKpHz9aPT3JFdz8lyeVJXjZbf1OSN3f305P89YqHvjPJ87v7aUnOTfJfqqqSPCfJN7r7KbOzyB89qp8QAACAdeNIIve4qtqbZE+Sryd522z9wqq6OskVSR6X5LTZ+t1JPjy7fWWSrbPb5yT549ntd694/EryO1V1TZL/mWRLkpOzHNPnVdXrquoXunv/oYNV1c6q2lNVew7c/iObAQAAWGeWjmCfO7r7zJULVfWLSc5LcnZ3315Vn05y7GzzPd3ds9sHDnmOzo+6IMnmJGd19z1VdWOSY7v7f1XVWUl+Ocl/qqqPd/d/WHlgd+9OsjtJjjnltMM9NgAAAOvI0X6F0KYk350F7pOTPOMIjvmLJC+Y3b7gkMe6ZRa45yY5NUmq6jFJbu/u9yR5fZKnHeWsAAAArBNHcib3cD6a5OWzS4xvyPIly/fnoiTvraqLkrx/xfolSf6sqvYk2Zvky7P1bUl+t6p+kOSeJL9xlLMCAACwTtQPryxe24455bQ+5SVvnHqMdenGXTumHgEAABhcVV3Z3dvvb7+jvVwZAAAAHnJELgAAAMMQuQAAAAxD5AIAADAMkQsAAMAwRC4AAADDELkAAAAMQ+QCAAAwjKWpB1gt27Zsyp5dO6YeAwAAgAk5kwsAAMAwRC4AAADDELkAAAAMQ+QCAAAwDJELAADAMEQuAAAAwxC5AAAADEPkAgAAMAyRCwAAwDBELgAAAMMQuQAAAAxD5AIAADAMkQsAAMAwRC4AAADDELkAAAAMQ+QCAAAwDJELAADAMEQuAAAAwxC5AAAADEPkAgAAMAyRCwAAwDBELgAAAMMQuQAAAAxD5AIAADAMkQsAAMAwRC4AAADDELkAAAAMY2nqAVbLvpv3Z+vFl009xrp0464dU48AAACQxJlcAAAABiJyAQAAGIbIBQAAYBgiFwAAgGGIXAAAAIYhcgEAABiGyAUAAGAYIhcAAIBhzC1yq+pAVe2tqmur6s+q6lGz9a1Vde3s9saquqSq9s32+2xVnXDI8Qf/XDyvWQEAABjD0hwf+47uPjNJquqdSV6Z5LWH7HNRkr/p7m2z/X4myT2HHg8AAABHYlGXK38uyZbDrJ+S5OaDd7r7hu6+a0EzAQAAMJi5R25VbUjy7CQfOszmtyf5t1X1uar6j1V12optxx1yufL5854VAACAtW2elysfV1V7k2xNcmWS/3HoDt29t6qekOQfJjkvyReq6uzuvj5HcLlyVe1MsjNJNpy4eZXHBwAAYK2Z55ncg5F6apJHZPk9uT+iu2/r7g909yuSvCfJLx/pE3T37u7e3t3bN2zctCpDAwAAsHbN/XLl7t6f5MIk/7qqHr5yW1WdU1U/Nrv9iCSnJ/navGcCAABgTAv54KnuvirJ1UlecMimJyb586ral+SqJHuSvH+27dD35O5axKwAAACsXXN7T253n3DI/X+04u4Zs7V3JXnXvRy/YV6zAQAAMKZFfYUQAAAAzJ3IBQAAYBgiFwAAgGGIXAAAAIYhcgEAABiGyAUAAGAYIhcAAIBhiFwAAACGIXIBAAAYxtLUA6yWbVs2Zc+uHVOPAQAAwIScyQUAAGAYIhcAAIBhiFwAAACGIXIBAAAYhsgFAABgGCIXAACAYYhcAAAAhiFyAQAAGIbIBQAAYBgiFwAAgGGIXAAAAIYhcgEAABiGyAUAAGAYIhcAAIBhiFwAAACGIXIBAAAYhsgFAABgGCIXAACAYYhcAAAAhiFyAQAAGIbIBQAAYBgiFwAAgGGIXAAAAIYhcgEAABiGyAUAAGAYIhcAAIBhLE09wGrZd/P+bL34sqnHWJdu3LVj6hEAAACSOJMLAADAQEQuAAAAwxC5AAAADEPkAgAAMAyRCwAAwDBELgAAAMMQuQAAAAxD5AIAADCMh0TkVtWGqnplVR079SwAAACsXaseuVV121Ec9vok13f3nas9DwAAAOvH0tQDJEl3v3rqGQAAAFj7FnK5clVtrqr3V9UXZn/Oma3/eFV9sKquqaorqurnZuuvqaq3V9Wnq+qrVXXhIuYEAABgbVvUmdw3Jfm97v5sVf1Uko8l+dkk/z7JVd39q1X1rCTvSnLm7JgnJzk3ySOT3FBVb+7uexY0LwAAAGvQoiL3vCSnV9XB+ydW1SOT/HySX0uS7v5kVT26qjbN9rmsu+9KcldV3ZLk5CQ3rXzQqtqZZGeSbDhx8/x/CgAAAB7SFhW5D0tydnffsXKxVlTvCj37+64VawdymFm7e3eS3UlyzCmn9aHbAQAAWF8W9RVCH0/yqoN3qurgJcmXJ7lgtvaLSb7d3d9b0EwAAAAMZh5ncjdW1crLit+Q5MIkf1BV18ye8/IkL0/ymiTvmK3fnuQlc5gHAACAdWLVI7e77+3s8PmH2ff/JnneYdZfc8j9M1ZlOAAAAIa2qMuVAQAAYO5ELgAAAMMQuQAAAAxD5AIAADAMkQsAAMAwRC4AAADDELkAAAAMQ+QCAAAwjKWpB1gt27Zsyp5dO6YeAwAAgAk5kwsAAMAwRC4AAADDELkAAAAMQ+QCAAAwDJELAADAMEQuAAAAwxC5AAAADEPkAgAAMAyRCwAAwDBELgAAAMMQuQAAAAxD5AIAADAMkQsAAMAwRC4AAADDELkAAAAMQ+QCAAAwDJELAADAMEQuAAAAwxC5AAAADEPkAgAAMAyRCwAAwDBELgAAAMMQuQAAAAxD5AIAADAMkQsAAMAwRC4AAADDWJp6gNWy7+b92XrxZVOPAawDN+7aMfUIAADcC2dyAQAAGIbIBQAAYBgiFwAAgGGIXAAAAIYhcgEAABiGyAUAAGAYIhcAAIBhiFwAAACGIXIBAAAYxtK8n6CqDiTZl+ThSb6f5J1J3tjdP5j3cwMAALC+zD1yk9zR3WcmSVX9RJL3JtmU5N8t4LkBAABYRxZ6uXJ335JkZ5JX1bJjq+odVbWvqq6qqnOTpKo2VtV/q6prquq/VtXnq2r7ImcFAABg7VnEmdy/o7u/WlUPS/ITSV48W9tWVU9O8vGqelKSVyT5bnf/XFWdkWTvoucEAABg7Znqg6dq9vfPJ3l3knT3l5N8LcmTZuvvm61fm+Sawz5I1c6q2lNVew7cvn/uQwMAAPDQtvDIraonJDmQ5Jb8MHZ/ZLcjeazu3t3d27t7+4aNm1ZrRAAAANaohUZuVW1O8pYkv9/dneTyJBfMtj0pyU8luSHJZ5P8+mz99CTbFjknAAAAa9Mi3pN7XFXtzQ+/QujdSd4w2/aHSd5SVftm217a3XdV1R8meWdVXZPkqixfrux6ZAAAAO7T3CO3uzfcx7Y7k7z0MJvuTPLi7r6zqp6Y5BNZfr8uAAAA3KuFf7ryEdqY5FNV9fAsvz/3N7r77olnAgAA4CHuIRm53X1rEt+LCwAAwAMy1VcIAQAAwKoTuQAAAAxD5AIAADAMkQsAAMAwRC4AAADDELkAAAAM4yH5FUJHY9uWTdmza8fUYwAAADAhZ3IBAAAYhsgFAABgGCIXAACAYYhcAAAAhiFyAQAAGIbIBQAAYBgiFwAAgGGIXAAAAIYhcgEAABiGyAUAAGAYIhcAAIBhiFwAAACGIXIBAAAYhsgFAABgGCIXAACAYYhcAAAAhiFyAQAAGIbIBQAAYBgiFwAAgGGIXAAAAIYhcgEAABiGyAUAAGAYIhcAAIBhiFwAAACGIXIBAAAYhsgFAABgGCIXAACAYSxNPcBq2Xfz/my9+LKpxwAAYI27cdeOqUcAHgRncgEAABiGyAUAAGAYIhcAAIBhiFwAAACGIXIBAAAYhsgFAABgGCIXAACAYYhcAAAAhnHEkVtVB6pqb1VdW1V/UlUb72PfrVX1ohX3X1pVv/9ghwUAAID78kDO5N7R3Wd29xlJ7k7y8vvYd2uSF93HdgAAAFh1R3u58meS/HRV/XZVXXRwsapeW1UXJtmV5BdmZ35fPdv8mKr6aFX9ZVX95xXHvLCq9s3OEL9uxfpts8e7uqquqKqTj3JWAAAA1okHHLlVtZTkuUn2JXlbkpfM1h+W5AVJLklycZLPzM78/t7s0DOTnJ9kW5Lzq+pxVfWYJK9L8qzZ9qdX1a/O9j8+yRXd/ZQklyd52dH9iAAAAKwXSw9g3+Oqau/s9meSvK27766q71TVU5OcnOSq7v5OVR3u+E909/4kqaovJTk1yaOTfLq7vzVbvyTJM5N8MMuXRH94duyVSX7p0Aesqp1JdibJhhM3P4AfBQAAgBE9kMi9o7vPPMz6W5O8NMlPJnn7fRx/14rbB2bPfdganrmnu/uQ/f+O7t6dZHeSHHPKaX3odgAAANaX1fgKoT9N8pwkT0/ysdnarUkeeQTHfj7JP6iqk6pqQ5IXJvnzVZgJAACAdeiBnMk9rNkly59K8rfdfWC2fE2S71fV1Un+KMl37+XYb1bVbyb5VJbP6n6ku//7g50JAACA9emII7e7Tzjc+uwDp56R5J+s2PeeJM8+ZNc/WrH9V1bcfm+S997X83X3pUkuPdJZAQAAWJ8e1OXKVXV6kq9k+UOl/nJ1RgIAAICj86AuV+7uLyV5wirNAgAAAA/KanzwFAAAADwkiFwAAACGIXIBAAAYhsgFAABgGCIXAACAYYhcAAAAhiFyAQAAGMaD+p7ch5JtWzZlz64dU48BAADAhJzJBQAAYBgiFwAAgGGIXAAAAIYhcgEAABiGyAUAAGAYIhcAAIBhiFwAAACGIXIBAAAYhsgFAABgGCIXAACAYYhcAAAAhiFyAQAAGIbIBQAAYBgiFwAAgGGIXAAAAIYhcgEAABiGyAUAAGAYIhcAAIBhiFwAAACGIXIBAAAYhsgFAABgGCIXAACAYYhcAAAAhiFyAQAAGIbIBQAAYBgiFwAAgGEsTT3Aatl38/5svfiyqccAAABYU27ctWPqEVaVM7kAAAAMQ+QCAAAwDJELAADAMEQuAAAAwxC5AAAADEPkAgAAMAyRCwAAwDBELgAAAMMQuQAAAAxj4ZFbVT9ZVe+rqv9dVV+qqo9U1ZPuZd9HVdUrFj0jAAAAa9NCI7eqKsmfJvl0dz+xu09P8ltJTr6XQx6VROQCAABwRBZ9JvfcJPd091sOLnT33iRXVdUnquqLVbWvqp4327wryROram9V/e6CZwUAAGCNWVrw852R5MrDrN+Z5Pnd/b2qOinJFVX1oSQXJzmju89c5JAAAACsTYuO3HtTSX6nqp6Z5AdJtuTeL2H+4UFVO5PsTJINJ26e64AAAAA89C36cuXrkpx1mPULkmxOctbsrO3fJDn2/h6su3d39/bu3r5h46bVnRQAAIA1Z9GR+8kkx1TVyw4uVNXTk5ya5Jbuvqeqzp3dT5JbkzxywTMCAACwRi00cru7kzw/yS/NvkLouiSvSfKRJNurak+Wz+p+ebb/d5L8RVVd64OnAAAAuD8Lf09ud38jya8fZtPZ97L/i+Y7EQAAAKNY9OXKAAAAMDciFwAAgGGIXAAAAIYhcgEAABiGyAUAAGAYIhcAAIBhiFwAAACGIXIBAAAYxtLUA6yWbVs2Zc+uHVOPAQAAwIScyQUAAGAYIhcAAIBhiFwAAACGIXIBAAAYhsgFAABgGCIXAACAYYhcAAAAhiFyAQAAGIbIBQAAYBgiFwAAgGGIXAAAAIYhcgEAABiGyAUAAGAY1d1Tz7AqqurWJDdMPQcs0ElJvj31ELBAXvOsN17zrDde89yfU7t78/3ttLSISRbkhu7ePvUQsChVtcdrnvXEa571xmue9cZrntXicmUAAACGIXIBAAAYxkiRu3vqAWDBvOZZb7zmWW+85llvvOZZFcN88BQAAACMdCYXAACAdW6IyK2q51TVDVX1laq6eOp5YJ6q6nFV9amqur6qrquqi6aeCRahqjZU1VVV9eGpZ4F5q6pHVdWlVfXl2b/3Z089E8xTVb169nvNtVX1x1V17NQzsXat+citqg1J/iDJc5OcnuSFVXX6tFPBXH0/yb/q7p9N8owkr/SaZ524KMn1Uw8BC/KmJB/t7icneUq89hlYVW1JcmGS7d19RpINSV4w7VSsZWs+cpP8vSRf6e6vdvfdSd6X5HkTzwRz093f7O4vzm7fmuVffLZMOxXMV1U9NsmOJG+dehaYt6o6Mckzk7wtSbr77u7+22mngrlbSnJcVS0l2ZjkGxPPwxo2QuRuSfJXK+7fFL/ws05U1dYkT03y+Wkngbl7Y5J/k+QHUw8CC/CEJN9K8o7ZJfpvrarjpx4K5qW7b07y+iRfT/LNJPu7++PTTsVaNkLk1mHWfGQ0w6uqE5K8P8m/7O7vTT0PzEtV/UqSW7r7yqlngQVZSvK0JG/u7qcm+X9JfOYIw6qqH8vylZiPT/KYJMdX1YunnYq1bITIvSnJ41bcf2xc3sDgqurhWQ7cS7r7A1PPA3N2TpJ/XFU3ZvktKc+qqvdMOxLM1U1Jburug1fpXJrl6IVRnZfk/3T3t7r7niQfSPL3J56JNWyEyP1CktOq6vFV9Ygsv0n9QxPPBHNTVZXl92ld391vmHoemLfu/s3ufmx3b83yv/Gf7G7/w8+wuvuvk/xVVf3MbOnZSb404Ugwb19P8oyq2jj7PefZ8WFrPAhLUw/wYHX396vqVUk+luVPYnt7d1838VgwT+ck+adJ9lXV3tnab3X3RyacCYDV9S+SXDL7D/yvJvlnE88Dc9Pdn6+qS5N8McvfInFVkt3TTsVaVt3evgoAAMAYRrhcGQAAAJKIXAAAAAYicgEAABiGyAUAAGAYIhcAAIBhiFwAAACGIXIBAAAYhsgFAABgGP8fqdj0zHNKT7YAAAAASUVORK5CYII=
+" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="2.6-Soluci&#243;n-Nivel-2:-Respuestas">2.6 Soluci&#243;n Nivel 2: Respuestas<a class="anchor-link" href="#2.6-Soluci&#243;n-Nivel-2:-Respuestas"> </a></h5><p>Hagamos un gráfico un poco mejor.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="n">answer_counts</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">6</span><span class="p">),</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.50</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="n">question</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Número de respuestas&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="2.7-Soluci&#243;n-nivel-2:-Resumen">2.7 Soluci&#243;n nivel 2: Resumen<a class="anchor-link" href="#2.7-Soluci&#243;n-nivel-2:-Resumen"> </a></h5><ol>
+<li>Elegir algún proveedor.</li>
+<li>Crear la encuesta.</li>
+<li>Obtener la url pública de las preguntas, e incrustarla en un iframe.</li>
+<li>Obtener la url de los datos de las respuestas.</li>
+<li>Usar una api o descargar los datos.</li>
+<li>Graficar desde python para interpretar los datos.</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="2.1-Problema:-Realizar-encuestas-interactivas.">2.1 Problema: Realizar encuestas interactivas.<a class="anchor-link" href="#2.1-Problema:-Realizar-encuestas-interactivas."> </a></h5><p><strong>Solución Nivel 3</strong></p>
+<p>La solución más compleja es por supuesto hacer el sistema completo:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><strong>Base de datos</strong>: donde almacenar la encuesta y las respuestas. </li>
+<li><strong>Frontend</strong>: para realizar la encuesta (mostrar preguntas, recolectar respuestas, mostrar gráficos).</li>
+<li><strong>Backend</strong>: interactuar con la base de datos. </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En este caso: mysql, flask, flask-mysql y pandas, con algo de html y css, y una librería de javascript para graficar.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Soluci&#243;n-Nivel-3">Soluci&#243;n Nivel 3<a class="anchor-link" href="#Soluci&#243;n-Nivel-3"> </a></h5><p>¿Porqué alguien voluntariamente se sometería a este tormento?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Filosofía xkcd</strong>:</p>
+<p>¿Porqué hacer algo simple cuando podrías hacer algo extremadamente complejo <em>de la manera más simple posible</em>, aprendiendo mucho en el camino?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="/blog/images/copied_from_nb/pycon/the_general_problem.png" alt="" /></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Soluci&#243;n-Nivel-3">Soluci&#243;n Nivel 3<a class="anchor-link" href="#Soluci&#243;n-Nivel-3"> </a></h5><p>¿xkcd en python?</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">antigravity</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="/blog/images/copied_from_nb/pycon/python.png" alt="" /></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Soluci&#243;n-Nivel-3">Soluci&#243;n Nivel 3<a class="anchor-link" href="#Soluci&#243;n-Nivel-3"> </a></h5>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">IFrame</span>
+<span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;http://localhost:5000/&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+        <iframe width="800" height="300" src="http://localhost:5000/" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Soluci&#243;n-Nivel-3">Soluci&#243;n Nivel 3<a class="anchor-link" href="#Soluci&#243;n-Nivel-3"> </a></h5><p>El código de polite se encuentra en <a href="https://github.com/sebastiandres/surveys_with_flask_and_xkcd_charts">https://github.com/sebastiandres/surveys_with_flask_and_xkcd_charts</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Hace uso de muchos recursos públicamente disponibles (además de mysql y  python+librerías):</p>
+<ul>
+<li>Font xkcd.ttf de ipython, <a href="https://github.com/ipython/xkcd-font">https://github.com/ipython/xkcd-font</a></li>
+<li>Librería xkcd_chart en javascript: <a href="https://timqian.com/chart.xkcd/">https://timqian.com/chart.xkcd/</a></li>
+<li>Una cantidad vergonzosamente grande de búsquedas en internet y stackoverflow. </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Soluci&#243;n-Nivel-3">Soluci&#243;n Nivel 3<a class="anchor-link" href="#Soluci&#243;n-Nivel-3"> </a></h5><p>Una de las cosas que más me llamó la atención fue cómo hacer una función que pudiese transformar un texto markdown en la serie de preguntas y opciones de respuesta.</p>
+<p>Requería definir convenciones:</p>
+<ul>
+<li>La pregunta es todo lo que va antes de <code>:</code></li>
+<li>Las preguntas de respuesta única se definen por <code>*</code> </li>
+<li>Las preguntas de respuesta única se definen por <code>^</code></li>
+</ul>
+<p>Otra opción podría haber sido <code>-</code> y <code>+</code>.</p>
+<p>Es una mala opción usar <code>o</code> y <code>m</code>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Soluci&#243;n-Nivel-3">Soluci&#243;n Nivel 3<a class="anchor-link" href="#Soluci&#243;n-Nivel-3"> </a></h5>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">markdown_parser</span><span class="p">(</span><span class="n">my_text</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">my_text</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">)</span><span class="o">!=</span><span class="mi">1</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cannot parse, there&#39;s an error in the format&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;is_format_ok&quot;</span><span class="p">:</span><span class="kc">False</span><span class="p">,</span> <span class="s2">&quot;markdown_str&quot;</span><span class="p">:</span><span class="n">my_text</span><span class="p">}</span>
+    <span class="n">single_option</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">multiple_option</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">if</span> <span class="p">(</span><span class="s2">&quot;* &quot;</span> <span class="ow">in</span> <span class="n">my_text</span><span class="p">):</span>
+        <span class="n">single_option</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="n">split_char</span> <span class="o">=</span> <span class="s2">&quot;*&quot;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="s2">&quot;^ &quot;</span> <span class="ow">in</span> <span class="n">my_text</span><span class="p">):</span>
+        <span class="n">multiple_option</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="n">split_char</span> <span class="o">=</span> <span class="s2">&quot;^&quot;</span>
+    <span class="c1"># If both False or both True, simultaneoulsy, there&#39;s an error</span>
+    <span class="k">if</span> <span class="n">single_option</span><span class="o">==</span><span class="n">multiple_option</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cannot parse, there&#39;s an error in the format&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;is_format_ok&quot;</span><span class="p">:</span><span class="kc">False</span><span class="p">,</span> <span class="s2">&quot;markdown_str&quot;</span><span class="p">:</span><span class="n">my_text</span><span class="p">}</span>
+    <span class="n">question_str</span><span class="p">,</span> <span class="n">answer_str</span> <span class="o">=</span> <span class="n">my_text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">)</span>
+    <span class="n">question</span> <span class="o">=</span> <span class="n">question_str</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+    <span class="n">answer_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">_</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">answer_str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">split_char</span><span class="p">)[</span><span class="mi">1</span><span class="p">:</span><span class="mi">6</span><span class="p">]]</span> <span class="c1"># Skip the empty string, reach to the fifth existing one</span>
+    <span class="n">answer_list</span> <span class="o">=</span> <span class="n">answer_list</span> <span class="o">+</span> <span class="p">[</span><span class="s2">&quot;&quot;</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="o">-</span><span class="nb">len</span><span class="p">(</span><span class="n">answer_list</span><span class="p">))]</span> <span class="c1"># Fill with empty ones if needed</span>
+    <span class="n">question_type</span> <span class="o">=</span> <span class="n">single_option</span><span class="o">*</span><span class="s2">&quot;radio&quot;</span><span class="o">+</span><span class="n">multiple_option</span><span class="o">*</span><span class="s2">&quot;checkbox&quot;</span> <span class="c1"># This is the html convention</span>
+    <span class="c1"># Create the dict</span>
+    <span class="n">md_dict</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">md_dict</span><span class="p">[</span><span class="s2">&quot;is_format_ok&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="n">md_dict</span><span class="p">[</span><span class="s2">&quot;markdown_str&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">my_text</span>
+    <span class="n">md_dict</span><span class="p">[</span><span class="s2">&quot;type_str&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">question_type</span>
+     <span class="n">md_dict</span><span class="p">[</span><span class="s2">&quot;question_str&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">question</span>
+    <span class="n">md_dict</span><span class="p">[</span><span class="s2">&quot;option_1_str&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">answer_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">md_dict</span><span class="p">[</span><span class="s2">&quot;option_2_str&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">answer_list</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">md_dict</span><span class="p">[</span><span class="s2">&quot;option_3_str&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">answer_list</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+    <span class="n">md_dict</span><span class="p">[</span><span class="s2">&quot;option_4_str&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">answer_list</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+    <span class="n">md_dict</span><span class="p">[</span><span class="s2">&quot;option_5_str&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">answer_list</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">md_dict</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Soluci&#243;n-Nivel-3">Soluci&#243;n Nivel 3<a class="anchor-link" href="#Soluci&#243;n-Nivel-3"> </a></h5>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">markdown_parser</span><span class="p">(</span><span class="s2">&quot;Q: ^ A * B * C * D * E * F * G &quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">markdown_parser</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Q: ^ A ^ B ^ C ^ D ^ E ^ F ^ G ^ H&quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Soluci&#243;n-Nivel-3">Soluci&#243;n Nivel 3<a class="anchor-link" href="#Soluci&#243;n-Nivel-3"> </a></h5><p>Hagamos la prueba:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">IFrame</span>
+<span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;http://localhost:5000/survey&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Soluci&#243;n-Nivel-3">Soluci&#243;n Nivel 3<a class="anchor-link" href="#Soluci&#243;n-Nivel-3"> </a></h5><p>Veamos los resultados:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">IFrame</span>
+<span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;http://localhost:5000/bar_chart&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+        <iframe width="1000" height="1000" src="http://localhost:5000/bar_chart" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Conclusi&#243;n:-Encuestas-nivel-1">Conclusi&#243;n: Encuestas nivel 1<a class="anchor-link" href="#Conclusi&#243;n:-Encuestas-nivel-1"> </a></h5><p><table align="left" style="font-size:120%">
+  <tr>
+    <td><b></b></td>
+    <td><b>Ventaja</b></td>
+    <td><b>Desventaja</b></td>
+  <tr>
+    <td>Complejidad</td>
+    <td>Trivial</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Precio</td>
+    <td>Versión limitada gratis</td>
+    <td>Versión pagada con más funcionalidades</td>
+  </tr>
+  <tr>
+    <td>Gráficos</td>
+    <td>Gráficos predefinidos</td>
+    <td>Gráficos predefinidos</td>
+  </tr>
+  <tr>
+    <td>Datos</td>
+    <td>-</td>
+    <td>Sin accceso a datos</td>
+  </tr>
+&lt;/table&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Conclusi&#243;n:-Encuestas-nivel-2">Conclusi&#243;n: Encuestas nivel 2<a class="anchor-link" href="#Conclusi&#243;n:-Encuestas-nivel-2"> </a></h5><table align="left" style="font-size:120%">
+  <tr>
+    <td><b></b></td>
+    <td><b>Ventaja</b></td>
+    <td><b>Desventaja</b></td>
+  <tr>
+    <td>Complejidad</td>
+    <td>Simple</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Precio</td>
+    <td>Versión gratis es suficiente</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Gráficos</td>
+    <td>Configurables</td>
+    <td>Requieren código</td>
+  </tr>
+  <tr>
+    <td>Datos</td>
+    <td>Con accceso a datos</td>
+    <td></td>
+  </tr>
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Conclusi&#243;n:-Encuestas-nivel-3">Conclusi&#243;n: Encuestas nivel 3<a class="anchor-link" href="#Conclusi&#243;n:-Encuestas-nivel-3"> </a></h5><table align="left" style="font-size:120%">
+  <tr>
+    <td><b></b></td>
+    <td><b>Ventaja</b></td>
+    <td><b>Desventaja</b></td>
+  <tr>
+    <td>Complejidad</td>
+    <td></td>
+    <td>Bastante complejo. Toma tiempo. Deployment puede ser complejo.</td>
+  </tr>
+  <tr>
+    <td>Precio</td>
+    <td>Hosting gratis es suficiente</td>
+    <td>Time=Money?</td>
+  </tr>
+  <tr>
+    <td>Gráficos</td>
+    <td>Configurables</td>
+    <td>Hay que configurarlos completamente.</td>
+  </tr>
+  <tr>
+    <td>Datos</td>
+    <td>Con accceso completo a datos</td>
+    <td>Hay que almacenar los datos.</td>
+  </tr>
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Conclusi&#243;n">Conclusi&#243;n<a class="anchor-link" href="#Conclusi&#243;n"> </a></h5><h2 id="&#191;Preguntas?">&#191;Preguntas?<a class="anchor-link" href="#&#191;Preguntas?"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Encuesta sobre la charla: 
+<br />
+<br /></p>
+<div style="font-size:200%"> https://bit.ly/2UzrYGU </div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Retroalimentaci&#243;n">Retroalimentaci&#243;n<a class="anchor-link" href="#Retroalimentaci&#243;n"> </a></h3><p>Revisando las evaluaciones, alguien sugirió que para las encuestas resulta más fácil agregar (además del enlace) un código QR para abrir la encuesta usando la cámara del celular. Desde entonces, lo he probado y funciona excelente.</p>
+
+</div>
+</div>
+</div>
+&lt;/div&gt;
+</tr></table></div></div></div></tr></table></div></div></div></tr></table></p></div></div></div></div>
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="sebastiandres/blog"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/blog/rise/encuestas/pycon/jupyter/2020/03/12/_02-09-Mi-charla-en-la-pycon.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">sebastiandres</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">sebastiandres</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list">
+  <li><a href="https://github.com/sebastiandres"><svg class="social svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg> <span class="username">sebastiandres</span></a></li></ul></div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
