@@ -119,13 +119,17 @@
       
         <div class="pb-5 d-flex flex-wrap flex-justify-end">
           <div class="px-2">
-<a href="https://github.com/sebastiandres/blog/tree/master/_notebooks/2020-03-19-Columnas-en-RISE.ipynb" role="button">
-    <img class="notebook-badge-image" src="https://img.shields.io/static/v1?label=&message=View%20On%20GitHub&color=586069&logo=github&labelColor=2f363d">
-</a>
+    <a href="https://mybinder.org/v2/gh/sebastiandres/blog/master?filepath=/_notebooks/2020-03-19-Columnas-en-RISE.ipynb">
+        <img class="notebook-badge-image" src="https://img.shields.io/badge/launch-binder-579aca.svg" alt="Open In Binder"/>
+    </a>
 </div><div class="px-2">
     <a href="https://colab.research.google.com/github/sebastiandres/blog/blob/master/_notebooks/2020-03-19-Columnas-en-RISE.ipynb">
         <img class="notebook-badge-image" src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
     </a>
+</div><div class="px-2">
+<a href="https://github.com/sebastiandres/blog/tree/master/_notebooks/2020-03-19-Columnas-en-RISE.ipynb" role="button">
+    <img class="notebook-badge-image" src="https://img.shields.io/static/v1?label=&message=View%20On%20GitHub&color=586069&logo=github&labelColor=2f363d">
+</a>
 </div>
         </div>
       </header>
@@ -149,6 +153,7 @@
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Este notebook no se muestra bien en fastpages. Mejor verla en github, colab o binder</strong></p>
 <p>Uno de los problemas más comunes en la transición de creación de presentaciones (PowerPoint o Google Slides) es poder usar columnas. Por defecto, el texto ocupa toda la pantalla:</p>
 
 </div>
@@ -159,6 +164,7 @@
 <h2 id="Titulo-1">Titulo 1<a class="anchor-link" href="#Titulo-1"> </a></h2><h3 id="Subt&#237;tulo-1">Subt&#237;tulo 1<a class="anchor-link" href="#Subt&#237;tulo-1"> </a></h3><p><br /></p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <p>Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam.</p>
+<p><img src="/blog/images/copied_from_nb/columns/lore_ipsum.png" alt="Lore Ipsum image" /></p>
 
 </div>
 </div>
@@ -180,51 +186,18 @@ RIGHT COLUMN CONTENT
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="T&#237;tulo">T&#237;tulo<a class="anchor-link" href="#T&#237;tulo"> </a></h2><h3 id="Subt&#237;tulo">Subt&#237;tulo<a class="anchor-link" href="#Subt&#237;tulo"> </a></h3><p><br /></p>
-<div style="float: left; width: 50%;">
+<p>Por ejemplo, una slide con 2 columnas de texto podría obtenerse con el siguiente código markdown:</p>
+
+<pre><code>## Título 2
+### Subtítulo 2
+
+&lt;br&gt;
+
+&lt;div style="float: left; width: 50%;"&gt;
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</div>
-<div style="float: right; width: 50%;">
-Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam.
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="T&#237;tulo-2">T&#237;tulo 2<a class="anchor-link" href="#T&#237;tulo-2"> </a></h2><h3 id="Subt&#237;tulo-2">Subt&#237;tulo 2<a class="anchor-link" href="#Subt&#237;tulo-2"> </a></h3><p><img src="/blog/images/copied_from_nb/columns/lore_ipsum.png" alt="Lore Ipsum image" /></p>
-<p><br /></p>
-<div style="float: left; width: 48%;">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-<br />
-
-Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam.
-</div>
-<div style="float: right; width: 48%;">
-
-Acá...
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="T&#237;tulo-3">T&#237;tulo 3<a class="anchor-link" href="#T&#237;tulo-3"> </a></h2><h3 id="Subt&#237;tulo-3">Subt&#237;tulo 3<a class="anchor-link" href="#Subt&#237;tulo-3"> </a></h3><p><br /></p>
-
-<pre><code>&lt;div style="float: left; width: 50%;"&gt;
-
-La imagen de la derecha 
-fue creado con el siguiente código:
-
-html
-![Lore Ipsum image](/blog/images/copied_from_nb/columns/lore_ipsum.png)
-
 &lt;/div&gt;
 &lt;div style="float: right; width: 50%;"&gt;
-
-![Lore Ipsum image](/blog/images/copied_from_nb/columns/lore_ipsum.png)
-
+Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam.
 &lt;/div&gt;</code></pre>
 
 </div>
@@ -232,18 +205,19 @@ html
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="T&#237;tulo-4">T&#237;tulo 4<a class="anchor-link" href="#T&#237;tulo-4"> </a></h2><h3 id="Subt&#237;tulo-4">Subt&#237;tulo 4<a class="anchor-link" href="#Subt&#237;tulo-4"> </a></h3><p><br /></p>
+<p>Por ejemplo, una slide con 2 columnas, texto e imagen, podría obtenerse con el siguiente código markdown:</p>
 
-<pre><code>&lt;div style="float: left; width: 50%;vertical-align: middle;"&gt;
+<pre><code>
+## Título 3
+### Subtítulo 3
 
-La imagen de la derecha fue creado con el siguiente código:
+&lt;br&gt;
 
-html
-
-&lt;/div&gt;
+&lt;div style="float: left; width: 50%;"&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/div&gt;
 &lt;div style="float: right; width: 50%;"&gt;
 
-[Lore Ipsum image](columns/lore_ipsum.png)
+! [Lore Ipsum image] (columns/lore_ipsum.png)
 
 &lt;/div&gt;</code></pre>
 
