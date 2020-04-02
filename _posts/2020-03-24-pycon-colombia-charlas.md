@@ -38,6 +38,7 @@ Hace algún tiempo hice un post con los keynotes de la PyCon Colombia 2020. Ahor
 * **Carlos de la Torre (y Rodolfo Edelmann)** - _Conectando microservicios con Python_: [video]()  / <strike>slides</strike> / [repo](https://github.com/cmdelatorre) / [twitter](https://twitter.com/py_litox)
 
 ## Sábado 8 Febrero | La tarde
+* **Jesus Anaya Orozco** - _Prueba tu código con PyTest_: [video](https://www.youtube.com/watch?v=LkMAuAcDFAI) / <strike>slides</strike> / [repo](https://github.com/jesusanaya) / [twitter](https://twitter.com/jesusanayao)
 * **Ben Dechrai** - _My voice is my passport. Verify me?_: <strike>video</strike>  / <strike>slides</strike> / [repo](https://github.com/bendechrai) / [twitter](https://twitter.com/bendechrai)
 * **Angel Galicia** - _Procesamiento de datos en sistemas distribuidos con python_: [video](https://www.youtube.com/watch?v=n7QbZDmXlUo)  / <strike>slides</strike> / [repo](https://github.com/miknotauro) / [twitter](https://twitter.com/miknotauro)
 * **Felipe dos Santos de Morais** - _AfroPython: Empowering black people using Python in Brazil_: [video]()  / [slides](https://speakerdeck.com/felipedemorais/afropython-empowering-black-people-using-python-in-brazil) / [repo](https://github.com/lipemorais) / [twitter](https://twitter.com/felipedemorais_)
@@ -53,4 +54,4 @@ Creo que estas finalmente no se dictaron:
 * **Kevin Patrón** - _A Python library for Teaching-Learning-Based Optimization_: <strike>video</strike> / <strike>slides</strike> / <strike>repo</strike> / <strike>twitter</strike> 
 * **Yilsey Benavides Miranda** - _Máquinas de aprendizaje para analis de datos geoespaciales en procesos de identificación de cobertura terrestre e índices_: <strike>video</strike> / <strike>slides</strike> / <strike>repo</strike> / <strike>twitter</strike> 
 * **Andrés Gonzalez** - _IDK: Connecting APIS, developers, bots and customers with Django, Channels and VueJS_: <strike>video</strike> / <strike>slides</strike> / <strike>repo</strike> / <strike>twitter</strike> 
-* **Jesus Anaya Orozco** - _Prueba tu código con PyTest_: <strike>video</strike> / <strike>slides</strike> / <strike>repo</strike> / <strike>twitter</strike> 
+
